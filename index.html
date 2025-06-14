@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Zürich Einbürgerung Grundkenntnis Test Vorbereitung</title>
+<meta name="description" content="App zum Vorbereiten auf den Zürich Einbürgerung Grundkenntnis Test. Praxisfragen, Statistiken & Lernfortschritt." />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+<style>
+  /* Reset and base */
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+  html {
+    font-family: 'Inter', 'Poppins', sans-serif;
+    font-size: 16px;
+    scroll-behavior: smooth;
+  }
+  body {
+    margin: 0;
+    background: linear-gradient(135deg, #0f3460 0%, #16213e 100%);
+    color: #e0e6f1;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  a {
+    color: #06b6d4;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  a:hover, a:focus {
+    color: #8b5cf6;
+    outline: none;
+  }
+  main {
+    flex-grow: 1;
+    padding: 32px 16px 48px;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+  }
+  h1, h2, h3 {
+    margin: 0 0 24px 0;
+  }
+  h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: 2.5rem;
+    background: linear-gradient(135deg, #8b5cf6 0%, #06b6d4 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  h2 {
+    font-weight: 700;
+    font-size: 1.8rem;
+    border-bottom: 3px solid #06b6d4;
+    padding-bottom: 8px;
+  }
+  p {
+    line-height: 1.6;
+    max-width: 700px;
+  }
+  button {
+    cursor: pointer;
+    border: none;
+    border-radius: 12px;
+    padding: 14px 28px;
+    font-weight: 600;
+    font-size: 1rem;
+    background: linear-gradient(135deg, #8b5cf6 0%, #06b6d4 100%);
+    color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 5px 12px rgba(8,27,58,0.75);
+  }
+  button:hover, button:focus {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(139, 92, 246, 0.6);
+    outline: none;
+  }
+  /* Container cards - glass morphism */
+  .card {
+    background: rgba(16, 26, 49, 0.75);
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(8,27,58,0.7);
+    margin-bottom: 32px;
+    padding: 24px 32px;
+  }
+  /* Responsive Header */
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(7,18,38,0.95);
+    padding: 12px 24px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.7);
+  }
+  .logo {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #8b5cf6;
+    user-select: none;
+  }
+  nav {
+    display: flex;
+    gap: 24px;
+  }
+  nav a {
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 8px 0;
+    position: relative;
+  }
+  nav a.active, nav a:hover, nav a:focus {
+    color: #8b5cf6;
+  }
+  /* Hamburger for mobile */
+  .mobile-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 32px;
+    color: #8b5cf6;
+    cursor: pointer;
+    user-select: none;
+  }
+  /* Navigation mobile slide */
+  .nav-mobile {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 60px;
+    right: 0;
+    width: 260px;
+    max-width: 70vw;
+    height: calc(100vh - 60px);
+    background: rgba(7,18,38,0.98);
+    padding: 24px;
+    box-shadow: -4px 0 12px rgba(0,0,0,0.9);
+    z-index: 1500;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+  }
+  .nav-mobile.show {
+    display: flex;
+    transform: translateX(0%);
+  }
+  .nav-mobile a {
+    padding: 16px 0;
+    font-size: 1.2rem;
+    border-bottom: 1px solid #2a2a5c;
+    color: #a0a9c0;
+  }
+  .nav-mobile a.active {
+    color: #8b5cf6;
+    font-weight: 700;
+    border-color: #8b5cf6;
+  }
+  /* Responsive Footer */
+  footer {
+    background: rgba(7,18,38,0.95);
+    color: #7f8c8d;
+    padding: 24px 20px;
+    text-align: center;
+    font-size: 0.9rem;
+    user-select: none;
+  }
+  footer a {
+    color: #06b6d4;
+  }
+  /* Stats Grid */
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(180px,1fr));
+    gap: 32px;
+    margin-bottom: 32px;
+  }
+  .stat-card {
+    background: rgba(139, 92, 246, 0.15);
+    border-radius: 12px;
+    padding: 24px 20px;
+    text-align: center;
+    user-select: none;
+  }
+  .stat-value {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #8b5cf6;
+    margin-bottom: 8px;
+  }
+  .stat-label {
+    font-weight: 500;
+    color: #cad6f2;
+  }
+  /* Questions list */
+  .questions-list {
+    max-height: 350px;
+    overflow-y: auto;
+  }
+  .question-fail {
+    background: #271e47;
+    margin-bottom: 12px;
+    border-radius: 12px;
+    padding: 16px 20px;
+    color: #e0e6f1;
+  }
+  .question-fail strong {
+    color: #eab308;
+  }
+  /* Practice test */
+  .practice-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 760px;
+    margin: 0 auto;
+  }
+  .question-text {
+    font-weight: 600;
+    font-size: 1.2rem;
+  }
+  .answers-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .answers-list button {
+    background: rgba(16, 26, 49, 0.75);
+    border: 2px solid transparent;
+    padding: 12px 20px;
+    border-radius: 12px;
+    font-size: 1rem;
+    color: #e0e6f1;
+    text-align: left;
+    transition: background-color 0.4s ease, border-color 0.4s ease;
+  }
+  .answers-list button:hover, .answers-list button:focus {
+    background: rgba(139, 92, 246, 0.3);
+    border-color: #8b5cf6;
+    outline: none;
+  }
+  .answers-list button.correct {
+    background: #16a34a;
+    border-color: #22c55e;
+    color: #d9f99d;
+  }
+  .answers-list button.incorrect {
+    background: #dc2626;
+    border-color: #f87171;
+    color: #fee2e2;
+  }
+  .feedback {
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-top: 12px;
+    color: #a0aec0;
+  }
+  .feedback.correct {
+    color: #22c55e;
+  }
+  .feedback.incorrect {
+    color: #f87171;
+  }
+  /* End test summary */
+  .test-summary {
+    margin-top: 32px;
+    text-align: center;
+  }
+  .test-summary h2 {
+    margin-bottom: 16px;
+  }
+  .pass {
+    color: #22c55e;
+  }
+  .fail {
+    color: #f87171;
+  }
+  /* Responsive Layout */
+  @media (max-width: 640px) {
+    main {
+      padding: 24px 12px 32px;
+    }
+    nav {
+      display: none;
+    }
+    .mobile-toggle {
+      display: block;
+    }
+  }
+  @media (min-width: 641px) and (max-width: 1024px) {
+    main {
+      padding: 32px 24px 48px;
+    }
+  }
+  @media (min-width: 1025px) {
+    main {
+      padding: 48px 48px 64px;
+    }
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="logo" tabindex="0">Zürich Citizenship Prep</div>
+  <nav role="navigation" aria-label="Main navigation">
+    <a href="#landing" class="nav-link active" tabindex="0">Start</a>
+    <a href="#practice" class="nav-link" tabindex="0">Praxis Test</a>
+    <a href="#mistakes" class="nav-link" tabindex="0">Fehler Statistik</a>
+    <a href="#resources" class="nav-link" tabindex="0">Materialien</a>
+  </nav>
+  <button class="material-icons mobile-toggle" aria-label="Menü öffnen" aria-expanded="false" aria-controls="mobile-menu">menu</button>
+</header>
+<nav id="mobile-menu" class="nav-mobile" aria-label="Mobile navigation">
+  <a href="#landing" class="nav-link active" tabindex="0">Start</a>
+  <a href="#practice" class="nav-link" tabindex="0">Praxis Test</a>
+  <a href="#mistakes" class="nav-link" tabindex="0">Fehler Statistik</a>
+  <a href="#resources" class="nav-link" tabindex="0">Materialien</a>
+</nav>
+<main id="content" tabindex="-1">
+  
+  <section id="landing" aria-label="Startseite" class="card" tabindex="0">
+    <h1>Zürich Einbürgerung Grundkenntnis Test Vorbereitung</h1>
+    <p>Willkommen! Bereiten Sie sich auf die Grundkenntnisprüfung für die Einbürgerung in Zürich vor. Nutzen Sie Praxisfragen, offizielle Materialien und erhalten Sie sofortiges Feedback, um Ihre Chancen zu maximieren.</p>
+    <div class="stats-grid" aria-live="polite" aria-atomic="true">
+      <div class="stat-card" role="region" aria-label="Gesamtzahl Anträge">
+        <div class="stat-value" id="stat-applications">10'210</div>
+        <div class="stat-label">Anträge in Zürich (2023)</div>
+      </div>
+      <div class="stat-card" role="region" aria-label="Erfolgsquote">
+        <div class="stat-value" id="stat-successrate">78%</div>
+        <div class="stat-label">Erfolgsquote</div>
+      </div>
+      <div class="stat-card" role="region" aria-label="Nutzer insgesamt">
+        <div class="stat-value" id="stat-users">1'540</div>
+        <div class="stat-label">Nutzer dieser App</div>
+      </div>
+    </div>
+    <div style="margin-top: 32px; text-align:center;">
+      <button id="donate-btn" aria-label="Donation unterstützen">Unterstütze die App Entwicklung</button>
+    </div>
+  </section>
+
+  <section id="practice" aria-label="Praxis Test" class="card" hidden>
+    <h2>Praxis Test</h2>
+    <div class="practice-container" id="practice-container" aria-live="polite" aria-atomic="true">
+      <!-- Questions and answers will be dynamically injected here -->
+    </div>
+  </section>
+
+  <section id="mistakes" aria-label="Statistik der falschen Antworten" class="card" hidden>
+    <h2>Fragen mit den meisten Fehlern</h2>
+    <p>Diese Liste zeigt die Fragen, bei denen Nutzer am häufigsten Fehler machen – Üben Sie diese, um nie wieder zu scheitern!</p>
+    <div class="questions-list" id="most-failed-questions" tabindex="0" aria-live="polite" aria-atomic="true">
+      <!-- Sorted questions by fail count injected here -->
+    </div>
+    <div style="text-align: center; margin-top: 24px;">
+      <button id="practice-mistakes-btn" aria-label="Fehler Fragen üben">Fehler Üben</button>
+    </div>
+  </section>
+
+  <section id="resources" aria-label="Vorbereitungsmaterialien" class="card" hidden>
+    <h2>Vorbereitungs Materialien</h2>
+    <p>Hier finden Sie die offiziellen &amp; ergänzenden Materialien für die Grundkenntnisprüfung.</p>
+    <ul>
+      <li><a href="https://www.zh.ch/de/migration-integration/einbuergerung/grundkenntnistest.html" target="_blank" rel="noopener" aria-label="Grundkenntnistest Kanton Zürich">Grundkenntnistest Kanton Zürich</a></li>
+      <li><a href="https://www.zh.ch/content/dam/zhweb/bilder-dokumente/themen/migration-integration/einbuergerung/gkt/broschuere_einbuergerung_grundkenntnistest.pdf" target="_blank" rel="noopener" aria-label="Broschüre für die Einbürgerung">Broschüre für die Einbürgerung</a></li>
+      <li><a href="https://www.zh.ch/content/dam/zhweb/bilder-dokumente/themen/migration-integration/einbuergerung/gkt/grundkenntnistest_kanton_zuerich.pdf" target="_blank" rel="noopener" aria-label="Kantonaler Grundkenntnistest im Einbürgerungsverfahren">Kantonaler Grundkenntnistest im Einbürgerungsverfahren</a></li>
+    </ul>
+  </section>
+</main>
+
+<footer>
+  <p>© 2024 Zürich Citizenship Prep. Made with care.</p>
+</footer>
+
+<script>
+  'use strict';
+
+  // Placeholder question data limited for demo; you'll need to add more questions based on official PDF.
+  const questionsBank = [
+    { id: 1, question: "Was ist die Landeshauptstadt von Zürich?", answers: ["Zürich", "Bern", "Genf", "Basel"], correctIndex: 0 },
+    { id: 2, question: "Wie viele Kantone hat die Schweiz?", answers: ["20", "26", "30", "32"], correctIndex: 1 },
+    { id: 3, question: "Welche Sprache wird in Zürich gesprochen?", answers: ["Deutsch", "Französisch", "Italienisch", "Rätoromanisch"], correctIndex: 0 },
+    { id: 4, question: "In welchem Jahr trat die Schweiz der UNO bei?", answers: ["2002", "1998", "2005", "1990"], correctIndex: 0 },
+    { id: 5, question: "Wie heißt das Parlament der Schweiz?", answers: ["Nationalrat", "Bundesrat", "Ständerat", "Bundesversammlung"], correctIndex: 3 },
+    // Add more questions (50 total) from official PDF
+  ];
+
+  // Local storage keys
+  const STORAGE_MISTAKES_KEY = 'cep_mistake_counts';
+
+  // State
+  let currentQuestionIndex = 0;
+  let currentTestQuestions = [];
+  let userAnswers = [];
+  let reviewingMistakes = false;
+
+  // Cached Elements
+  const content = document.getElementById('content');
+  const navLinks = document.querySelectorAll('nav a, .nav-mobile a');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const mobileToggleBtn = document.querySelector('.mobile-toggle');
+  const practiceSection = document.getElementById('practice');
+  const practiceContainer = document.getElementById('practice-container');
+  const landingSection = document.getElementById('landing');
+  const mistakesSection = document.getElementById('mistakes');
+  const mostFailedQuestionsContainer = document.getElementById('most-failed-questions');
+  const resourcesSection = document.getElementById('resources');
+  const donateBtn = document.getElementById('donate-btn');
+  const practiceMistakesBtn = document.getElementById('practice-mistakes-btn');
+
+  // Accessibility: Focus main content on navigation
+  function focusMain() {
+    content.focus();
+  }
+
+  // Save mistake counts in localStorage
+  function loadMistakes() {
+    const json = localStorage.getItem(STORAGE_MISTAKES_KEY);
+    try {
+      if (json) return JSON.parse(json);
+    } catch {
+      return {};
+    }
+    return {};
+  }
+
+  function saveMistakes(mistakes) {
+    localStorage.setItem(STORAGE_MISTAKES_KEY, JSON.stringify(mistakes));
+  }
+
+  // Increment mistake count for a question ID
+  function countMistake(questionId) {
+    const mistakes = loadMistakes();
+    if (mistakes[questionId]) {
+      mistakes[questionId]++;
+    } else {
+      mistakes[questionId] = 1;
+    }
+    saveMistakes(mistakes);
+  }
+
+  // Sort and show most failed questions
+  function showMostFailedQuestions() {
+    const mistakes = loadMistakes();
+    // Map questions to fail count
+    const failedArray = Object.entries(mistakes)
+      .map(([id, count]) => {
+        const question = questionsBank.find(q => q.id === Number(id));
+        return question ? { ...question, failCount: count } : null;
+      })
+      .filter(Boolean)
+      .sort((a, b) => b.failCount - a.failCount);
+
+    if (failedArray.length === 0) {
+      mostFailedQuestionsContainer.innerHTML = '<p>Keine Fehler bisher. Sie sind auf dem besten Weg!</p>';
+      return;
+    }
+
+    const frag = document.createDocumentFragment();
+    failedArray.forEach(q => {
+      const div = document.createElement('div');
+      div.className = 'question-fail';
+      div.tabIndex = 0;
+      div.setAttribute('aria-label', `Fehlantwort: Frage ${q.id} mit ${q.failCount} Fehlversuchen. Frage: ${q.question}`);
+      div.innerHTML = `<strong>Fehler: ${q.failCount}x</strong><br>${q.question}`;
+      frag.appendChild(div);
+    });
+    mostFailedQuestionsContainer.innerHTML = '';
+    mostFailedQuestionsContainer.appendChild(frag);
+  }
+
+  // Navigation handler
+  function navigateToSection(id) {
+    // Hide all sections
+    [landingSection, practiceSection, mistakesSection, resourcesSection].forEach(s => s.hidden = true);
+    // Remove active from nav links
+    navLinks.forEach(link => link.classList.remove('active'));
+    // Show selected
+    if (id === 'landing') landingSection.hidden = false;
+    if (id === 'practice') practiceSection.hidden = false;
+    if (id === 'mistakes') {
+      mistakesSection.hidden = false;
+      showMostFailedQuestions();
+    }
+    if (id === 'resources') resourcesSection.hidden = false;
+    // Add active to clicked nav link(s)
+    navLinks.forEach(link => {
+      const href = link.getAttribute('href').substring(1);
+      if (href === id) {
+        link.classList.add('active');
+      }
+    });
+    // Close mobile menu if open
+    closeMobileMenu();
+    focusMain();
+  }
+
+  // Mobile menu toggle open/close
+  function toggleMobileMenu() {
+    const expanded = mobileToggleBtn.getAttribute('aria-expanded') === 'true';
+    if (expanded) {
+      closeMobileMenu();
+    } else {
+      openMobileMenu();
+    }
+  }
+  function openMobileMenu() {
+    mobileMenu.classList.add('show');
+    mobileToggleBtn.setAttribute('aria-expanded', 'true');
+    mobileMenu.focus();
+  }
+  function closeMobileMenu() {
+    mobileMenu.classList.remove('show');
+    mobileToggleBtn.setAttribute('aria-expanded', 'false');
+    mobileToggleBtn.focus();
+  }
+
+  // Pick a fixed number of random questions (e.g., 50) for the practice test
+  function selectRandomQuestions(num = 50, pool = questionsBank) {
+    const shuffled = pool.slice().sort(() => 0.5 - Math.random());
+    return shuffled.slice(0, Math.min(num, shuffled.length));
+  }
+
+  // Render current question and answers
+  function renderQuestion() {
+    const q = currentTestQuestions[currentQuestionIndex];
+    if (!q) {
+      renderTestSummary();
+      return;
+    }
+    const answersHtml = q.answers.map((a, i) => 
+      `<button type="button" data-index="${i}" aria-label="Antwort Option ${i+1}: ${a}">${a}</button>`
+    ).join('');
+
+    practiceContainer.innerHTML = `
+      <div class="question-text" id="question-text" tabindex="0">Frage ${currentQuestionIndex + 1} von ${currentTestQuestions.length}: ${q.question}</div>
+      <ul class="answers-list" role="list" aria-labelledby="question-text">${answersHtml}</ul>
+      <div id="feedback" class="feedback" aria-live="polite"></div>
+    `;
+
+    // Attach event listeners to answers
+    const answerButtons = practiceContainer.querySelectorAll('button[data-index]');
+    answerButtons.forEach(btn => btn.addEventListener('click', onAnswerSelected));
+
+    // Focus question text for screen readers
+    document.getElementById('question-text').focus();
+  }
+
+  // On answer selected
+  function onAnswerSelected(e) {
+    const selectedIndex = Number(e.currentTarget.getAttribute('data-index'));
+    const q = currentTestQuestions[currentQuestionIndex];
+    const feedbackDiv = document.getElementById('feedback');
+    const allButtons = practiceContainer.querySelectorAll('button[data-index]');
+    // Disable all buttons after selection
+    allButtons.forEach(button => button.disabled = true);
+    userAnswers[currentQuestionIndex] = selectedIndex;
+
+    if (selectedIndex === q.correctIndex) {
+      e.currentTarget.classList.add('correct');
+      feedbackDiv.textContent = 'Richtig!';
+      feedbackDiv.className = 'feedback correct';
+    } else {
+      e.currentTarget.classList.add('incorrect');
+      // Highlight correct button
+      const correctBtn = practiceContainer.querySelector(`button[data-index="${q.correctIndex}"]`);
+      if (correctBtn) correctBtn.classList.add('correct');
+      feedbackDiv.textContent = `Falsch. Richtige Antwort: ${q.answers[q.correctIndex]}`;
+      feedbackDiv.className = 'feedback incorrect';
+      // Count mistake
+      countMistake(q.id);
+    }
+    // After short delay, move to next question or summary
+    setTimeout(() => {
+      currentQuestionIndex++;
+      if (currentQuestionIndex >= currentTestQuestions.length) {
+        renderTestSummary();
+      } else {
+        renderQuestion();
+      }
+    }, 1800);
+  }
+
+  // Render test summary results and pass/fail
+  function renderTestSummary() {
+    // Calculate score
+    let score = 0;
+    currentTestQuestions.forEach((q, idx) => {
+      if (userAnswers[idx] === q.correctIndex) score++;
+    });
+    const passThreshold = Math.ceil(currentTestQuestions.length * 0.8); // 80% pass
+    const passed = score >= passThreshold;
+    const percentage = Math.round((score / currentTestQuestions.length) * 100);
+
+    let summaryHtml = `
+      <div class="test-summary" tabindex="0">
+        <h2>Test beendet</h2>
+        <p>Deine Punktzahl: ${score} von ${currentTestQuestions.length} (${percentage}%)</p>
+        <p class="${passed ? 'pass' : 'fail'}">${passed ? 'Herzlichen Glückwunsch! Du hast die Prüfung bestanden.' : 'Leider nicht bestanden. Bitte übe die Fehlerfragen nochmals.'}</p>
+        <div style="display:flex;justify-content:center;gap:24px;margin-top:24px;">
+          <button id="restart-test-btn" aria-label="Neuer Test starten">Neuer Test</button>
+          <button id="review-test-btn" aria-label="Fehler Fragen anzeigen">Fehler Überprüfen</button>
+        </div>
+      </div>
+    `;
+    practiceContainer.innerHTML = summaryHtml;
+
+    // Button to restart test
+    document.getElementById('restart-test-btn').addEventListener('click', () => {
+      startPracticeTest();
+    });
+    // Button to review mistakes
+    document.getElementById('review-test-btn').addEventListener('click', () => {
+      startReviewMistakes();
+    });
+
+    // Focus summary container
+    practiceContainer.querySelector('.test-summary').focus();
+  }
+
+  // Start a new full practice test
+  function startPracticeTest() {
+    reviewingMistakes = false;
+    currentTestQuestions = selectRandomQuestions(50);
+    currentQuestionIndex = 0;
+    userAnswers = [];
+    practiceSection.hidden = false;
+    missingSectionHideExcept('practice');
+    renderQuestion();
+    updateActiveNav('practice');
+  }
+
+  // Start practice review of mistakes
+  function startReviewMistakes() {
+    reviewingMistakes = true;
+    const mistakes = loadMistakes();
+    let mistakeIds = Object.keys(mistakes).map(id => Number(id));
+    const mistakeQuestions = questionsBank.filter(q => mistakeIds.includes(q.id));
+
+    if (mistakeQuestions.length === 0) {
+      alert('Keine Fehler zum Üben gefunden. Du hast keine Fragen falsch beantwortet.');
+      return startPracticeTest();
+    }
+    currentTestQuestions = mistakeQuestions;
+    currentQuestionIndex = 0;
+    userAnswers = [];
+    practiceSection.hidden = false;
+    missingSectionHideExcept('practice');
+    renderQuestion();
+    updateActiveNav('practice');
+  }
+
+  // Hide all except a given section id
+  function missingSectionHideExcept(showId) {
+    const sections = [landingSection, practiceSection, mistakesSection, resourcesSection];
+    for (const s of sections) {
+      s.hidden = s.id !== showId;
+    }
+  }
+
+  // Update navigation active state
+  function updateActiveNav(activeId) {
+    navLinks.forEach(link => {
+      const href = link.getAttribute('href')?.substring(1);
+      link.classList.toggle('active', href === activeId);
+    });
+  }
+
+  // Event handler for nav clicks
+  navLinks.forEach(link => {
+    link.addEventListener('click', e => {
+      e.preventDefault();
+      const targetId = link.getAttribute('href').substring(1);
+      navigateToSection(targetId);
+    });
+  });
+
+  // Mobile toggle handler
+  mobileToggleBtn.addEventListener('click', () => {
+    toggleMobileMenu();
+  });
+
+  // Clicking the donate button: simulate or link externally
+  donateBtn.addEventListener('click', () => {
+    const donateUrl = 'https://www.paypal.com/donate?hosted_button_id=YOUR_BUTTON_ID'; // Replace with actual URL if available
+    window.open(donateUrl, '_blank', 'noopener');
+  });
+
+  // Practice mistakes button click
+  practiceMistakesBtn.addEventListener('click', () => {
+    startReviewMistakes();
+  });
+
+  // Close mobile menu when resizing desktop
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 640) closeMobileMenu();
+  });
+
+  // Keyboard accessibility for mobile menu closing: Escape key
+  window.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && mobileMenu.classList.contains('show')) {
+      closeMobileMenu();
+    }
+  });
+
+  // Initialize app default view on load
+  window.addEventListener('DOMContentLoaded', () => {
+    navigateToSection('landing');
+  });
+</script>
+</body>
+</html>
+
