@@ -331,20 +331,20 @@
     <p>Willkommen! Bereiten Sie sich auf die Grundkenntnisprüfung für die Einbürgerung in Zürich vor. Nutzen Sie Praxisfragen, offizielle Materialien und erhalten Sie sofortiges Feedback, um Ihre Chancen zu maximieren.</p>
     <div class="stats-grid" aria-live="polite" aria-atomic="true">
       <div class="stat-card" role="region" aria-label="Gesamtzahl Anträge">
-        <div class="stat-value" id="stat-applications">10'210</div>
-        <div class="stat-label">Anträge in Zürich (2023)</div>
+        <div class="stat-value" id="stat-applications">41,201</div>
+        <div class="stat-label">neue Schweizer:innen 2023</div>
       </div>
       <div class="stat-card" role="region" aria-label="Erfolgsquote">
-        <div class="stat-value" id="stat-successrate">78%</div>
-        <div class="stat-label">Erfolgsquote</div>
+        <div class="stat-value" id="stat-successrate">8,911</div>
+        <div class="stat-label">neue Schweizer:innen in Zürich 2023</div>
       </div>
       <div class="stat-card" role="region" aria-label="Nutzer insgesamt">
-        <div class="stat-value" id="stat-users">1'540</div>
-        <div class="stat-label">Nutzer dieser App</div>
+        <div class="stat-value" id="stat-users">14.Juni</div>
+        <div class="stat-label">start dieser Website</div>
       </div>
     </div>
     <div style="margin-top: 32px; text-align:center;">
-      <button id="donate-btn" aria-label="Donation unterstützen">Unterstütze die App Entwicklung</button>
+      <button id="donate-btn" aria-label="Donation unterstützen">Buy me a Coffee :)</button>
     </div>
   </section>
 
@@ -370,26 +370,549 @@
     <h2>Vorbereitungs Materialien</h2>
     <p>Hier finden Sie die offiziellen &amp; ergänzenden Materialien für die Grundkenntnisprüfung.</p>
     <ul>
-      <li><a href="https://www.zh.ch/de/migration-integration/einbuergerung/grundkenntnistest.html" target="_blank" rel="noopener" aria-label="Grundkenntnistest Kanton Zürich">Grundkenntnistest Kanton Zürich</a></li>
-      <li><a href="https://www.zh.ch/content/dam/zhweb/bilder-dokumente/themen/migration-integration/einbuergerung/gkt/broschuere_einbuergerung_grundkenntnistest.pdf" target="_blank" rel="noopener" aria-label="Broschüre für die Einbürgerung">Broschüre für die Einbürgerung</a></li>
-      <li><a href="https://www.zh.ch/content/dam/zhweb/bilder-dokumente/themen/migration-integration/einbuergerung/gkt/grundkenntnistest_kanton_zuerich.pdf" target="_blank" rel="noopener" aria-label="Kantonaler Grundkenntnistest im Einbürgerungsverfahren">Kantonaler Grundkenntnistest im Einbürgerungsverfahren</a></li>
+      <li>
+        <a href="https://www.zh.ch/de/migration-integration/einbuergerung/grundkenntnistest.html" target="_blank" rel="noopener" aria-label="Grundkenntnistest Kanton Zürich">
+          Grundkenntnistest Kanton Zürich
+        </a>
+      </li>
+      <li>
+        <a href="https://www.zh.ch/content/dam/zhweb/bilder-dokumente/themen/migration-integration/einbuergerung/gkt/broschuere_einbuergerung_grundkenntnistest.pdf" target="_blank" rel="noopener" aria-label="Broschüre für die Einbürgerung">
+          Broschüre für die Einbürgerung
+        </a>
+      </li>
+      <li>
+        <a href="https://www.zh.ch/content/dam/zhweb/bilder-dokumente/themen/migration-integration/einbuergerung/gkt/grundkenntnistest_kanton_zuerich.pdf" target="_blank" rel="noopener" aria-label="Kantonaler Grundkenntnistest im Einbürgerungsverfahren">
+          Kantonaler Grundkenntnistest im Einbürgerungsverfahren
+        </a>
+      </li>
     </ul>
   </section>
 </main>
 
 <footer>
   <p>© 2024 Zürich Citizenship Prep. Made with care.</p>
+  <p> Diese Website enthält 217 zufällig ausgewählte Übungsfragen aus öffentlich verfügbaren Materialien zur Vorbereitung auf den Einbürgerungstest im Kanton Zürich (Stand: 14. Juni 2025).</p>
+  <p> <b> Bitte beachten:</b></p>
+<ul>
+      <li> Die Inhalte dienen nur zur persönlichen Vorbereitung. </li>
+	  <li> Diese Website ist nicht offiziell und nicht mit Behörden verbunden. </li>
+	  <li> Es wird nicht garantiert, dass Sie mit dieser Website den offiziellen Test bestehen. </li>
+	  <li> Die Nutzung erfolgt auf eigenes Risiko. </li>
+	  <li> Für Fehler, veraltete Inhalte oder Folgen aus der Nutzung wird keine Haftung übernommen.</li>
+</ul>
+	  <p> Mit der Nutzung der Website akzeptieren Sie diesen Haftungsausschluss. </p>
 </footer>
 
 <script>
   'use strict';
-
-  // Updated question data with 210 questions
+  // The full list of 217 questions from https://www.zh.ch/content/dam/zhweb/bilder-dokumente/themen/migration-integration/einbuergerung/gkt/grundkenntnistest_kanton_zuerich.pdf
   const questionsBank = [
-    { id: 1, question: 'Die Schweiz ist neutral. Was heisst das?', answers: ['Sie unterzeichnet keine internationalen Verträge.', 'Sie schliesst nur mit Staaten Verträge, die nicht in Kriege verwickelt sind.', 'Sie mischt sich nicht in bewaffnete Konflikte anderer Staaten ein.', 'Sie will als Transitland wirtschaftlich unabhängig sein.'], correctIndex: 2 },
-    { id: 2, question: 'Was ist eine Grenzgängerin oder ein Grenzgänger?', answers: ['eine Person, die in der Schweiz arbeitet und im Ausland wohnt', 'eine Person, die nicht im gleichen Kanton wohnt und arbeitet', 'Schweizer Handelsware, die ins Ausland exportiert wird', 'Schweizer Handelsware, die vom Ausland in die Schweiz importiert wird'], correctIndex: 0 },
-    { id: 3, question: 'Confoederatio Helvetica ...', answers: ['ist der Name einer Schweizer Schokolade.', 'ist der lateinische Name für die Schweizer Eidgenossenschaft.', 'ist der Name des ersten Parlaments der Schweiz.', 'ist eine Fraktion des Parlaments.'], correctIndex: 1 },
-    { id: 4, question: 'Was ist ein Departement der Bundesverwaltung?', answers: ['Ernährungsdepartement', 'Natur- und Klimadepartement', 'Schul- und Weiterbildungsdepartement', 'Justiz- und Polizeidepartement'], correctIndex: 3 },
-    { id: 5, question: 'Zwischen den Mitgliedern des Bundesrats gilt das Kollegialitätsprinzip. Was heisst das?', answers: ['Die Mitglieder des Bundesrates müssen sich gut kennen.', 'Jeder Bundesrat vertritt seine eigenen politischen Meinungen.', 'Alle Mitglieder müssen Entscheide des Bundesrates nach aussen gleich vertreten.', 'Der Bundesrat Entscheidungen mit Abstimmung.'], correctIndex: 2 },
-    { id: 6, question: 'Können die Stimmbürgerinnen und Stimmbürger ein neues Gesetz stoppen?', answers: ['Ja - mit einer Initiative', 'Nein - nur der Bundesrat kann Gesetze ändern', 'Nein - nur der Nationalrat kann Gesetze ändern', 'Ja - mit einem Referendum'], correctIndex: 3 },
-    { id: 7, question: 'Was macht der Bundeskanzler oder die Bundeskanzlerin der Schweiz?', answers: ['den Bundesrat unterstützen', 'die Schweiz regieren',
+{ id: 1, question: 'Die Schweiz ist neutral. Was heisst das?', answers: ['Sie unterzeichnet keine internationalen Verträge.', 'Sie schliesst nur mit Staaten Verträge, die nicht in Kriege verwickelt sind.', 'Sie mischt sich nicht in bewaffnete Konflikte anderer Staaten ein.', 'Sie will als Transitland wirtschaftlich unabhängig sein.'], correctIndex: 2 },
+{ id: 2, question: 'Was ist eine Grenzgängerin oder ein Grenzgänger?', answers: ['eine Person, die in der Schweiz arbeitet und im Ausland wohnt', 'eine Person, die nicht im gleichen Kanton wohnt und arbeitet', 'Schweizer Handelsware, die ins Ausland exportiert wird', 'Schweizer Handelsware, die vom Ausland in die Schweiz importiert wird'], correctIndex: 0 },
+{ id: 3, question: 'Confoederatio Helvetica ...', answers: ['ist der Name einer Schweizer Schokolade.', 'ist der lateinische Name für die Schweizer Eidgenossenschaft.', 'ist der Name des ersten Parlaments der Schweiz.', 'ist eine Fraktion des Parlaments.'], correctIndex: 1 },
+{ id: 4, question: 'Was ist ein Departement der Bundesverwaltung?', answers: ['Ernährungsdepartement', 'Natur- und Klimadepartement', 'Schul- und Weiterbildungsdepartement', 'Justiz- und Polizeidepartement'], correctIndex: 3 },
+{ id: 5, question: 'Zwischen den Mitgliedern des Bundesrats gilt das Kollegialitätsprinzip. Was heisst das?', answers: ['Die Mitglieder des Bundesrates müssen sich gut kennen.', 'Jeder Bundesrat vertritt seine eigenen politischen Meinungen.', 'Alle Mitglieder müssen Entscheide des Bundesrates nach aussen gleich vertreten.', 'Der Bundesrat Entscheidungen mit Abstimmung.'], correctIndex: 2 },
+{ id: 6, question: 'Können die Stimmbürgerinnen und Stimmbürger ein neues Gesetz stoppen?', answers: ['Ja - mit einer Initiative', 'Nein - nur der Bundesrat kann Gesetze ändern', 'Nein - nur der Nationalrat kann Gesetze ändern', 'Ja - mit einem Referendum'], correctIndex: 3 },
+{ id: 7, question: 'Was macht der Bundeskanzler oder die Bundeskanzlerin der Schweiz?', answers: ['den Bundesrat unterstützen', 'die Schweiz regieren', 'den Bundesrat wählen', 'Gesetze machen'], correctIndex: 0 },
+{ id: 8, question: 'Was bedeutet bei Abstimmungen "Ständemehr"?', answers: ['Mehrheit aller Stimmen', 'Mehrheit der Kantone', 'Mehrheit der Stimmen nach Sprachregionen der Schweiz', 'Mehrheit in den vorausgegangenen Meinungsumfragen'], correctIndex: 1 },
+{ id: 9, question: 'Welche politischen Rechte haben Schweizerinnen und Schweizer, die im Ausland leben?', answers: ['Sie dürfen an Abstimmungen und Wahlen teilnehmen, wenn sie in der Schweiz zu Besuch sind.', 'Sie verlieren alle politischen Rechte in der Schweiz.', 'Sie können an nationalen Abstimmungen und Wahlen teilnehmen, ohne deswegen in die Schweiz reisen zu müssen.', 'Sie dürfen sich im Gastland in keiner Weise politisch engagieren.'], correctIndex: 2 },
+{ id: 10, question: 'Wer in der Schweiz wählen und abstimmen will, …', answers: ['muss das Schweizer Bürgerrecht haben.', 'muss einen Computer haben.', 'muss in der Schweiz geboren sein.', 'muss mehr Steuern zahlen'], correctIndex: 0 },
+{ id: 11, question: 'Was ist eine Partei?', answers: ['ein Zusammenschluss von Menschen aus der gleichen Stadt oder dem gleichen Dorf', 'ein Zusammenschluss von Menschen mit ähnlichen politischen Zielen', 'ein Zusammenschluss von Menschen mit unterschiedlichen Weltanschauungen', 'ein Zusammenschluss von Nationalräten oder Ständeräten, um die Mehrheit zu erreichen'], correctIndex: 1 },
+{ id: 12, question: 'Was ist eine Aufgabe des Bundes?', answers: ['Wasserversorgung', 'Geldpolitik', 'Polizeiwesen', 'Organisation der Volksschule'], correctIndex: 1 },
+{ id: 13, question: 'Was ist eine Aufgabe des Bundes?', answers: ['Feuerwehr', 'Begrünung von Parks', 'Zoll', 'Spitäler'], correctIndex: 2 },
+{ id: 14, question: 'Was ist ein Grundrecht in der Schweiz?', answers: ['Tierhaltung', 'Meinungs- und Informationsfreiheit', 'kostenloser Fernsehzugang', 'WLAN-Zugang'], correctIndex: 1 },
+{ id: 15, question: 'Was ist ein Grundrecht in der Schweiz?', answers: ['Recht auf Waffenbesitz', 'Recht auf eine Wohnung', 'Recht auf einen Arbeitsplatz', 'Glaubens- und Gewissensfreiheit'], correctIndex: 3 },
+{ id: 16, question: 'Welche Pflichten haben Einwohnerinnen und Einwohner der Schweiz?', answers: ['Sie müssen Steuern bezahlen.', 'Sie müssen eine Lehre machen.', 'Sie müssen ein Bankkonto haben.', 'Sie müssen den Führerausweis haben'], correctIndex: 0 },
+{ id: 17, question: 'Welche Pflichten haben Einwohnerinnen und Einwohner der Schweiz?', answers: ['Sie müssen eine Weiterbildung machen.', 'Sie müssen Mitglied einer Kirche sein.', 'Sie müssen sich in der Gemeinde anmelden.', 'Sie müssen ein Telefon haben.'], correctIndex: 2 },
+{ id: 18, question: 'Welche Pflichten haben Einwohnerinnen und Einwohner der Schweiz?', answers: ['Sie müssen gegen Diebstahl versichert sein.', 'Sie müssen bei einer Krankenkasse versichert sein.', 'Sie müssen ein Halbtax der SBB haben.', 'Sie müssen ein Haus besitzen.'], correctIndex: 1 },
+{ id: 19, question: 'Was bedeutet Rechtsgleichheit?', answers: ['Alle verdienen gleich viel.', 'Alle Kantone haben die gleichen Gesetze.', 'Alle Menschen sind vor dem Gesetz gleich.', 'Alle Menschen haben gleich lange Ferien.'], correctIndex: 2 },
+{ id: 20, question: 'Wie heissen die beiden "Kammern" des Schweizer Parlaments?', answers: ['Oberhaus und Unterhaus', 'Senat und Kongress', 'Nationalrat und Ständerat', 'Fraktion und Kommission'], correctIndex: 2 },
+{ id: 21, question: 'Die Schweiz ist …', answers: ['eine Diktatur.', 'ein absolutistischer Staat.', 'eine Demokratie.', 'ein Fürstentum.'], correctIndex: 2 },
+{ id: 22, question: 'Was ist ein wichtiges Merkmal der Demokratie?', answers: ['Das Volk wählt ein Parlament.', 'Es regiert ein König.', 'Die Menschen können frei reisen.', 'Die Menschen haben ein garantiertes Grundeinkommen.'], correctIndex: 0 },
+{ id: 23, question: 'Warum gibt es in einer Demokratie regelmässig Wahlen?', answers: ['Damit das Interesse für Politik geweckt wird.', 'Damit das Volk die Volksvertretung bestimmen kann.', 'Damit die Armen mehr Macht bekommen.', 'Damit Frauen und Männer gleichmässig vertreten sind.'], correctIndex: 1 },
+{ id: 24, question: 'Wie heisst die Verfassung der Schweizerischen Eidgenossenschaft?', answers: ['Grundgesetz', 'Verfassungsvertrag', 'Bundesbrief', 'Bundesverfassung'], correctIndex: 3 },
+{ id: 25, question: 'Wer führt die Regierungsgeschäfte der Schweiz?', answers: ['die Parteien', 'die Medien', 'der Bundesrat', 'die Bundesversammlung'], correctIndex: 2 },
+{ id: 26, question: 'Wer beschliesst auf Bundesebene neue Gesetze?', answers: ['das Bundesgericht', 'die Präsidentinnen und Präsidenten der Parteien', 'der Nationalrat und der Ständerat und das Volk (Referendum)', 'die Bundeskanzlei'], correctIndex: 2 },
+{ id: 27, question: 'Wer darf auf Bundesebene wählen und abstimmen?', answers: ['Personen, die in der Schweiz wohnen', 'Schweizerinnen und Schweizer ab 18 Jahren', 'Schweizerinnen und Schweizer, die nicht vorbestraft sind', 'Personen, die in der Schweiz Steuern bezahlen'], correctIndex: 1 },
+{ id: 28, question: 'Ab wann sind Schweizerinnen und Schweizer auf Bundesebene stimmund wahlberechtigt?', answers: ['ab 18 Jahren', 'ab 21 Jahren', 'ab 25 Jahren', 'ab 16 Jahren'], correctIndex: 0 },
+{ id: 29, question: 'Was bedeutet das aktive Wahlrecht in der Demokratie?', answers: ['Man darf nur wählen und abstimmen, wenn man in einer politischen Partei aktiv ist.', 'Man kann in ein politisches Amt gewählt werden.', 'Man darf wählen und abstimmen.', 'Man muss beim Auszählen der Stimmen helfen.'], correctIndex: 2 },
+{ id: 30, question: 'Wer kann auf Bundesebene in ein politisches Amt gewählt werden?', answers: ['wer eine Arbeit hat', 'wer in der Schweiz lebt', 'wer das Schweizer Bürgerrecht hat und volljährig ist', 'wer mindestens zwei Landessprachen spricht'], correctIndex: 2 },
+{ id: 31, question: 'Wie können Schweizer Bürgerinnen und Bürger auf die Gesetzgebung Einfluss nehmen?', answers: ['Sie können über Initiativen und Referenden abstimmen.', 'Sie haben keine direkte Einflussmöglichkeit.', 'Sie können einer Partei beitreten.', 'Sie können den Bundesrat wählen.'], correctIndex: 0 },
+{ id: 32, question: 'Gegen was kann man das Referendum ergreifen?', answers: ['gegen Beschlüsse des Bundesrats', 'gegen Urteile des Bundesgerichts', 'gegen Gesetzesvorlagen von Nationalrat und Ständerat', 'gegen Massnahmen der Bundesverwaltung'], correctIndex: 2 },
+{ id: 33, question: 'Weshalb ist die Volksinitiative ein wichtiges politisches Recht der Stimmbürgerinnen und Stimmbürger? Sie können mit der Volksinitiative …', answers: ['das Parlament ausschalten.', 'die Regierung abwählen.', 'politische Entscheidungen rückgängig machen.', 'wichtige Anliegen aus der Bevölkerung politisch durchsetzen.'], correctIndex: 3 },
+{ id: 34, question: 'Wie oft wählen die Stimmbürgerinnen und Stimmbürger das Bundesparlament?', answers: ['alle 6 Jahre', 'alle 2 Jahre', 'alle 4 Jahre', 'alle 7 Jahre'], correctIndex: 2 },
+{ id: 35, question: 'Die Bundesversammlung besteht aus 246 Mitgliedern. Wer wählt diese Mitglieder?', answers: ['die wahlberechtigten Bürgerinnen und Bürger', 'die Parteien', 'alle Einwohnerinnen und Einwohner der Schweiz', 'eine Wahlkommission'], correctIndex: 0 },
+{ id: 36, question: 'Über was können stimmberechtigte Bürgerinnen und Bürger in der Schweiz auf Bundesebene abstimmen?', answers: ['über Parteiprogramme', 'über das Radio- und Fernsehprogramm', 'über Volksinitiativen und Referenden', 'über die Besetzung von Verwaltungsstellen'], correctIndex: 2 },
+{ id: 37, question: 'Was ist die zentrale Aufgabe der Bundesversammlung (Bundesparlament)?', answers: ['Sie organisiert Wahlen und Abstimmungen.', 'Sie berät und beschliesst Gesetze.', 'Sie führt die Regierungsgeschäfte in der Schweiz.', 'Sie fällt Gerichtsurteile in letzter Instanz.'], correctIndex: 1 },
+{ id: 38, question: 'Wie setzt sich die Vereinigte Bundesversammlung zusammen?', answers: ['aus den Mitgliedern des Nationalrats und Ständerats', 'aus den Bundesrichterinnen und Bundesrichtern', 'aus den Mitgliedern der kantonalen Regierungen', 'aus den Parteipräsidentinnen und Parteipräsidenten'], correctIndex: 0 },
+{ id: 39, question: 'Das Bundeshaus in Bern ist der Sitz …', answers: ['des Nationalmuseums.', 'der Bundesversammlung (Schweizer Parlament).', 'der Universität.', 'des Schweizer Fernsehens.'], correctIndex: 1 },
+{ id: 40, question: 'Wie heisst die Exekutive in der Schweiz auf Bundesebene?', answers: ['Grosser Rat', 'Generalrat', 'Bundesrat', 'Landrat'], correctIndex: 2 },
+{ id: 41, question: 'Wer wählt die sieben Mitglieder des Bundesrats?', answers: ['die Parteipräsidentinnen und Parteipräsidenten', 'die Stimmbürgerinnen und Stimmbürger in direkter Wahl', 'der Rat der Ältesten', 'Nationalrat und Ständerat'], correctIndex: 3 },
+{ id: 42, question: 'Welche Funktion haben die Parteien in einer Demokratie?', answers: ['Sie vertreten verschiedene Interessen und Anliegen der Bevölkerung.', 'Sie wählen die Regierung.', 'Sie kontrollieren die Medien.', 'Sie vermitteln bei Streit zwischen verschiedenen Ämtern.'], correctIndex: 0 },
+{ id: 43, question: 'Wie viele Unterschriften braucht es für eine Volksinitiative auf Bundesebene?', answers: [30000, 100000, 500000, 800000], correctIndex: 1 },
+{ id: 44, question: 'Was ist die Aufgabe des Ständerates?', answers: ['Er hat nur eine repräsentative Funktion.', 'Er ist die höchste juristische Instanz.', 'Er vertritt vor allem die Interessen der Kantone.', 'Er koordiniert die Planung der Gemeinden.'], correctIndex: 2 },
+{ id: 45, question: 'Was machen Nationalrat und Ständerat gemeinsam?', answers: ['Sie entscheiden über internationale Verträge.', 'Sie wählen die Mitglieder des Bundesrats und des Bundesgerichts.', 'Sie entwerfen das Bundesbudget.', 'Sie fällen im Bundesgericht Urteile.'], correctIndex: 1 },
+{ id: 46, question: 'Wie oft pro Jahr stimmt das Stimmvolk normalerweise in Bundesangelegenheiten ab?', answers: [5, 3, 2, 4], correctIndex: 3 },
+{ id: 47, question: 'Wer beschliesst ein Grossteil der neuen Gesetze auf Bundesebene?', answers: ['das Bundesgericht', 'die Kantone', 'der Nationalrat und der Ständerat', 'der Bundesrat'], correctIndex: 2 },
+{ id: 48, question: 'Wann ist eine Initiative auf Bundesebene angenommen?', answers: ['Bei Ständemehr', 'Bei Volksmehr', 'Bei Volksmehr und Ständemehr', 'Bei Volksmehr und mindestens einem Drittel der Stände'], correctIndex: 2 },
+{ id: 49, question: 'Durch eine Volksinitiative kann …', answers: ['der National- und Ständerat abgesetzt werden.', 'die Bundesverfassung geändert werden.', 'das Völkerrecht geändert werden.', 'der Bundesrat ausgetauscht werden.'], correctIndex: 1 },
+{ id: 50, question: 'Wie stimmen die meisten Stimmberechtigten ab?', answers: ['per Gang an die Urne', 'per Internet', 'per Telefon', 'per Brief'], correctIndex: 3 },
+{ id: 51, question: 'An welchem Wochentag finden nationale Wahlen und Abstimmungen statt?', answers: ['Sonntag', 'Mittwoch', 'Montag', 'Freitag'], correctIndex: 0 },
+{ id: 52, question: 'Was ist eine wichtige Aufgabe des Bundesstaats?', answers: ['Er sorgt für soziale Sicherheit.', 'Er organisiert die Arbeit in Fabriken und Betrieben.', 'Er garantiert günstigen Wohnraum für alle.', 'Er gibt verschiedene Tageszeitungen in allen Landessprachen heraus.'], correctIndex: 0 },
+{ id: 53, question: 'Was ist eine wichtige Aufgabe des Bundes?', answers: ['Er fördert die Gründung von Vereinen.', 'Er unterstützt die Gründung von Firmen.', 'Er sorgt für die innere und äussere Sicherheit.', 'Er unterhält eigene Spitäler und Kliniken.'], correctIndex: 2 },
+{ id: 54, question: 'Was ist eine wichtige Aufgabe des Bundes?', answers: ['Er finanziert die Herstellung von Autos.', 'Er sorgt für den Schutz der Umwelt.', 'Er bestimmt die Leitzinsen der Nationalbank.', 'Er unterhält eigene Elektrizitätswerke.'], correctIndex: 1 },
+{ id: 55, question: 'Der Schweizer Bundesstaat besteht aus verschiedenen. . .', answers: ['Bundesländern.', 'Kantonen.', 'Distrikten.', 'Provinzen.'], correctIndex: 1 },
+{ id: 56, question: 'Wie viele Kantone hat der Schweizer Bundesstaat?', answers: ['12 (10 Kantone und 2 Halbkantone)', '26 (20 Kantone und 6 Halbkantone)', '34 (28 Kantone und 6 Halbkantone)', '16 (12 Kantone und 4 Halbkantone)'], correctIndex: 1 },
+{ id: 57, question: 'Wie viele politische Gemeinden gibt es in der Schweiz (Stand 2021)?', answers: ['Etwa 50', 'Etwa 200', 'Etwa 2200', 'Etwa 8000'], correctIndex: 2 },
+{ id: 58, question: 'Die Schweiz ist ein föderalistischer Staat mit drei Staatsebenen. Was ist die unterste Ebene?', answers: ['der Kanton', 'die Gemeinde', 'der Bezirk', 'der Bund'], correctIndex: 1 },
+{ id: 59, question: 'Die Schweiz ist ein föderalistischer Staat mit drei Staatsebenen. Was ist die oberste Ebene?', answers: ['die Gemeinde', 'der Kanton', 'der Bund', 'die Region'], correctIndex: 2 },
+{ id: 60, question: 'Für was ist der Bund zuständig?', answers: ['für die Organisation der Volksschule', 'für die Aussenpolitik', 'für den Erlass von Bauordnungen', 'für die Wahl der Kantonsrichterinnen und Kantonsrichter'], correctIndex: 1 },
+{ id: 61, question: 'Welche Staatsebene ist für das Militär zuständig?', answers: ['Bund', 'Kanton', 'Bezirk', 'Gemeinde'], correctIndex: 0 },
+{ id: 62, question: 'Was sind die Landessprachen der Schweiz?', answers: ['Französisch, Italienisch, Englisch, Deutsch', 'Französisch, Italienisch, Rätoromanisch, Deutsch', 'Französisch, Italienisch, Dialekte der Kantone und Rätoromanisch', 'Deutsch, Französisch, Italienisch'], correctIndex: 1 },
+{ id: 63, question: 'Was ist eine offizielle Landessprache in der Schweiz?', answers: ['Französisch', 'Englisch', 'Portugiesisch', 'Spanisch'], correctIndex: 0 },
+{ id: 64, question: 'Wie viele offizielle Landessprachen gibt es in der Schweiz?', answers: [2, 3, 4, 8], correctIndex: 2 },
+{ id: 65, question: 'Was ist die vierte Landessprache der Schweiz?', answers: ['Elsässisch', 'Rätoromanisch', 'Englisch', 'Portugiesisch'], correctIndex: 1 },
+{ id: 66, question: 'Wer darf in der Schweiz Gewalt gegen Menschen und Sachen ausüben (Gewaltmonopol)?', answers: ['betroffene Bürgerinnen und Bürger', 'die Parteien', 'die Medien', 'der Staat (Polizei, Militär)'], correctIndex: 3 },
+{ id: 67, question: 'Wer hat auf Bundesebene die richterliche Gewalt (Judikative)?', answers: ['die Parlamentarierinnen und Parlamentarier', 'das Bundesgericht', 'die Regierungen', 'das Militär'], correctIndex: 1 },
+{ id: 68, question: 'Wer hat auf Bundesebene die gesetzgebende Gewalt (Legislative)?', answers: ['der Bundesrat', 'der Militärrat', 'das Bundesparlament (Nationalrat und Ständerat)', 'das Bundesgericht'], correctIndex: 2 },
+{ id: 69, question: 'Wer hat auf Bundesebene die ausführende Gewalt (Exekutive)?', answers: ['der Bundesrat', 'die Parteien', 'das Bundesparlament (Nationalrat und Ständerat)', 'das Bundesverwaltungsgericht'], correctIndex: 0 },
+{ id: 70, question: 'Was bezeichnet man häufig als vierte Gewalt im Staat?', answers: ['die Kirche', 'die Verbände und Vereine', 'die Medien (Zeitungen, Radio, Fernsehen)', 'die Werbung'], correctIndex: 2 },
+{ id: 71, question: 'Was ist die Aufgabe der Richterinnen und Richter?', answers: ['Sie überwachen die Verwaltung.', 'Sie fällen Gerichtsurteile.', 'Sie verteidigen die Angeklagten.', 'Sie verfassen Gesetze.'], correctIndex: 1 },
+{ id: 72, question: 'Was ist eine Aufgabe der Polizei?', answers: ['Sie hilft bei der Steuererklärung.', 'Sie verfolgt Rechtsverletzungen.', 'Sie erlässt neue Gesetze.', 'Sie fällt Gerichtsurteile'], correctIndex: 1 },
+{ id: 73, question: 'Wer darf Kriminelle verhaften?', answers: ['Zeuginnen und Zeugen eines Verbrechens', 'der Gemeinderat', 'die Polizei', 'die Bürgerwehr'], correctIndex: 2 },
+{ id: 74, question: 'Was bedeutet Gewaltenteilung?', answers: ['Polizei und Militär dürfen beide Gewalt anwenden.', 'Die Verteilung der Macht auf Staat und Kirche.', 'Die Verteilung der Staatsgewalt auf verschiedene Staatsorgane wie Regierung, Parlament und Gerichte.', 'Die Verteilung der Macht auf den Nationalrat und den Ständerat.'], correctIndex: 2 },
+{ id: 75, question: 'Die Schweiz ist ein Rechtsstaat. Was bedeutet das?', answers: ['Auch der Staat muss sich an die Gesetze halten.', 'Die Gesetze gelten nur für die Personen, die diesen Gesetzen zugestimmt haben.', 'Die Gesetze gelten nur für Schweizer Bürgerinnen und Bürger.', 'Die Gesetze gelten nicht für Politikerinnen und Politiker.'], correctIndex: 0 },
+{ id: 76, question: 'Welches Grundrecht ist in der Bundesverfassung verankert?', answers: ['der Waffenbesitz', 'die Glaubens- und Gewissensfreiheit', 'die persönliche Rache', 'das Recht auf ein eigenes Haus'], correctIndex: 1 },
+{ id: 77, question: 'Welches Grundrecht garantiert die Bundesverfassung?', answers: ['die Meinungsfreiheit', 'das Recht auf WLAN', 'das Recht auf kostenlose Aus- und Weiterbildung', 'das Halten von Haustieren'], correctIndex: 0 },
+{ id: 78, question: 'Was wird durch die Glaubens- und Gewissensfreiheit garantiert?', answers: ['freie Schulwahl', 'Freizeit', 'Versammlungsfreiheit', 'Religionsfreiheit'], correctIndex: 3 },
+{ id: 79, question: 'Frauen und Männer sind laut Verfassung und Gesetz in der Schweiz gleichberechtigt. Was heisst das?', answers: ['Kochen ist Männersache.', 'Frauen und Männer haben grundsätzlich die gleichen Rechte.', 'In politischen Gremien müssen gleich viele Männer wie Frauen vertreten sein.', 'Kindererziehung ist Frauensache.'], correctIndex: 1 },
+{ id: 80, question: 'Was ist in der Schweiz verboten?', answers: ['Man darf keine falschen Behauptungen über Personen öffentlich verbreiten.', 'Man darf die Regierung nicht öffentlich kritisieren.', 'Man darf eine geschlossene Ehe nicht auflösen.', 'Man darf nicht an Demonstrationen teilnehmen.'], correctIndex: 0 },
+{ id: 81, question: 'Jemand bekommt wegen seiner Hautfarbe oder seinem Geschlecht eine Arbeitsstelle nicht. Welches Grundrecht wird damit verletzt?', answers: ['das Recht auf freie Meinungsäusserung', 'die Niederlassungsfreiheit', 'das Recht auf rechtsgleiche Behandlung (Diskriminierungsverbot)', 'das Recht auf Bildung'], correctIndex: 2 },
+{ id: 82, question: 'Welches Recht bekommen Personen erst mit der Einbürgerung?', answers: ['Sie dürfen einem Verein beitreten.', 'Sie dürfen an politischen Wahlen und Abstimmungen auf Bundesebene teilnehmen.', 'Sie dürfen eine Wohnung kaufen.', 'Sie dürfen den Arbeitsplatz frei wählen.'], correctIndex: 1 },
+{ id: 83, question: 'Durch was wird der Persönlichkeits- oder Datenschutz verletzt?', answers: ['Wenn der persönliche Computer nicht genügend geschützt ist.', 'Wenn eine Person auf einer öffentlichen Strasse fotografiert wird.', 'Wenn eine Zeitung über eine Person berichtet.', 'Wenn private Informationen über einzelne Personen ohne gesetzliche Grundlage oder ohne Zustimmung der Person veröffentlicht werden.'], correctIndex: 3 },
+{ id: 84, question: 'Was verbietet die Schweizer Bundesverfassung?', answers: ['Man darf im öffentlichen Raum keine religiösen Zeichen tragen.', 'Man darf keine Sammelaktionen für notleidende Menschen durchführen.', 'Es darf niemand gefoltert werden.', 'Man darf nicht ohne Lohn arbeiten.'], correctIndex: 2 },
+{ id: 85, question: 'Welches Recht ist in der Schweizer Bundesverfassung verankert?', answers: ['Alle Menschen haben ein Recht auf gesunde und kostenlose Ernährung.', 'Das persönliche Eigentum ist geschützt.', 'Man darf Haustiere halten.', 'Man darf kostenlos das Internet benutzen.'], correctIndex: 1 },
+{ id: 86, question: 'Was ist in der Schweiz verboten?', answers: ['die Arbeit des Bundesrats zu kritisieren', 'ohne Bewilligung Velo zu fahren', 'im öffentlichen Raum ein religiöses Zeichen zu tragen', 'andere Menschen wegen ihrer Herkunft oder Religion öffentlich zu beschimpfen'], correctIndex: 3 },
+{ id: 87, question: 'Wer muss in der Schweiz Militärdienst oder Zivilschutzdienst leisten?', answers: ['junge Männer mit Schweizer Bürgerrecht', 'Frauen und Männer im Alter von 20 Jahren, die mindestens 10 Jahre in der Schweiz gelebt haben', 'Militärdienst ist für alle freiwillig', 'junge Frauen und Männer mit einem technischen oder medizinischen Beruf'], correctIndex: 0 },
+{ id: 88, question: 'Zwei Jugendliche werden wegen ihrer dunklen Hautfarbe nicht ins Schwimmbad heineingelassen. Gegen welches Grundrecht verstösst das?', answers: ['gegen die freie Sportbetätigung', 'gegen das Diskriminierungsverbot', 'gegen die Meinungsfreiheit', 'gegen die Versammlungsfreiheit'], correctIndex: 1 },
+{ id: 89, question: 'Welche Pflicht gilt in der Schweiz nur für Männer?', answers: ['Männer müssen bis zu einem bestimmten Alter Militärdienst oder Zivilschutzdienst leisten.', 'Männer müssen bei Bedarf ein politisches Amt übernehmen.', 'Männer müssen für den Unterhalt der Familie sorgen.', 'Männer müssen mehr Steuern und Krankenkassenprämien bezahlen'], correctIndex: 0 },
+{ id: 90, question: 'Was ist in einem Rechtsstaat verboten?', answers: ['Gesetze zu kritisieren', 'die Arbeit von demokratisch gewählten Behörden in Frage zu stellen', 'Personen grundlos zu verhaften und einzusperren', 'einer religiösen Gruppierung beizutreten'], correctIndex: 2 },
+{ id: 91, question: 'Was geschieht in der Schweiz, wenn jemand eine Straftat begeht?', answers: ['Wer gegen ein Gesetz verstossen hat, wird bestraft.', 'Wer Opfer eines Verbrechens geworden ist, darf sich selber rächen.', 'Wer sich selbst anzeigt, bleibt straffrei.', 'Die Opfer eines Verbrechens können zwischen verschiedenen Strafen wählen.'], correctIndex: 0 },
+{ id: 92, question: 'Welche Strafe verbietet die Bundesverfassung?', answers: ['eine Gefängnisstrafe', 'eine Geldstrafe', 'die Todesstrafe', 'gemeinnützige Arbeit'], correctIndex: 2 },
+{ id: 93, question: 'In der Schweiz gibt es verschiedene Gesetze. Welches regelt das Mieten von Wohnungen?', answers: ['Obligationenrecht (OR)', 'Mehrwertsteuergesetz (MWSTG)', 'Strafgesetzbuch (StGB)', 'Bundesgesetz über Schuldbetreibung und Konkurs (SchKG)'], correctIndex: 0 },
+{ id: 94, question: 'In der Schweiz gibt es verschiedene Gesetze. Was regelt das Zivilgesetzbuch (ZGB)?', answers: ['Eheschliessungen und Scheidungen', 'Firmengründungen', 'Strafen bei Mord und Totschlag', 'Staatsverträge'], correctIndex: 0 },
+{ id: 95, question: 'In der Schweiz gibt es verschiedene Gesetze. Welches regelt, ob jemand ins Gefängnis muss?', answers: ['Obligationenrecht (OR)', 'Zivilgesetzbuch (ZGB)', 'Strafgesetzbuch (StGB)', 'Bundesgesetz über Schuldbetreibung und Konkurs (SchKG)'], correctIndex: 2 },
+{ id: 96, question: 'Wie werden Richterinnen und Richter am Bundesgericht ernannt?', answers: ['Durch die Kantonsparlamente. Jeder Kanton kann einen Richter stellen.', 'Durch ein normales Bewerbungsverfahren mit Vorstellungsgespräch.', 'Durch Wahl des Bundesparlaments.', 'Der Bundesrat hat das Recht, Richter einzusetzen.'], correctIndex: 2 },
+{ id: 97, question: 'Dürfen Schweizer Bürgerinnen und Bürger an andere Länder ausgeliefert werden?', answers: ['Nein. Dies ist unter keinen Umständen erlaubt.', 'Ja, aber nur an Länder welche demokratisch organisiert sind.', 'Ja, aber nur wenn die Straftat auch in der Schweiz strafbar ist.', 'Grundsätzlich nicht. Ausgenommen für Prozesse vor internationalen Gerichten.'], correctIndex: 3 },
+{ id: 98, question: 'Von was hängt die individuelle Steuerbelastung ab?', answers: ['vom steuerbaren Einkommen und Vermögen', 'von der Mitgliedschaft bei einer Partei', 'von der Nationalität', 'von der Mitgliedschaft in einer Behörde'], correctIndex: 0 },
+{ id: 99, question: 'Wie viele Regierungsräte hat der Kanton Zürich?', answers: [3, 250, 7, 180], correctIndex: 2 },
+{ id: 100, question: 'Wie heisst eine Direktion des Kanton Zürichs?', answers: ['Tourismusdirektion', 'Baudirektion', 'Ernährungsdirektion', 'Militärdirektion'], correctIndex: 1 },
+{ id: 101, question: 'Wie heisst in der Stadt Zürich die Exekutive?', answers: ['Stadtrat', 'Nationalrat', 'Regierungsrat', 'Bundesrat'], correctIndex: 0 },
+{ id: 102, question: 'Was ist eine Aufgabe des Kantons Zürich?', answers: ['Abschluss von Verträgen mit der Europäischen Union', 'Organisation der Universität', 'Digitalisierung der Bundesverwaltung', 'Organisation der Armee'], correctIndex: 1 },
+{ id: 103, question: 'Wie viele Bezirke gibt es im Kanton Zürich?', answers: [12, 18, 7, 25], correctIndex: 0 },
+{ id: 104, question: 'Wie können im Kanton Zürich auch Personen ohne Schweizer Pass politisch aktiv werden?', answers: ['mit einem Referendum.', 'mit einer Petition.', 'mit einem Einsitz in die Regierung.', 'mit einem parlamentarischen Kommissionsantrag.'], correctIndex: 1 },
+{ id: 105, question: 'Wie viele Mitglieder hat die Regierung des Kantons Zürich?', answers: [7, 3, 5, 'je nach Aufgaben, die anstehen'], correctIndex: 0 },
+{ id: 106, question: 'Für was sind die Kantone vor allem zuständig?', answers: ['für die Leitung der kantonalen Verwaltung und für kantonale Gesetze', 'für die Innen- und Aussenpolitik auf nationaler Ebene', 'für die nationale Verteidigung (Militär)', 'für die Geldpolitik und die Zölle'], correctIndex: 0 },
+{ id: 107, question: 'Wie oft werden die Mitglieder des Kantonsrats gewählt?', answers: ['alle 6 Jahre', 'alle 2 Jahre', 'alle 7 Jahre', 'alle 4 Jahre'], correctIndex: 3 },
+{ id: 108, question: 'Wie heisst die Exekutive im Kanton Zürich?', answers: ['Landammann', 'Regierungsrat', 'Ständerat', 'Es gibt keine Exekutive'], correctIndex: 1 },
+{ id: 109, question: 'Wie viele Personen sind für den Kanton Zürich im Ständerat?', answers: [13, 5, 2, 7], correctIndex: 2 },
+{ id: 110, question: 'Wie heisst das Parlament im Kanton Zürich?', answers: ['Landtag', 'Grosser Rat', 'Kantonsrat', 'Regierungsrat'], correctIndex: 2 },
+{ id: 111, question: 'Wie werden die Mitglieder der Zürcher Regierung bestimmt?', answers: ['Sie werden von den Parteien ernannt.', 'Sie werden vom Kantonsrat gewählt.', 'Sie werden auf Parteiversammlungen gewählt.', 'Sie werden von den Zürcher Stimmbürgerinnen und Stimmbürgern gewählt.'], correctIndex: 3 },
+{ id: 112, question: 'Wer stellt im Kanton Zürich die Führerausweise für Autofahrerinnen und Autofahrer aus?', answers: ['die Gemeinde', 'das Strassenverkehrsamt', 'die Verkehrsverbände', 'die Verkehrspolizei'], correctIndex: 1 },
+{ id: 113, question: 'Wer darf Motorfahrzeuge für den Verkehr zulassen?', answers: ['die Gemeinde', 'die grossen Autogaragen', 'das Strassenverkehrsamt', 'die Verkehrspolizei'], correctIndex: 2 },
+{ id: 114, question: 'Wie werden die Mitglieder des Kantonsrats bestimmt?', answers: ['durch Wahlen', 'durch Ernennung von der Kantonsregierung', 'durch das eidgenössische Parlament', 'durch die Ständeräte des Kantons'], correctIndex: 0 },
+{ id: 115, question: 'Was passiert an einer Gemeindeversammlung?', answers: ['Die Stimmbürgerinnen und Stimmbürger entscheiden über das Budget.', 'Die Einwohnerinnen und Einwohner feiern ein Fest.', 'Die Stimmbürgerinnen und Stimmbürger wählen den Chef oder die Chefin der Feuerwehr.', 'Die Stimmbürgerinnen und Stimmbürger beschliessen neue nationale Gesetze.'], correctIndex: 0 },
+{ id: 116, question: 'Wer wählt den Gemeinderat der Stadt Zürich?', answers: ['der Kantonsrat', 'der Regierungsrat', 'der Bezirksrat', 'das Volk'], correctIndex: 3 },
+{ id: 117, question: 'Was ist eine Aufgabe von Zürcher Gemeinden?', answers: ['Sie bauen Autobahnen.', 'Sie führen das Militär.', 'Sie verkaufen Versicherungen.', 'Sie organisieren die Primarschule.'], correctIndex: 3 },
+{ id: 118, question: 'Wer erteilt die Baubewilligung für ein Einfamilienhaus im Kanton Zürich?', answers: ['der Nachbar', 'die Gemeinde', 'das Quartierkomitee', 'die Architektin'], correctIndex: 1 },
+{ id: 119, question: 'Für was sind die Gemeinden zuständig?', answers: ['für die Organisation von privaten Geburtstagsfesten', 'für die Aussenpolitik', 'für die lokale Raumplanung', 'für das Militär'], correctIndex: 2 },
+{ id: 120, question: 'Wer zählt bei politischen Abstimmungen die Stimmzettel?', answers: ['das Militärbüro', 'das Wahlbüro', 'die Stimmbürgerinnen und Stimmbürger selber', 'die Polizei'], correctIndex: 1 },
+{ id: 121, question: 'Bürgerinnen und Bürger können auf Gemeindeebene politisch entscheiden, indem sie . . .', answers: ['regelmässig an Volksfesten teilnehmen.', 'die Steuern rechtzeitig bezahlen.', 'in Vereinen mitwirken.', 'an Wahlen und Abstimmungen teilnehmen'], correctIndex: 3 },
+{ id: 122, question: 'Wer leitet die Verwaltung und plant die Ziele öffentlichen Handelns der Stadt Zürich?', answers: ['die Stadtkanzlei', 'der Stadtrat', 'die Einwohnerkontrolle', 'die Einwohnerinnen und Einwohner der Stadt'], correctIndex: 1 },
+{ id: 123, question: 'Wofür ist die Gemeinde zuständig?', answers: ['Fachhochschulen', 'Geldpolitik', 'Zivildienst', 'Einwohnerkontrolle'], correctIndex: 3 },
+{ id: 124, question: 'Wie viele Gemeinden gibt es im Kanton Zürich?', answers: ['zwischen 30 und 50', 'zwischen 150 und 170', 'zwischen 420 und 440', 'zwischen 300 und 320'], correctIndex: 1 },
+{ id: 125, question: 'Wie nennt man die oberste Repräsentantin oder den obersten Repräsentanten in kleineren Zürcher Gemeinden?', answers: ['Bürgermeisterin oder Bürgermeister', 'Gemeindeammann', 'Bezirksamtmann', 'Gemeindepräsidentin oder Gemeindepräsident'], correctIndex: 3 },
+{ id: 126, question: 'Was ist am Gotthard-Basis-Tunnel speziell?', answers: ['Er war der erste Tunnel in Europa.', 'Er ist der einzige Eisenbahntunnel Europas.', 'Er ist der längste Eisenbahntunnel der Welt.', 'Er hat den grössten Tunneldurchmesser der Welt.'], correctIndex: 2 },
+{ id: 127, question: 'Simplon, Gotthard, Grosser Sankt Bernhard sind Beispiele für ...', answers: ['Schweizer Käsesorten.', 'Schweizer Hauptverkehrsachsen.', 'Schweizer Naturreservate.', 'Schweizer Alpenpässe.'], correctIndex: 3 },
+{ id: 128, question: 'Wohin fliesst der Rhein?', answers: ['in die Nordsee', 'ins Schwarze Meer', 'in den Pazifik', 'ins Mittelmeer'], correctIndex: 0 },
+{ id: 129, question: 'Wohin fliesst die Rhone?', answers: ['in die Ostsee', 'in den Atlantik', 'ins Mittelmeer', 'ins Schwarze Meer'], correctIndex: 2 },
+{ id: 130, question: 'Rund zwei Drittel der ausländischen Bevölkerung der Schweiz ...', answers: ['kommen aus einem EU-Land.', 'kommen aus Italien.', 'sprechen fliessend Englisch.', 'leben in der Ostschweiz.'], correctIndex: 0 },
+{ id: 131, question: 'Aus geografischer Sicht ist die Schweiz ...', answers: ['ein Binnenland.', 'eine Exklave.', 'ein Kontinent.', 'eine Insel.'], correctIndex: 0 },
+{ id: 132, question: 'Über das Eisenbahnnetz der Schweiz sagt man, ...', answers: ['es sei das schönste der Welt.', 'es sei das dichteste der Welt.', 'es sei das längste der Welt.', 'es sei das billigste der Welt.'], correctIndex: 1 },
+{ id: 133, question: 'Wer ist der wichtigste Handelspartner der Schweiz?', answers: ['USA', 'EU', 'China', 'Brasilien'], correctIndex: 1 },
+{ id: 134, question: 'Die drei grossen geografischen Räume der Schweiz sind:', answers: ['Jura, Mittelland, Alpen', 'Rhonetal, Südtäler, Alpennordfuss', 'Rheintal, Rhonetal, Aaretal', 'Bündner Alpen, Innerschweizer Alpen, Berner Alpen'], correctIndex: 0 },
+{ id: 135, question: 'Die Ausdehnung der Schweiz von Norden nach Süden ist ...', answers: ['580 km.', '220 km.', '130 km.', '760 km.'], correctIndex: 1 },
+{ id: 136, question: 'Die Ausdehnung der Schweiz von Osten nach Westen ist ...', answers: ['700 km.', '150 km.', '350 km.', '900 km.'], correctIndex: 2 },
+{ id: 137, question: 'Welcher Kanton ist ein Bergkanton?', answers: ['Wallis', 'Schaffhausen', 'Zürich', 'Aargau'], correctIndex: 0 },
+{ id: 138, question: 'Wie heisst die höchste Bergspitze in der Schweiz?', answers: ['Dom', 'Dufourspitze', 'Liskamm', 'Weisshorn'], correctIndex: 1 },
+{ id: 139, question: 'Was ist eine wichtige Aufgabe der Raumplanung?', answers: ['Schutz von unverbauten Landschaften', 'Unterhalt von Kanalisationen', 'Bau von Einkaufszentren', 'Finanzausgleich zwischen Gemeinden'], correctIndex: 0 },
+{ id: 140, question: 'Warum werden die Gletscher in der Schweiz kleiner?', answers: ['wegen dem Klimawandel', 'wegen den vielen Touristen in den Bergen', 'wegen der Benutzung für die Ski-Rennen', 'wegen dem vielen Regen im Sommer'], correctIndex: 0 },
+{ id: 141, question: 'Wie reagieren Förster auf den Anstieg der Temperaturen wegen des Klimawandels?', answers: ['Sie holzen die Wälder ab.', 'Sie pflanzen andere Baumsorten.', 'Sie besprühen die Wälder.', 'Sie verweigern die Arbeit.'], correctIndex: 1 },
+{ id: 142, question: 'Wie heisst ein trockener und warmer Südwind in der Schweiz?', answers: ['Bise', 'Föhn', 'Brise', 'Führ'], correctIndex: 1 },
+{ id: 143, question: 'Die Schweiz grenzt im Westen an …', answers: ['Portugal.', 'Spanien.', 'Frankreich.', 'Deutschland.'], correctIndex: 2 },
+{ id: 144, question: 'Das Nachbarland im Süden der Schweiz ist …', answers: ['Spanien.', 'Kroatien.', 'Liechtenstein.', 'Italien.'], correctIndex: 3 },
+{ id: 145, question: 'Wie heisst die grösste Stadt der Schweiz?', answers: ['Zürich', 'Basel', 'Bern', 'Genf'], correctIndex: 0 },
+{ id: 146, question: 'Wo leben die meisten Menschen in der Schweiz?', answers: ['in den Alpen', 'im Westschweizer Jura', 'im Mittelland', 'im Tessin'], correctIndex: 2 },
+{ id: 147, question: 'Wie viele Ausländerinnen und Ausländer leben in der Schweiz (Stand 2020)?', answers: ['3.5 Millionen', '2.1 Millionen', 630000, '1.1 Millionen'], correctIndex: 1 },
+{ id: 148, question: 'Welcher Kanton hat die grösste Fläche?', answers: ['Basel', 'Graubünden', 'Zürich', 'Glarus'], correctIndex: 1 },
+{ id: 149, question: 'Wie viele Menschen leben in der Schweiz (Stand 2020)?', answers: ['600’000', '12 Millionen', '5 Millionen', '8.6 Millionen'], correctIndex: 3 },
+{ id: 150, question: 'Wie gross ist der Anteil der ausländischen Wohnbevölkerung in der Schweiz (Stand 2020)?', answers: [0.1, 0.6, 0.25, 0.4], correctIndex: 2 },
+{ id: 151, question: 'Was ist eine wichtige natürliche Ressource der Schweiz?', answers: ['grosse Goldvorkommen in der Zentralschweiz', 'grosse Wasservorräte zum Betrieb von Wasserkraftwerken', 'wertvolle Bodenschätze (Erdöl, Kohle)', 'grosser Bestand an Fischen'], correctIndex: 1 },
+{ id: 152, question: 'In welchem Kanton spricht man Französisch und Deutsch?', answers: ['St. Gallen', 'Tessin', 'Graubünden', 'Freiburg'], correctIndex: 3 },
+{ id: 153, question: 'Welche Region in der Schweiz nennt man Welschland oder Romandie?', answers: ['die Ostschweiz', 'die französischsprachige Schweiz', 'die deutschsprachige Schweiz', 'das Tessin'], correctIndex: 1 },
+{ id: 154, question: 'Welche Sprache spricht man im Kanton Tessin?', answers: ['Rätoromanisch', 'Französisch', 'Italienisch', 'Deutsch'], correctIndex: 2 },
+{ id: 155, question: 'In welchem Kanton spricht man Rätoromanisch?', answers: ['Freiburg', 'Appenzell', 'Glarus', 'Graubünden'], correctIndex: 3 },
+{ id: 156, question: 'Was bedeutet das Wort Röstigraben?', answers: ['die kulturelle Grenze zwischen der deutschsprachigen und der französischsprachigen Schweiz', 'das Rhonetal', 'die Aareschlucht', 'die Grenze zwischen der Schweiz und Deutschland'], correctIndex: 0 },
+{ id: 157, question: 'Geografisch gehört der Kanton Zürich ...', answers: ['zum Jura.', 'zur Seenplatte.', 'zum Mittelland.', 'zur Tössebene.'], correctIndex: 2 },
+{ id: 158, question: 'An wie viele Kantone grenzt der Kanton Zürich?', answers: [10, 2, 6, 8], correctIndex: 2 },
+{ id: 159, question: 'Wie heissen die drei grössten Städte des Kantons Zürich?', answers: ['Zürich, Winterthur, Uster', 'Zürich, Zug, Cham', 'Zürich, Winterthur, Bülach', 'Zürich, Baden, Wettingen'], correctIndex: 0 },
+{ id: 160, question: 'Welche Hügel umrahmen den Zürichsee?', answers: ['Chli Aubrig, Hörnli, Randen', 'Randen, Hörnli, Albis', 'Lägeren, Stierenberg, Pfannenstiel', 'Uetliberg, Albis, Pfannenstiel'], correctIndex: 3 },
+{ id: 161, question: 'In welcher Gemeinde liegt der Flughafen Zürich?', answers: ['Zürich', 'Winterthur', 'Kloten', 'Bülach'], correctIndex: 2 },
+{ id: 162, question: 'Welcher See liegt im Kanton Zürich?', answers: ['Hallwilersee', 'Pfäffikersee', 'Zugersee', 'Sempachersee'], correctIndex: 1 },
+{ id: 163, question: 'Wie heisst der zweitgrösste See des Kantons Zürich?', answers: ['Walensee', 'Zugersee', 'Sihlsee', 'Greifensee'], correctIndex: 3 },
+{ id: 164, question: 'Welcher Fluss fliesst in der Stadt Zürich in die Limmat?', answers: ['Sihl', 'Aare', 'Rhone', 'Tessin'], correctIndex: 0 },
+{ id: 165, question: 'Welcher Fluss fliesst durch den Kanton Zürich?', answers: ['Rhone', 'Inn', 'Aare', 'Limmat'], correctIndex: 3 },
+{ id: 166, question: 'Welcher Fluss fliesst durch Winterthur?', answers: ['Töss', 'Rhein', 'Limmat', 'Sihl'], correctIndex: 0 },
+{ id: 167, question: 'Welches Schloss liegt im Kanton Zürich?', answers: ['Schloss Kyburg', 'Château de Chillon', 'Schloss Hallwyl', 'Schloss Greyerz'], correctIndex: 0 },
+{ id: 168, question: 'Wie gross ist die Landwirtschaftsfläche im Kanton Zürich?', answers: [0.05, 0.6, 0.8, 0.41], correctIndex: 3 },
+{ id: 169, question: 'Wie viele Personen leben im Kanton Zürich (Stand 2020)?', answers: ['1.5 Millionen', 360000, 600000, '3.1 Millionen'], correctIndex: 0 },
+{ id: 170, question: 'Wie heisst die Hauptstadt des Kantons Zürich?', answers: ['Uster', 'Winterthur', 'Wädenswil', 'Zürich'], correctIndex: 3 },
+{ id: 171, question: 'Welcher Kanton grenzt an den Kanton Zürich?', answers: ['Freiburg', 'Thurgau', 'Luzern', 'Glarus'], correctIndex: 1 },
+{ id: 172, question: 'Wie heisst das traditionelle Kartenspiel der Schweiz?', answers: ['Uno', 'Jass', 'Poker', 'Bridge'], correctIndex: 1 },
+{ id: 173, question: 'Wie heisst der grösste Schweizer Zirkus?', answers: ['Zirkus Knie', 'Zirkus Busch', 'Zirkus Krone', 'Zirkus Roncalli'], correctIndex: 0 },
+{ id: 174, question: 'Die Basler Fasnacht wird mit dem «Morgestraich» an einem Montag um 4 Uhr morgens angepfiffen. Was passiert dann?', answers: ['Alle Baslerinnen und Basler beginnen zu singen.', 'Die Vorsitzenden der Fasnachtsgruppen halten Reden.', 'Die Strassenlichter werden gelöscht und die Pfeifer und Trommler beginnen zu speilen', 'Brennende Besen werden durch die Stadt getragen.'], correctIndex: 2 },
+{ id: 175, question: 'Wie heisst eine traditionelle Schweizer Sportart?', answers: ['Basketball', 'Eishockey', 'Schwingen', 'Volleyball'], correctIndex: 2 },
+{ id: 176, question: 'Wann ist der Schweizer Nationalfeiertag?', answers: ['14. Juli', '1. August', '4. Juli', '3. Oktober'], correctIndex: 1 },
+{ id: 177, question: 'Was bedeutet die Abkürzung SBB?', answers: ['Schweizerische Bundesbahnen', 'Gesellschaft der schweizerischen Börse', 'Zusammenschluss des Bühnenpersonals in der Schweiz', 'Schweizerische Gesellschaft für Bildungsforschung'], correctIndex: 0 },
+{ id: 178, question: 'SBB, BLS, SOB, SZU sind Abkürzungen für Schweizer ...', answers: ['Gewerkschaften.', 'Kulturvereine.', 'Eisenbahngesellschaften.', 'Seilbahngesellschaften.'], correctIndex: 2 },
+{ id: 179, question: 'Was soll man tun, wenn die Alarm-Sirenen im Ernstfall heulen?', answers: ['nach Hause gehen', 'Radio hören', 'den Fernseher abstellen', 'zum zentralen Platz der Gemeinde gehen'], correctIndex: 1 },
+{ id: 180, question: 'Was wird im Landesmuseum Zürich gezeigt?', answers: ['Werke des europäischen Impressionismus', 'die Geschichte der Schweiz', 'eine Insektensammlung', 'eine Sammlung von historischen Autos'], correctIndex: 1 },
+{ id: 181, question: 'Für welche Industrie ist die Juraregion bekannt?', answers: ['Uhrenindustrie', 'Wurstproduktion', 'Schuhherstellung', 'Seidenmalerei'], correctIndex: 0 },
+{ id: 182, question: 'Was ist eine bäuerliche kulturelle Tradition der Schweiz?', answers: ['Didgeridoo spielen.', 'Kastagnetten schlagen.', 'Jodeln.', 'Bembé Trommel spielen.'], correctIndex: 2 },
+{ id: 183, question: 'Was braucht man zum Jodeln?', answers: ['Holzschuhe.', 'eine kleine Pfeife.', 'die Hände.', 'die Stimme.'], correctIndex: 3 },
+{ id: 184, question: 'Wer entscheidet, welche Artikel in der Zeitung veröffentlicht werden?', answers: ['die Zeitungsredaktion', 'der kantonale Verband der Journalistinnen und Journalisten', 'die zentrale Medienstelle des Kantons', 'die Medienpolizei'], correctIndex: 0 },
+{ id: 185, question: 'Was ist eine Schweizer Wochenzeitung (erscheint 1x pro Woche)?', answers: ['Tages-Anzeiger', 'Blick', 'Neue Zürcher Zeitung', 'Sonntagszeitung'], correctIndex: 3 },
+{ id: 186, question: 'Wie wird die Schweiz auch bezeichnet?', answers: ['Freistaat Schweiz', 'Eidgenossenschaft', 'Bündnis Schweiz', 'Freie Alpenrepublik'], correctIndex: 1 },
+{ id: 187, question: 'Roger Federer ist ein bekannter Schweizer …', answers: ['Tennisspieler.', 'Fussballspieler.', 'Skirennfahrer.', 'Filmschauspieler.'], correctIndex: 0 },
+{ id: 188, question: 'An was erinnert das Rütli?', answers: ['an eine prähistorische Kultstätte', 'an das Bündnis der Urkantone', 'an ein Schlachtfeld', 'an einen Friedensvertrag'], correctIndex: 1 },
+{ id: 189, question: 'Wer ist auf der 2-Franken-Münze zu sehen?', answers: ['die lächelnde Mona Lisa', 'die allegorische Frauenfigur Helvetia', 'eine römische Siegerin', 'eine antike Priesterin'], correctIndex: 1 },
+{ id: 190, question: 'Die Stadt Bern ist politisch wichtig. Warum?', answers: ['Sie ist Sitz der FIFA.', 'Sie ist die Hauptstadt der Schweiz.', 'Sie ist der Sitz der UNO (Vereinte Nationen).', 'Sie ist der Sitz des Europarats.'], correctIndex: 1 },
+{ id: 191, question: 'Als was ist die Region Basel besonders bekannt?', answers: ['als Weinland', 'als Standort grosser Pharmafirmen', 'als Land der Burgen und Klöster', 'als Standort verschiedener internationaler Organisationen (z.B. UNO)'], correctIndex: 1 },
+{ id: 192, question: 'Welcher Kanton hat am meisten Einwohnerinnen und Einwohner?', answers: ['Waadt', 'Bern', 'Zürich', 'St. Gallen'], correctIndex: 2 },
+{ id: 193, question: 'Wann feiert die Schweiz ihren Nationalfeiertag?', answers: ['am 4. Juli', 'am 8. November', 'am 1. August', 'am 1. Mai'], correctIndex: 2 },
+{ id: 194, question: 'Was bedeutet die Abkürzung CH?', answers: ['Confoederatio Helvetica', 'Schweizerisches Längenmass', 'Christlicher Verein', 'Cultura Habsburgiensia'], correctIndex: 0 },
+{ id: 195, question: 'Welchen Sport machen viele Menschen in der Schweiz im Winter?', answers: ['Skifahren', 'Schwingen', 'Berg-Radfahren', 'Bergsee-Segeln'], correctIndex: 0 },
+{ id: 196, question: 'Welche Tradition ist in der Schweiz mit der Fasnacht verbunden?', answers: ['Fahnenschwingen', 'Maskenumzüge', 'Jodeln', 'Bergfeuer'], correctIndex: 1 },
+{ id: 197, question: 'Welche berühmte Figur hat die Schriftstellerin Johanna Spyri erfunden?', answers: ['Ueli der Knecht', 'Schellenursli', 'Heidi', 'Peter und der Wolf'], correctIndex: 2 },
+{ id: 198, question: 'Max Frisch (1911-1991) und Friedrich Dürrenmatt (1921-1990) waren bekannte Schweizer …', answers: ['Komponisten.', 'Schriftsteller.', 'Unternehmer.', 'Journalisten.'], correctIndex: 1 },
+{ id: 199, question: 'Niki de Saint-Phalle, Sophie Täuber-Arp und Pipilotti Rist sind international berühmte Schweizer …', answers: ['Politikerinnen.', 'Sportlerinnen.', 'Ingenieurinnen.', 'Künstlerinnen.'], correctIndex: 3 },
+{ id: 200, question: 'Welche internationale Organisation hat ihren Hauptsitz in der Schweitz?', answers: ['der internationale Strafgerichtshof', 'die Organisation für Sicherheit und Zusammenarbeit in Europa (OSZE)', 'der Europarat', 'das Internationale Komitee vom Roten Kreuz (IKRK)'], correctIndex: 3 },
+{ id: 201, question: 'Bei welcher internationalen Organisation ist die Schweiz seit 2002 Mitglied?', answers: ['der Europäischen Union (EU)', 'dem Europäischen Wirtschaftsraum (EWR)', 'der Organisation der Vereinten Nationen (UNO)', 'dem Weltwährungsfonds (IWF)'], correctIndex: 2 },
+{ id: 202, question: 'Die Schweiz ist Mitglied der Organisation für Sicherheit und Zusammenarbeit in Europa (OSZE). Für was setzt sie sich dort besonders ein?', answers: ['für die Friedenssicherung in Osteuropa und Zentralasien', 'für die wirtschaftliche Entwicklung Indiens', 'für die Förderung des Baus von Flusskraftwerken', 'für die Förderung des Tourismus in Europa'], correctIndex: 0 },
+{ id: 203, question: 'Wie ist das Verhältnis der Schweiz zur Europäischen Union (EU) geregelt?', answers: ['Sie ist Mitglied der EU.', 'Sie hat mit der EU die Bilateralen Verträge abgeschlossen.', 'Sie hat mit allen EU-Mitgliedstaaten Einzelverträge abgeschlossen.', 'Sie ist gegenüber der EU vollständig unabhängig.'], correctIndex: 1 },
+{ id: 204, question: 'Welche wichtige internationale Veranstaltung findet regelmässig in der Schweiz statt?', answers: ['der jährliche Umweltgipfel der UNO', 'die olympischen Winterspiele', 'das Skirennen der Mitglieder des EU-Parlaments', 'das Weltwirtschaftsforum (WEF) in Davos'], correctIndex: 3 },
+{ id: 205, question: 'In welcher Stadt hat die UNO-Menschenrechtskommission ihren Sitz?', answers: ['Neuenburg', 'St. Gallen', 'Genf', 'Bern'], correctIndex: 2 },
+{ id: 206, question: 'Welcher internationale Sportverband hat seinen Sitz in Zürich?', answers: ['Internationaler Golfverband (IGF)', 'Internationaler Skiverband (FIS)', 'Weltfussballverband (FIFA)', 'Internationaler Schwimmverband (FINA)'], correctIndex: 2 },
+{ id: 207, question: 'Was kann man auf einer "Chilbi" erleben?', answers: ['eine Fahrt mit der Achterbahn', 'eine Opernaufführung', 'einen Fussballmatch', 'einen Schwimmwettkampf'], correctIndex: 0 },
+{ id: 208, question: 'Welchen Sport macht man in der Schweiz am häufigsten in einem Verein?', answers: ['Schwimmen', 'Skifahren', 'Unihockey', 'Fussball'], correctIndex: 3 },
+{ id: 209, question: 'Man sagt: Je schneller am Sechseläuten der "Böögg" (SchneemannPuppe) auf dem Scheiterhaufen den Kopf verliert, desto ...', answers: ['kälter wird der Zürichsee im Sommer.', 'schöner wird der nächste Sommer.', 'mehr Kinder wird es im kommenden Jahr geben.', 'besser wird die Wirtschaft im kommenden Jahr laufen.'], correctIndex: 1 },
+{ id: 210, question: 'Wofür steht die Street Parade in Zürich?', answers: ['für Liebe, Friede, Freiheit, Grosszügigkeit und Toleranz', 'für Demokratie und Menschenrechte', 'für Theater und Kunst der jungen Generation', 'für Volksmusik und Spektakel'], correctIndex: 0 },
+{ id: 211, question: 'Was bietet das Zürcher Theater Spektakel immer im August?', answers: ['Theater, Tanz und Musik aus der ganzen Welt', 'Jassturniere für ältere Menschen', 'ein Weinfest', 'die Vorführung neuer Schweizer Filme'], correctIndex: 0 },
+{ id: 212, question: 'Was ist ein Zürcher Sportevent?', answers: ['Weltklasse Zürich', 'Engadiner Skimarathon', 'Swiss Indoors', 'Schweizer Frauenlauf'], correctIndex: 0 },
+{ id: 213, question: 'In diesem Museum kann man experimentieren. In welcher Stadt ist das Technorama?', answers: ['Zürich', 'Winterthur', 'Aarau', 'Zug'], correctIndex: 1 },
+{ id: 214, question: 'In welchem Museum kann man alles berühren und experimentieren?', answers: ['Sammlung Reinhart "Am Römerholz"', 'Fotomuseum Winterthur', 'Technorama', 'Villa Lindengut'], correctIndex: 2 },
+{ id: 215, question: 'Wo ist die Masoala-Halle mit einem Urwald aus Madagaskar?', answers: ['im Zoo Zürich', 'im China Garten von Zürich', 'im alten botanischen Garten Zürich', 'im Rieterpark in Zürich'], correctIndex: 0 },
+{ id: 216, question: 'Wer spielt eine wichtige Rolle am Zürcher Sechseläuten?', answers: ['die Frauen', 'die Kirchen', 'die Gewerkschaften', 'die Zünfte'], correctIndex: 3 },
+{ id: 217, question: 'Gottfried Keller (1819-1890) war ein bekannter Zürcher ...', answers: ['Erfinder.', 'Schriftsteller.', 'reformierter Pfarrer.', 'Fabrikant.'], correctIndex: 1 }
+ ];
+
+  // Local storage keys
+  const STORAGE_MISTAKES_KEY = 'cep_mistake_counts';
+
+  // State
+  let currentQuestionIndex = 0;
+  let currentTestQuestions = [];
+  let userAnswers = [];
+  let reviewingMistakes = false;
+
+  // Cached Elements
+  const content = document.getElementById('content');
+  const navLinks = document.querySelectorAll('nav a, .nav-mobile a');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const mobileToggleBtn = document.querySelector('.mobile-toggle');
+  const practiceSection = document.getElementById('practice');
+  const practiceContainer = document.getElementById('practice-container');
+  const landingSection = document.getElementById('landing');
+  const mistakesSection = document.getElementById('mistakes');
+  const mostFailedQuestionsContainer = document.getElementById('most-failed-questions');
+  const resourcesSection = document.getElementById('resources');
+  const donateBtn = document.getElementById('donate-btn');
+  const practiceMistakesBtn = document.getElementById('practice-mistakes-btn');
+
+  // Accessibility: Focus main content on navigation
+  function focusMain() {
+    content.focus();
+  }
+
+  // Save mistake counts in localStorage
+  function loadMistakes() {
+    const json = localStorage.getItem(STORAGE_MISTAKES_KEY);
+    try {
+      if (json) return JSON.parse(json);
+    } catch {
+      return {};
+    }
+    return {};
+  }
+
+  function saveMistakes(mistakes) {
+    localStorage.setItem(STORAGE_MISTAKES_KEY, JSON.stringify(mistakes));
+  }
+
+  // Increment mistake count for a question ID
+  function countMistake(questionId) {
+    const mistakes = loadMistakes();
+    if (mistakes[questionId]) {
+      mistakes[questionId]++;
+    } else {
+      mistakes[questionId] = 1;
+    }
+    saveMistakes(mistakes);
+  }
+
+  // Sort and show most failed questions
+  function showMostFailedQuestions() {
+    const mistakes = loadMistakes();
+    // Map questions to fail count
+    const failedArray = Object.entries(mistakes)
+      .map(([id, count]) => {
+        const question = questionsBank.find(q => q.id === Number(id));
+        return question ? { ...question, failCount: count } : null;
+      })
+      .filter(Boolean)
+      .sort((a, b) => b.failCount - a.failCount);
+
+    if (failedArray.length === 0) {
+      mostFailedQuestionsContainer.innerHTML = '<p>Keine Fehler bisher. Sie sind auf dem besten Weg!</p>';
+      return;
+    }
+
+    const frag = document.createDocumentFragment();
+    failedArray.forEach(q => {
+      const div = document.createElement('div');
+      div.className = 'question-fail';
+      div.tabIndex = 0;
+      div.setAttribute('aria-label', `Fehlantwort: Frage ${q.id} mit ${q.failCount} Fehlversuchen. Frage: ${q.question}`);
+      div.innerHTML = `<strong>Fehler: ${q.failCount}x</strong><br>${q.question}`;
+      frag.appendChild(div);
+    });
+    mostFailedQuestionsContainer.innerHTML = '';
+    mostFailedQuestionsContainer.appendChild(frag);
+  }
+
+  // Navigation handler
+  function navigateToSection(id) {
+    [landingSection, practiceSection, mistakesSection, resourcesSection].forEach(s => s.hidden = true);
+    navLinks.forEach(link => link.classList.remove('active'));
+    if (id === 'landing') landingSection.hidden = false;
+    if (id === 'practice') practiceSection.hidden = false;
+    if (id === 'mistakes') {
+      mistakesSection.hidden = false;
+      showMostFailedQuestions();
+    }
+    if (id === 'resources') resourcesSection.hidden = false;
+    navLinks.forEach(link => {
+      const href = link.getAttribute('href').substring(1);
+      if (href === id) link.classList.add('active');
+    });
+    closeMobileMenu();
+    focusMain();
+  }
+
+  function toggleMobileMenu() {
+    const expanded = mobileToggleBtn.getAttribute('aria-expanded') === 'true';
+    if (expanded) closeMobileMenu();
+    else openMobileMenu();
+  }
+  function openMobileMenu() {
+    mobileMenu.classList.add('show');
+    mobileToggleBtn.setAttribute('aria-expanded', 'true');
+    mobileMenu.focus();
+  }
+  function closeMobileMenu() {
+    mobileMenu.classList.remove('show');
+    mobileToggleBtn.setAttribute('aria-expanded', 'false');
+    mobileToggleBtn.focus();
+  }
+
+  function selectRandomQuestions(num = 50, pool = questionsBank) {
+    const shuffled = pool.slice().sort(() => 0.5 - Math.random());
+    return shuffled.slice(0, Math.min(num, shuffled.length));
+  }
+
+  function renderQuestion() {
+    const q = currentTestQuestions[currentQuestionIndex];
+    if (!q) {
+      renderTestSummary();
+      return;
+    }
+    const answersHtml = q.answers.map((a, i) =>
+      `<button type="button" data-index="${i}" aria-label="Antwort Option ${i + 1}: ${a}">${a}</button>`
+    ).join('');
+
+    practiceContainer.innerHTML = `
+      <div class="question-text" id="question-text" tabindex="0">Frage ${currentQuestionIndex + 1} von ${currentTestQuestions.length}: ${q.question}</div>
+      <ul class="answers-list" role="list" aria-labelledby="question-text">${answersHtml}</ul>
+      <div id="feedback" class="feedback" aria-live="polite"></div>
+    `;
+
+    const answerButtons = practiceContainer.querySelectorAll('button[data-index]');
+    answerButtons.forEach(btn => btn.addEventListener('click', onAnswerSelected));
+
+    document.getElementById('question-text').focus();
+  }
+
+  function onAnswerSelected(e) {
+    const selectedIndex = Number(e.currentTarget.getAttribute('data-index'));
+    const q = currentTestQuestions[currentQuestionIndex];
+    const feedbackDiv = document.getElementById('feedback');
+    const allButtons = practiceContainer.querySelectorAll('button[data-index]');
+    allButtons.forEach(button => button.disabled = true);
+    userAnswers[currentQuestionIndex] = selectedIndex;
+
+    if (selectedIndex === q.correctIndex) {
+      e.currentTarget.classList.add('correct');
+      feedbackDiv.textContent = 'Richtig!';
+      feedbackDiv.className = 'feedback correct';
+    } else {
+      e.currentTarget.classList.add('incorrect');
+      const correctBtn = practiceContainer.querySelector(`button[data-index="${q.correctIndex}"]`);
+      if (correctBtn) correctBtn.classList.add('correct');
+      feedbackDiv.textContent = `Falsch. Richtige Antwort: ${q.answers[q.correctIndex]}`;
+      feedbackDiv.className = 'feedback incorrect';
+      countMistake(q.id);
+    }
+    setTimeout(() => {
+      currentQuestionIndex++;
+      if (currentQuestionIndex >= currentTestQuestions.length) {
+        renderTestSummary();
+      } else {
+        renderQuestion();
+      }
+    }, 1800);
+  }
+
+  function renderTestSummary() {
+    let score = 0;
+    currentTestQuestions.forEach((q, idx) => {
+      if (userAnswers[idx] === q.correctIndex) score++;
+    });
+    const passThreshold = Math.ceil(currentTestQuestions.length * 0.8);
+    const passed = score >= passThreshold;
+    const percentage = Math.round((score / currentTestQuestions.length) * 100);
+
+    let summaryHtml = `
+      <div class="test-summary" tabindex="0">
+        <h2>Test beendet</h2>
+        <p>Deine Punktzahl: ${score} von ${currentTestQuestions.length} (${percentage}%)</p>
+        <p class="${passed ? 'pass' : 'fail'}">${passed ? 'Herzlichen Glückwunsch! Du hast die Prüfung bestanden.' : 'Leider nicht bestanden. Bitte übe die Fehlerfragen nochmals.'}</p>
+        <div style="display:flex;justify-content:center;gap:24px;margin-top:24px;">
+          <button id="restart-test-btn" aria-label="Neuer Test starten">Neuer Test</button>
+          <button id="review-test-btn" aria-label="Fehler Fragen anzeigen">Fehler Überprüfen</button>
+        </div>
+      </div>
+    `;
+    practiceContainer.innerHTML = summaryHtml;
+
+    document.getElementById('restart-test-btn').addEventListener('click', () => {
+      startPracticeTest();
+    });
+    document.getElementById('review-test-btn').addEventListener('click', () => {
+      startReviewMistakes();
+    });
+
+    practiceContainer.querySelector('.test-summary').focus();
+  }
+
+  function startPracticeTest() {
+    reviewingMistakes = false;
+    currentTestQuestions = selectRandomQuestions(50);
+    currentQuestionIndex = 0;
+    userAnswers = [];
+    practiceSection.hidden = false;
+    missingSectionHideExcept('practice');
+    renderQuestion();
+    updateActiveNav('practice');
+  }
+
+  function startReviewMistakes() {
+    reviewingMistakes = true;
+    const mistakes = loadMistakes();
+    let mistakeIds = Object.keys(mistakes).map(id => Number(id));
+    const mistakeQuestions = questionsBank.filter(q => mistakeIds.includes(q.id));
+
+    if (!mistakeQuestions.length) {
+      alert('Keine Fehler zum Üben gefunden. Du hast keine Fragen falsch beantwortet.');
+      return startPracticeTest();
+    }
+    currentTestQuestions = mistakeQuestions;
+    currentQuestionIndex = 0;
+    userAnswers = [];
+    practiceSection.hidden = false;
+    missingSectionHideExcept('practice');
+    renderQuestion();
+    updateActiveNav('practice');
+  }
+
+  function missingSectionHideExcept(showId) {
+    const sections = [landingSection, practiceSection, mistakesSection, resourcesSection];
+    for (const s of sections) {
+      s.hidden = s.id !== showId;
+    }
+  }
+
+  function updateActiveNav(activeId) {
+    navLinks.forEach(link => {
+      const href = link.getAttribute('href')?.substring(1);
+      link.classList.toggle('active', href === activeId);
+    });
+  }
+
+  navLinks.forEach(link => {
+    link.addEventListener('click', e => {
+      e.preventDefault();
+      const targetId = link.getAttribute('href').substring(1);
+      navigateToSection(targetId);
+    });
+  });
+
+  mobileToggleBtn.addEventListener('click', () => {
+    toggleMobileMenu();
+  });
+
+  donateBtn.addEventListener('click', () => {
+    const donateUrl = 'https://ko-fi.com/kristtina'; // 
+    window.open(donateUrl, '_blank', 'noopener');
+  });
+
+  practiceMistakesBtn.addEventListener('click', () => {
+    startReviewMistakes();
+  });
+
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 640) closeMobileMenu();
+  });
+
+  window.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && mobileMenu.classList.contains('show')) {
+      closeMobileMenu();
+    }
+  });
+
+  window.addEventListener('DOMContentLoaded', () => {
+    navigateToSection('landing');
+  });
+</script>
+</body>
+</html>
+
