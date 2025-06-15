@@ -1,0 +1,384 @@
+  /* === style.css === */
+  /* Reset and base */
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+  html {
+    font-family: 'Inter', 'Poppins', sans-serif;
+    font-size: 16px;
+    scroll-behavior: smooth;
+  }
+  body {
+    margin: 0;
+    background: linear-gradient(135deg, #0f3460 0%, #16213e 100%);
+    color: #e0e6f1;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  a {
+    color: #06b6d4;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  a:hover, a:focus {
+    color: #8b5cf6;
+    outline: none;
+  }
+  main {
+    flex-grow: 1;
+    padding: 32px 16px 48px;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+  }
+  h1, h2, h3 {
+    margin: 0 0 24px 0;
+  }
+  h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: 2.5rem;
+    background: linear-gradient(135deg, #8b5cf6 0%, #06b6d4 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  h2 {
+    font-weight: 700;
+    font-size: 1.8rem;
+    border-bottom: 3px solid #06b6d4;
+    padding-bottom: 8px;
+  }
+  p {
+    line-height: 1.6;
+    max-width: 700px;
+  }
+  button {
+    cursor: pointer;
+    border: none;
+    border-radius: 12px;
+    padding: 14px 28px;
+    font-weight: 600;
+    font-size: 1rem;
+    background: linear-gradient(135deg, #8b5cf6 0%, #06b6d4 100%);
+    color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 5px 12px rgba(8,27,58,0.75);
+  }
+  button:hover, button:focus {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(139, 92, 246, 0.6);
+    outline: none;
+  }
+  /* Container cards - glass morphism */
+  .card {
+    background: rgba(16, 26, 49, 0.75);
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(8,27,58,0.7);
+    margin-bottom: 32px;
+    padding: 24px 32px;
+  }
+  /* Responsive Header */
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(7,18,38,0.95);
+    padding: 12px 24px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.7);
+  }
+  .logo {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #8b5cf6;
+    user-select: none;
+  }
+  nav {
+    display: flex;
+    gap: 24px;
+  }
+  nav a {
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 8px 0;
+    position: relative;
+  }
+  nav a.active, nav a:hover, nav a:focus {
+    color: #8b5cf6;
+  }
+  /* Hamburger for mobile */
+  .mobile-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 32px;
+    color: #8b5cf6;
+    cursor: pointer;
+    user-select: none;
+  }
+  /* Navigation mobile slide */
+  .nav-mobile {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 60px;
+    right: 0;
+    width: 260px;
+    max-width: 70vw;
+    height: calc(100vh - 60px);
+    background: rgba(7,18,38,0.98);
+    padding: 24px;
+    box-shadow: -4px 0 12px rgba(0,0,0,0.9);
+    z-index: 1500;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+  }
+  .nav-mobile.show {
+    display: flex;
+    transform: translateX(0%);
+  }
+  .nav-mobile a {
+    padding: 16px 0;
+    font-size: 1.2rem;
+    border-bottom: 1px solid #2a2a5c;
+    color: #a0a9c0;
+  }
+  .nav-mobile a.active {
+    color: #8b5cf6;
+    font-weight: 700;
+    border-color: #8b5cf6;
+  }
+  /* Responsive Footer */
+  footer {
+    background: rgba(7,18,38,0.95);
+    color: #7f8c8d;
+    padding: 24px 20px;
+    text-align: left;
+    font-size: 0.9rem;
+    user-select: none;
+  }
+  footer a {
+    color: #06b6d4;
+  }
+  /* Stats Grid */
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(180px,1fr));
+    gap: 32px;
+    margin-bottom: 32px;
+  }
+  .stat-card {
+    background: rgba(139, 92, 246, 0.15);
+    border-radius: 12px;
+    padding: 24px 20px;
+    text-align: center;
+    user-select: none;
+  }
+  .stat-value {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #8b5cf6;
+    margin-bottom: 8px;
+  }
+  .stat-label {
+    font-weight: 500;
+    color: #cad6f2;
+  }
+  /* Questions list */
+  .questions-list {
+    max-height: 350px;
+    overflow-y: auto;
+  }
+  .question-fail {
+    background: #271e47;
+    margin-bottom: 12px;
+    border-radius: 12px;
+    padding: 16px 20px;
+    color: #e0e6f1;
+  }
+  .question-fail strong {
+    color: #eab308;
+  }
+  /* Practice test */
+  .practice-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 760px;
+    margin: 0 auto;
+  }
+  .question-text {
+    font-weight: 600;
+    font-size: 1.4rem;
+  }
+  .answers-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .answers-list button {
+    background: rgba(16, 26, 49, 0.75);
+    border: 2px solid transparent;
+    padding: 12px 20px;
+    border-radius: 12px;
+    font-size: 1.2rem;
+    color: #e0e6f1;
+    text-align: left;
+    transition: background-color 0.4s ease, border-color 0.4s ease;
+  }
+  .answers-list button:hover, .answers-list button:focus {
+    background: rgba(139, 92, 246, 0.3);
+    border-color: #8b5cf6;
+    outline: none;
+  }
+  .answers-list button.correct {
+    background: #16a34a;
+    border-color: #22c55e;
+    color: #d9f99d;
+  }
+  .answers-list button.incorrect {
+    background: #dc2626;
+    border-color: #f87171;
+    color: #fee2e2;
+  }
+  .feedback {
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-top: 12px;
+    color: #a0aec0;
+  }
+  .feedback.correct {
+    color: #22c55e;
+  }
+  .feedback.incorrect {
+    color: #f87171;
+  }
+  /* End test summary */
+  .test-summary {
+    margin-top: 32px;
+    text-align: center;
+  }
+  .test-summary h2 {
+    margin-bottom: 16px;
+  }
+  .pass {
+    color: #22c55e;
+  }
+  .fail {
+    color: #f87171;
+  }
+  /* Responsive Layout */
+  @media (max-width: 640px) {
+    main {
+      padding: 24px 12px 32px;
+    }
+    nav {
+      display: none;
+    }
+    .mobile-toggle {
+      display: block;
+    }
+  }
+  @media (min-width: 641px) and (max-width: 1024px) {
+    main {
+      padding: 32px 24px 48px;
+    }
+  }
+  @media (min-width: 1025px) {
+    main {
+      padding: 48px 48px 64px;
+    }
+	
+/* Practice by Section - Responsive and polished layout */
+
+	#practice-by-section {
+	  display: none;
+	  padding: 2rem 1rem;
+	}
+
+	#practice-by-section:not([hidden]) {
+	  display: block;
+	}
+
+	#practice-by-section h2 {
+	  color: white;
+	  font-size: 2rem;
+	  border-bottom: 2px solid #00BFFF;
+	  margin-bottom: 2rem;
+	  padding-bottom: 0.5rem;
+	}
+
+	/* Grid layout */
+	.section-grid {
+	  display: grid;
+	  grid-template-columns: 1fr;
+	  gap: 1.5rem;
+	  padding: 0;
+	  justify-items: center;
+	}
+
+	@media (min-width: 600px) {
+	  .section-grid {
+		grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+		padding: 0 1rem;
+	  }
+	}
+
+	/* Card style */
+	.section-card {
+	  background-color: #f9f9f9;
+	  color: #222;
+	  border-radius: 16px;
+	  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+	  padding: 1.2rem 1rem 1.5rem;
+	  text-align: center;
+	  transition: transform 0.2s ease, box-shadow 0.2s ease;
+	  max-width: 400px;
+	  width: 100%;
+	  display: flex;
+	  flex-direction: column;
+	  justify-content: space-between;
+	  min-height: 200px;
+	}
+
+	.section-card:hover {
+	  transform: translateY(-4px);
+	  box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+	}
+
+	.section-card h3 {
+	  font-size: 1.2rem;
+	  font-weight: 600;
+	  margin: 0.5rem 0;
+	}
+
+	.section-card p {
+	  font-size: 1rem;
+	  color: #444;
+	  margin-bottom: 1rem;
+	}
+
+	.section-card button {
+	  margin-top: auto;
+	  background: linear-gradient(45deg, #7b2ff7, #00c6ff);
+	  border: none;
+	  color: white;
+	  padding: 0.6rem 1.2rem;
+	  border-radius: 12px;
+	  font-size: 1rem;
+	  font-weight: bold;
+	  cursor: pointer;
+	  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+	  transition: transform 0.1s ease, box-shadow 0.2s ease;
+	}
+
+	.section-card button:hover {
+	  transform: translateY(-2px);
+	  box-shadow: 0 6px 10px rgba(0,0,0,0.2);
+	}

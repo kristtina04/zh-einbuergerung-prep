@@ -1,391 +1,38 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Zürich Einbürgerung Grundkenntnis Test Vorbereitung</title>
-<script defer src="https://cloud.umami.is/script.js" data-website-id="19710125-c941-42ef-aaad-34fc5bee4853"></script>
-<meta name="description" content="App zum Vorbereiten auf den Zürich Einbürgerung Grundkenntnis Test. Praxisfragen, Statistiken & Lernfortschritt." />
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet" />
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-<style>
-  /* Reset and base */
-  *, *::before, *::after {
-    box-sizing: border-box;
-  }
-  html {
-    font-family: 'Inter', 'Poppins', sans-serif;
-    font-size: 16px;
-    scroll-behavior: smooth;
-  }
-  body {
-    margin: 0;
-    background: linear-gradient(135deg, #0f3460 0%, #16213e 100%);
-    color: #e0e6f1;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-  }
-  a {
-    color: #06b6d4;
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
-  a:hover, a:focus {
-    color: #8b5cf6;
-    outline: none;
-  }
-  main {
-    flex-grow: 1;
-    padding: 32px 16px 48px;
-    max-width: 1200px;
-    margin: 0 auto;
-    width: 100%;
-  }
-  h1, h2, h3 {
-    margin: 0 0 24px 0;
-  }
-  h1 {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 800;
-    font-size: 2.5rem;
-    background: linear-gradient(135deg, #8b5cf6 0%, #06b6d4 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  h2 {
-    font-weight: 700;
-    font-size: 1.8rem;
-    border-bottom: 3px solid #06b6d4;
-    padding-bottom: 8px;
-  }
-  p {
-    line-height: 1.6;
-    max-width: 700px;
-  }
-  button {
-    cursor: pointer;
-    border: none;
-    border-radius: 12px;
-    padding: 14px 28px;
-    font-weight: 600;
-    font-size: 1rem;
-    background: linear-gradient(135deg, #8b5cf6 0%, #06b6d4 100%);
-    color: white;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 5px 12px rgba(8,27,58,0.75);
-  }
-  button:hover, button:focus {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 25px rgba(139, 92, 246, 0.6);
-    outline: none;
-  }
-  /* Container cards - glass morphism */
-  .card {
-    background: rgba(16, 26, 49, 0.75);
-    border-radius: 16px;
-    box-shadow: 0 8px 24px rgba(8,27,58,0.7);
-    margin-bottom: 32px;
-    padding: 24px 32px;
-  }
-  /* Responsive Header */
-  header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: rgba(7,18,38,0.95);
-    padding: 12px 24px;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.7);
-  }
-  .logo {
-    font-weight: 700;
-    font-size: 1.5rem;
-    color: #8b5cf6;
-    user-select: none;
-  }
-  nav {
-    display: flex;
-    gap: 24px;
-  }
-  nav a {
-    font-weight: 600;
-    font-size: 1rem;
-    padding: 8px 0;
-    position: relative;
-  }
-  nav a.active, nav a:hover, nav a:focus {
-    color: #8b5cf6;
-  }
-  /* Hamburger for mobile */
-  .mobile-toggle {
-    display: none;
-    background: none;
-    border: none;
-    font-size: 32px;
-    color: #8b5cf6;
-    cursor: pointer;
-    user-select: none;
-  }
-  /* Navigation mobile slide */
-  .nav-mobile {
-    display: none;
-    flex-direction: column;
-    position: fixed;
-    top: 60px;
-    right: 0;
-    width: 260px;
-    max-width: 70vw;
-    height: calc(100vh - 60px);
-    background: rgba(7,18,38,0.98);
-    padding: 24px;
-    box-shadow: -4px 0 12px rgba(0,0,0,0.9);
-    z-index: 1500;
-    transform: translateX(100%);
-    transition: transform 0.3s ease;
-  }
-  .nav-mobile.show {
-    display: flex;
-    transform: translateX(0%);
-  }
-  .nav-mobile a {
-    padding: 16px 0;
-    font-size: 1.2rem;
-    border-bottom: 1px solid #2a2a5c;
-    color: #a0a9c0;
-  }
-  .nav-mobile a.active {
-    color: #8b5cf6;
-    font-weight: 700;
-    border-color: #8b5cf6;
-  }
-  /* Responsive Footer */
-  footer {
-    background: rgba(7,18,38,0.95);
-    color: #7f8c8d;
-    padding: 24px 20px;
-    text-align: left;
-    font-size: 0.9rem;
-    user-select: none;
-  }
-  footer a {
-    color: #06b6d4;
-  }
-  /* Stats Grid */
-  .stats-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(180px,1fr));
-    gap: 32px;
-    margin-bottom: 32px;
-  }
-  .stat-card {
-    background: rgba(139, 92, 246, 0.15);
-    border-radius: 12px;
-    padding: 24px 20px;
-    text-align: center;
-    user-select: none;
-  }
-  .stat-value {
-    font-size: 2rem;
-    font-weight: 700;
-    color: #8b5cf6;
-    margin-bottom: 8px;
-  }
-  .stat-label {
-    font-weight: 500;
-    color: #cad6f2;
-  }
-  /* Questions list */
-  .questions-list {
-    max-height: 350px;
-    overflow-y: auto;
-  }
-  .question-fail {
-    background: #271e47;
-    margin-bottom: 12px;
-    border-radius: 12px;
-    padding: 16px 20px;
-    color: #e0e6f1;
-  }
-  .question-fail strong {
-    color: #eab308;
-  }
-  /* Practice test */
-  .practice-container {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    max-width: 760px;
-    margin: 0 auto;
-  }
-  .question-text {
-    font-weight: 600;
-    font-size: 1.4rem;
-  }
-  .answers-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-  }
-  .answers-list button {
-    background: rgba(16, 26, 49, 0.75);
-    border: 2px solid transparent;
-    padding: 12px 20px;
-    border-radius: 12px;
-    font-size: 1.2rem;
-    color: #e0e6f1;
-    text-align: left;
-    transition: background-color 0.4s ease, border-color 0.4s ease;
-  }
-  .answers-list button:hover, .answers-list button:focus {
-    background: rgba(139, 92, 246, 0.3);
-    border-color: #8b5cf6;
-    outline: none;
-  }
-  .answers-list button.correct {
-    background: #16a34a;
-    border-color: #22c55e;
-    color: #d9f99d;
-  }
-  .answers-list button.incorrect {
-    background: #dc2626;
-    border-color: #f87171;
-    color: #fee2e2;
-  }
-  .feedback {
-    font-weight: 600;
-    font-size: 1.1rem;
-    margin-top: 12px;
-    color: #a0aec0;
-  }
-  .feedback.correct {
-    color: #22c55e;
-  }
-  .feedback.incorrect {
-    color: #f87171;
-  }
-  /* End test summary */
-  .test-summary {
-    margin-top: 32px;
-    text-align: center;
-  }
-  .test-summary h2 {
-    margin-bottom: 16px;
-  }
-  .pass {
-    color: #22c55e;
-  }
-  .fail {
-    color: #f87171;
-  }
-  /* Responsive Layout */
-  @media (max-width: 640px) {
-    main {
-      padding: 24px 12px 32px;
-    }
-    nav {
-      display: none;
-    }
-    .mobile-toggle {
-      display: block;
-    }
-  }
-  @media (min-width: 641px) and (max-width: 1024px) {
-    main {
-      padding: 32px 24px 48px;
-    }
-  }
-  @media (min-width: 1025px) {
-    main {
-      padding: 48px 48px 64px;
-    }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="title" content="Zürich Citizenship Prep – Practice Test for Einbürgerung 2025">
+  <meta name="description" content="Prepare for the Zürich Einbürgerungstest with 347 official questions. Practice by topic or simulate the real exam.">
+  <meta name="keywords" content="Zürich citizenship test, Einbürgerung Zürich, Schweiz Test 2025, citizenship practice questions, Einbürgerungstest online, Zürcher Einbürgerung, Switzerland naturalization">
+  <meta name="author" content="Zürich Citizenship Preparation Team">
 
-/* Practice by Section - Release 2 */
+  <!-- Social -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://kristtina04.github.io/">
+  <meta property="og:title" content="Zürich Citizenship Prep – Einbürgerung 2025 Test">
+  <meta property="og:description" content="Free test simulator with all 347 official questions for the Zürich Einbürgerungstest. Practice randomly or by section.">
 
-	#practice-by-section {
-	  display: none;
-	  padding: 2rem 1rem;
-	}
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://kristtina04.github.io/">
+  <meta name="twitter:title" content="Zürich Citizenship Prep – 2025 Practice Test">
+  <meta name="twitter:description" content="Train with 347 real Einbürgerung questions. Smart practice mode. Mobile-friendly.">
 
-	#practice-by-section:not([hidden]) {
-	  display: block;
-	}
+  <!-- Fonts & Styles -->
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 
-	#practice-by-section h2 {
-	  color: white;
-	  font-size: 2rem;
-	  border-bottom: 2px solid #00BFFF;
-	  margin-bottom: 2rem;
-	  padding-bottom: 0.5rem;
-	}
+  <!-- Analytics -->
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="19710125-c941-42ef-aaad-34fc5bee4853"></script>
 
-	/* Grid layout */
-	.section-grid {
-	  display: grid;
-	  gap: 1.5rem;
-	  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-	  padding: 0 1rem;
-	  justify-items: center;
-	}
-
-	/* Card style */
-	.section-card {
-	  background-color: #f9f9f9;
-	  color: #222;
-	  border-radius: 16px;
-	  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-	  padding: 1.5rem;
-	  text-align: center;
-	  transition: transform 0.2s ease, box-shadow 0.2s ease;
-	  width: 100%;
-	  max-width: 400px;
-	}
-
-	.section-card:hover {
-	  transform: translateY(-4px);
-	  box-shadow: 0 8px 18px rgba(0,0,0,0.15);
-	}
-
-	.section-card h3 {
-	  font-size: 1.2rem;
-	  font-weight: 600;
-	  margin-bottom: 0.5rem;
-	}
-
-	.section-card p {
-	  font-size: 1rem;
-	  color: #444;
-	  margin-bottom: 1rem;
-	}
-
-	.section-card button {
-	  background: linear-gradient(45deg, #7b2ff7, #00c6ff);
-	  border: none;
-	  color: white;
-	  padding: 0.6rem 1.2rem;
-	  border-radius: 12px;
-	  font-size: 1rem;
-	  font-weight: bold;
-	  cursor: pointer;
-	  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-	  transition: transform 0.1s ease, box-shadow 0.2s ease;
-	}
-
-	.section-card button:hover {
-	  transform: translateY(-2px);
-	  box-shadow: 0 6px 10px rgba(0,0,0,0.2);
-	}
-</style>
+  <title>Zürich Einbürgerung Grundkenntnis Test Vorbereitung</title>
 </head>
 <body>
 <header>
-  <div class="logo">Zürich Citizenship Prep</div>
+  <div class="logo" alt="Zürich Citizenship Preparation Free Test Practice">Zürich Citizenship Prep</div>
   <nav role="navigation" aria-label="Main navigation">
     <a href="#landing" class="nav-link active">Home</a>
     <a href="#practice" class="nav-link">Zufalls-Test</a>
@@ -437,31 +84,31 @@
 	<div class="section-card">
 		<h3 class="question-text">1 Demokratie und Föderalismus</h3>
 		<p class="card-description">125 Fragen</p>
-		<button onclick="startSectionPractice('1 Demokratie und Föderalismus')" class="gradient-button">Practice</button>
+		<button onclick="startSectionPractice('1 Demokratie und Föderalismus')" class="gradient-button" role="button" aria-label="Üben für Abschnitt 1. Demokratie und Föderalismus">Üben</button>
  	</div> 
 
 	<div class="section-card">
 		<h3 class="question-text">2 Sozialstaat und Zivilgesellschaft</h3>
 		<p class="card-description">81 Fragen</p>
-		<button onclick="startSectionPractice('2 Sozialstaat und Zivilgesellschaft')" class="gradient-button">Practice</button>
+		<button onclick="startSectionPractice('2 Sozialstaat und Zivilgesellschaft')" class="gradient-button" role="button" aria-label="Üben für Abschnitt 2. Sozialstaat und Zivilgesellschaft">Üben</button>
  	</div> 
   
 	<div class="section-card">
 		<h3 class="question-text">3 Geschichte</h3>
 		<p class="card-description">48 Fragen</p>
-		<button onclick="startSectionPractice('3 Geschichte')" class="gradient-button">Practice</button>
+		<button onclick="startSectionPractice('3 Geschichte')" class="gradient-button" role="button" aria-label="Üben für Abschnitt 3. Geschichte">Üben</button>
  	</div> 
 
 	<div class="section-card">
 		<h3 class="question-text">4 Geografie</h3>
 		<p class="card-description">46 Fragen</p>
-		<button onclick="startSectionPractice('4 Geografie')" class="gradient-button">Practice</button>
+		<button onclick="startSectionPractice('4 Geografie')" class="gradient-button" role="button" aria-label="Üben für Abschnitt 4. Geografie">Üben</button>
  	</div> 
 
 	<div class="section-card">
 		<h3 class="question-text">5 Kultur und Alltagskultur</h3>
 		<p class="card-description">46 Fragen</p>
-		<button onclick="startSectionPractice('5 Kultur und Alltagskultur')" class="gradient-button">Practice</button>
+		<button onclick="startSectionPractice('5 Kultur und Alltagskultur')" class="gradient-button" role="button" aria-label="Üben für Abschnitt 5. Kultur und Alltagskultur">Üben</button>
  	</div> 
   </div>
 </section>  <!-- release 2 end -->
@@ -506,12 +153,12 @@
         </a>
       </li>
     </ul>
-  </section>
 </main>
+  </section>
 
 <footer>
   <p>© 2025 Zürich Citizenship Prep. Made with care.</p>
-  <p>Diese Website basiert auf den 347 offiziellen Fragen aus dem Einbürgerungstest Kanton Zürich (Stand: Juni 2025).</p>
+  <p>Basierend auf 347 offiziellen Fragen des Zürcher Einbürgerungstests (Stand: 14 Juni 2025).</p>
 
   <details style="margin-top: 1rem;">
     <summary><strong>Haftungsausschluss & Hinweise</strong></summary>
@@ -764,17 +411,24 @@
     const passed = score >= passThreshold;
     const percentage = Math.round((score / currentTestQuestions.length) * 100);
 
-    let summaryHtml = `
-      <div class="test-summary" tabindex="0">
-        <h2>Test beendet</h2>
-        <p>Deine Punktzahl: ${score} von ${currentTestQuestions.length} (${percentage}%)</p>
-        <p class="${passed ? 'pass' : 'fail'}">${passed ? 'Herzlichen Glückwunsch! Du hast die Prüfung bestanden.' : 'Leider nicht bestanden. Bitte übe die Fehlerfragen nochmals.'}</p>
-        <div style="display:flex;justify-content:center;gap:24px;margin-top:24px;">
-          <button id="restart-test-btn" aria-label="Neuer Test starten">Neuer Test</button>
-          <button id="review-test-btn" aria-label="Fehler Fragen anzeigen">Fehler Überprüfen</button>
-        </div>
-      </div>
-    `;
+	let summaryHtml = `
+	  <div class="test-summary" tabindex="0">
+		<h2>Test beendet</h2>
+		<p>Deine Punktzahl: ${score} von ${currentTestQuestions.length} (${percentage}%)</p>
+		<p class="${passed ? 'pass' : 'fail'}">
+		  ${passed ? 'Herzlichen Glückwunsch! Du hast die Prüfung bestanden.' : 'Leider nicht bestanden. Bitte übe die Fehlerfragen nochmals.'}
+		</p>
+		<div style="display:flex;flex-direction:column;align-items:center;gap:16px;margin-top:24px;">
+		  <div style="display:flex;gap:16px;flex-wrap:wrap;justify-content:center;">
+			<button id="restart-test-btn" aria-label="Neuer Test starten">Neuer Test</button>
+			<button id="review-test-btn" aria-label="Fehler Fragen anzeigen">Fehler Überprüfen</button>
+		  </div>
+		  <button onclick="clearUsedQuestionIds(); location.reload();" title="Setzt alle bereits geübten Fragen zurück">
+			Fragen zurücksetzen
+		  </button>
+		</div>
+	  </div>
+	`;
     practiceContainer.innerHTML = summaryHtml;
 
     document.getElementById('restart-test-btn').addEventListener('click', () => {
