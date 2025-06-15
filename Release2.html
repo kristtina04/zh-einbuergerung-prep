@@ -309,12 +309,12 @@
 /* Practice by Section - Release 2 */
 
 	#practice-by-section {
-	  display: none;         /* hidden by default */
+	  display: none;
 	  padding: 2rem 1rem;
 	}
 
 	#practice-by-section:not([hidden]) {
-	  display: block;        /* shown when not hidden */
+	  display: block;
 	}
 
 	#practice-by-section h2 {
@@ -325,25 +325,38 @@
 	  padding-bottom: 0.5rem;
 	}
 
+	/* Grid layout */
+	.section-grid {
+	  display: grid;
+	  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+	  gap: 1.5rem;
+	}
+
+	/* Card style */
 	.section-card {
 	  background-color: #f9f9f9;
 	  color: #222;
-	  padding: 1.5rem;
 	  border-radius: 16px;
-	  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-	  margin: 16px 0;
+	  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+	  padding: 1.5rem;
 	  text-align: center;
+	  transition: transform 0.2s ease, box-shadow 0.2s ease;
+	}
+
+	.section-card:hover {
+	  transform: translateY(-4px);
+	  box-shadow: 0 8px 18px rgba(0,0,0,0.15);
 	}
 
 	.section-card h3 {
-	  font-size: 1.3rem;
+	  font-size: 1.2rem;
 	  font-weight: 600;
 	  margin-bottom: 0.5rem;
 	}
 
 	.section-card p {
 	  font-size: 1rem;
-	  color: #666;
+	  color: #444;
 	  margin-bottom: 1rem;
 	}
 
@@ -356,13 +369,13 @@
 	  font-size: 1rem;
 	  font-weight: bold;
 	  cursor: pointer;
-	  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+	  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
 	  transition: transform 0.1s ease, box-shadow 0.2s ease;
 	}
 
 	.section-card button:hover {
 	  transform: translateY(-2px);
-	  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+	  box-shadow: 0 6px 10px rgba(0,0,0,0.2);
 	}
 </style>
 </head>
@@ -416,34 +429,36 @@
 <section id="practice-by-section" hidden style="padding: 2rem;">
   <h2 class="section-title">Practice by Section</h2>
 
-  <div class="section-card">
-    <h3 class="question-text">1 Demokratie und Föderalismus</h3>
-    <p class="card-description">125 Fragen</p>
-    <button onclick="startSectionPractice('1 Demokratie und Föderalismus')" class="gradient-button">Practice</button>
-  </div>
+  <div class="section-grid">
+	<div class="section-card">
+		<h3 class="question-text">1 Demokratie und Föderalismus</h3>
+		<p class="card-description">125 Fragen</p>
+		<button onclick="startSectionPractice('1 Demokratie und Föderalismus')" class="gradient-button">Practice</button>
+ 	</div> 
 
-  <div class="section-card">
-    <h3 class="question-text">2 Sozialstaat und Zivilgesellschaft</h3>
-    <p class="card-description">81 Fragen</p>
-    <button onclick="startSectionPractice('2 Sozialstaat und Zivilgesellschaft')" class="gradient-button">Practice</button>
-  </div>
+	<div class="section-card">
+		<h3 class="question-text">2 Sozialstaat und Zivilgesellschaft</h3>
+		<p class="card-description">81 Fragen</p>
+		<button onclick="startSectionPractice('2 Sozialstaat und Zivilgesellschaft')" class="gradient-button">Practice</button>
+ 	</div> 
+  
+	<div class="section-card">
+		<h3 class="question-text">3 Geschichte</h3>
+		<p class="card-description">48 Fragen</p>
+		<button onclick="startSectionPractice('3 Geschichte')" class="gradient-button">Practice</button>
+ 	</div> 
 
-  <div class="section-card">
-    <h3 class="question-text">3 Geschichte</h3>
-    <p class="card-description">48 Fragen</p>
-    <button onclick="startSectionPractice('3 Geschichte')" class="gradient-button">Practice</button>
-  </div>
+	<div class="section-card">
+		<h3 class="question-text">4 Geografie</h3>
+		<p class="card-description">46 Fragen</p>
+		<button onclick="startSectionPractice('4 Geografie')" class="gradient-button">Practice</button>
+ 	</div> 
 
-  <div class="section-card">
-    <h3 class="question-text">4 Geografie</h3>
-    <p class="card-description">46 Fragen</p>
-    <button onclick="startSectionPractice('4 Geografie')" class="gradient-button">Practice</button>
-  </div>
-
-  <div class="section-card">
-    <h3 class="question-text">5 Kultur und Alltagskultur</h3>
-    <p class="card-description">46 Fragen</p>
-    <button onclick="startSectionPractice('5 Kultur und Alltagskultur')" class="gradient-button">Practice</button>
+	<div class="section-card">
+		<h3 class="question-text">5 Kultur und Alltagskultur</h3>
+		<p class="card-description">46 Fragen</p>
+		<button onclick="startSectionPractice('5 Kultur und Alltagskultur')" class="gradient-button">Practice</button>
+ 	</div> 
   </div>
 </section>  <!-- release 2 end -->
 
@@ -764,7 +779,7 @@
 	const total = questionsBank.length;
 	const counter = document.getElementById('progress-counter');
 		if (counter) {
-    counter.textContent = `Du hast bereits ${used.length} von ${total} Fragen geübt.`;
+    counter.textContent = `Du arbeitest dich durch ${used.length} von ${total} Übungsfragen.`;
 	}
   }
   
