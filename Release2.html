@@ -518,12 +518,13 @@
   const mobileToggleBtn = document.querySelector('.mobile-toggle');
   const practiceSection = document.getElementById('practice');
   const practiceContainer = document.getElementById('practice-container');
+  const sectionBySection = document.getElementById('practice-by-section'); 
   const landingSection = document.getElementById('landing');
   const mistakesSection = document.getElementById('mistakes');
   const mostFailedQuestionsContainer = document.getElementById('most-failed-questions');
   const resourcesSection = document.getElementById('resources');
   const donateBtn = document.getElementById('donate-btn');
-  const practiceMistakesBtn = document.getElementById('practice-mistakes-btn');
+  const practiceMistakesBtn = document.getElementById('practice-mistakes-btn'); <!-- release 2 -->
 
   // Accessibility: Focus main content on navigation
   function focusMain() {
@@ -588,7 +589,7 @@
 
   // Navigation handler
   function navigateToSection(id) {
-    [landingSection, practiceSection, mistakesSection, resourcesSection].forEach(s => s.hidden = true);
+    [landingSection, practiceSection, mistakesSection, resourcesSection, sectionBySection].forEach(s => s.hidden = true); <!-- release 2 -->
     navLinks.forEach(link => link.classList.remove('active'));
     if (id === 'landing') landingSection.hidden = false;
     if (id === 'practice') practiceSection.hidden = false;
@@ -597,6 +598,7 @@
       showMostFailedQuestions();
     }
     if (id === 'resources') resourcesSection.hidden = false;
+	if (id === 'practice-by-section') sectionBySection.hidden = false; <!-- release 2 -->
     navLinks.forEach(link => {
       const href = link.getAttribute('href').substring(1);
       if (href === id) link.classList.add('active');
@@ -741,7 +743,8 @@
   }
 
   function missingSectionHideExcept(showId) {
-    const sections = [landingSection, practiceSection, mistakesSection, resourcesSection];
+    const sectionBySection = document.getElementById('practice-by-section'); <!-- release 2 -->
+	const sections = [landingSection, practiceSection, mistakesSection, resourcesSection];
     for (const s of sections) {
       s.hidden = s.id !== showId;
     }
@@ -805,7 +808,7 @@
     currentQuestionIndex = 0;
     userAnswers = [];
     reviewingMistakes = false;
-    showPracticeQuestion();
+    renderQuestion();
     document.getElementById('practice').scrollIntoView({ behavior: 'smooth' });
   }
 </script>
