@@ -305,11 +305,17 @@
     main {
       padding: 48px 48px 64px;
     }
-<!-- release 2 below -->	
   #practice-by-section {
     padding: 2rem 1rem;
-  }
+	}
 
+ /* release 2 below */
+  #practice-by-section {
+	display: none;
+  }
+  #practice-by-section:not([hidden]) {
+	display: block;
+  }
   #practice-by-section h2 {
     color: white;
     font-size: 2rem;
@@ -357,7 +363,11 @@
     transform: translateY(-2px);
     box-shadow: 0 6px 10px rgba(0,0,0,0.2);
   }
-<!-- release 2 up -->
+  
+  .section-card {
+	margin: 16px 0;
+	}
+/* release 2 above */
   }
 </style>
 </head>
@@ -408,34 +418,34 @@
   </section>
 
  <!-- release 2 start -->
-<section id="practice-by-section" style="display:none; padding: 2rem;">
+<section id="practice-by-section" hidden style="padding: 2rem;">
   <h2 class="section-title">Practice by Section</h2>
 
-  <div class="card">
+  <div class="section-card">
     <h3 class="question-text">1 Demokratie und Föderalismus</h3>
     <p class="card-description">125 Fragen</p>
     <button onclick="startSectionPractice('1 Demokratie und Föderalismus')" class="gradient-button">Practice</button>
   </div>
 
-  <div class="card">
+  <div class="section-card">
     <h3 class="question-text">2 Sozialstaat und Zivilgesellschaft</h3>
     <p class="card-description">81 Fragen</p>
     <button onclick="startSectionPractice('2 Sozialstaat und Zivilgesellschaft')" class="gradient-button">Practice</button>
   </div>
 
-  <div class="card">
+  <div class="section-card">
     <h3 class="question-text">3 Geschichte</h3>
     <p class="card-description">48 Fragen</p>
     <button onclick="startSectionPractice('3 Geschichte')" class="gradient-button">Practice</button>
   </div>
 
-  <div class="card">
+  <div class="section-card">
     <h3 class="question-text">4 Geografie</h3>
     <p class="card-description">46 Fragen</p>
     <button onclick="startSectionPractice('4 Geografie')" class="gradient-button">Practice</button>
   </div>
 
-  <div class="card">
+  <div class="section-card">
     <h3 class="question-text">5 Kultur und Alltagskultur</h3>
     <p class="card-description">46 Fragen</p>
     <button onclick="startSectionPractice('5 Kultur und Alltagskultur')" class="gradient-button">Practice</button>
@@ -445,6 +455,7 @@
   
   <section id="practice" aria-label="Praxis Test" class="card" hidden>
     <h2>Praxis Test</h2>
+	<p id="progress-counter" style="color:#a0aec0; font-weight:500;"></p> <!-- release 2. Show how many questions tried from total pool -->
     <div class="practice-container" id="practice-container" aria-live="polite" aria-atomic="true">
       <!-- Questions and answers will be dynamically injected here -->
     </div>
@@ -486,7 +497,7 @@
 
 <footer>
   <p>© 2024 Zürich Citizenship Prep. Made with care.</p>
-  <p> Diese Website enthält 217 zufällig ausgewählte Übungsfragen aus öffentlich verfügbaren Materialien zur Vorbereitung auf den Einbürgerungstest im Kanton Zürich (Stand: 14. Juni 2025).</p>
+  <p> Diese Website enthält alle 347 Übungsfragen aus des offiziellen Vorbereitungshandbuchs für den Einbürgerungstest im Kanton Zürich (Stand: 14. Juni 2025). </p>
   <p> <b> Bitte beachten</b></p>
 <p> Die Inhalte dienen nur zur persönlichen Vorbereitung. </p>
 <p> Diese Website ist nicht offiziell und nicht mit Behörden verbunden. </p>
@@ -496,7 +507,13 @@
 <p> Mit der Nutzung der Website akzeptieren Sie diesen Haftungsausschluss. </p>
 </footer>
 
-<script src="ZH_canton_test_citizenship_questions_2025.js"></script>
+<script> // Release 2 Check that questionsBank loaded correctly
+  const questionsBank = window.questionsBank;
+  if (!questionsBank || !questionsBank.length) {
+    alert('Fragen konnten nicht geladen werden. Bitte Seite neu laden.');
+  }
+  
+</script>
 
 <script> <!-- Test practice 50 random questions -->
   'use strict';
@@ -504,7 +521,8 @@
   
   // Local storage keys
   const STORAGE_MISTAKES_KEY = 'cep_mistake_counts';
-
+  const STORAGE_USED_QUESTIONS_KEY = 'cep_used_question_ids'; /* Release 2 localStorage */
+  
   // State
   let currentQuestionIndex = 0;
   let currentTestQuestions = [];
@@ -545,6 +563,22 @@
   function saveMistakes(mistakes) {
     localStorage.setItem(STORAGE_MISTAKES_KEY, JSON.stringify(mistakes));
   }
+  // Release 2 start 
+  function loadUsedQuestionIds() {
+	const json = localStorage.getItem(STORAGE_USED_QUESTIONS_KEY);
+	try {
+		return json ? JSON.parse(json) : [];
+		} catch {
+		return [];
+		}
+	}
+	function saveUsedQuestionIds(ids) {
+		localStorage.setItem(STORAGE_USED_QUESTIONS_KEY, JSON.stringify(ids));
+	}
+	function clearUsedQuestionIds() {
+		localStorage.removeItem(STORAGE_USED_QUESTIONS_KEY);
+  }  
+// Release 2 end 
 
   // Increment mistake count for a question ID
   function countMistake(questionId) {
@@ -589,10 +623,11 @@
 
   // Navigation handler
   function navigateToSection(id) {
-    [landingSection, practiceSection, mistakesSection, resourcesSection, sectionBySection].forEach(s => s.hidden = true); <!-- release 2 -->
+    [landingSection, practiceSection, mistakesSection, resourcesSection, sectionBySection].forEach(s => s.hidden = true); /*-- release 2 */
     navLinks.forEach(link => link.classList.remove('active'));
     if (id === 'landing') landingSection.hidden = false;
     if (id === 'practice') practiceSection.hidden = false;
+	if (id === 'practice-by-section') sectionBySection.hidden = false; <!-- release 2 -->
     if (id === 'mistakes') {
       mistakesSection.hidden = false;
       showMostFailedQuestions();
@@ -622,12 +657,25 @@
     mobileToggleBtn.setAttribute('aria-expanded', 'false');
     mobileToggleBtn.focus();
   }
-
+  
+  // Release 2 start. Show unique questions from 347 pool
   function selectRandomQuestions(num = 50, pool = questionsBank) {
-    const shuffled = pool.slice().sort(() => 0.5 - Math.random());
-    return shuffled.slice(0, Math.min(num, shuffled.length));
+	const usedIds = loadUsedQuestionIds();
+	const remaining = pool.filter(q => !usedIds.includes(q.id));
+
+  if (remaining.length < num) {
+    clearUsedQuestionIds(); // reset when all used
+    return selectRandomQuestions(num, pool);
   }
 
+  const shuffled = remaining.sort(() => 0.5 - Math.random());
+  const selected = shuffled.slice(0, num);
+  const newUsed = [...usedIds, ...selected.map(q => q.id)];
+  saveUsedQuestionIds(newUsed);
+  return selected;
+  }
+  // Release 2 end. Show unique questions from 347 pool
+  
   function renderQuestion() {
     const q = currentTestQuestions[currentQuestionIndex];
     if (!q) {
@@ -712,6 +760,17 @@
     practiceContainer.querySelector('.test-summary').focus();
   }
 
+  // Release 2 / Fortschrittsanzeige
+  function updateProgressCounter() {
+
+	const used = loadUsedQuestionIds();
+	const total = questionsBank.length;
+	const counter = document.getElementById('progress-counter');
+		if (counter) {
+    counter.textContent = `Du hast bereits ${used.length} von ${total} Fragen geübt.`;
+	}
+  }
+  
   function startPracticeTest() {
     reviewingMistakes = false;
     currentTestQuestions = selectRandomQuestions(50);
@@ -721,6 +780,7 @@
     missingSectionHideExcept('practice');
     renderQuestion();
     updateActiveNav('practice');
+	updateProgressCounter(); // Release 2. Progress counter
   }
 
   function startReviewMistakes() {
@@ -743,8 +803,8 @@
   }
 
   function missingSectionHideExcept(showId) {
-    const sectionBySection = document.getElementById('practice-by-section'); <!-- release 2 -->
-	const sections = [landingSection, practiceSection, mistakesSection, resourcesSection];
+	const sections = [landingSection, practiceSection, mistakesSection, resourcesSection, sectionBySection]; <!-- release 2 -->
+
     for (const s of sections) {
       s.hidden = s.id !== showId;
     }
@@ -758,15 +818,18 @@
   }
 
   navLinks.forEach(link => {
+  });
     link.addEventListener('click', e => {
       e.preventDefault();
       const targetId = link.getAttribute('href').substring(1);
-	if (targetId === 'practice') {
-     		 startPracticeTest(); // initialize and show the test
-    	} else {
-     	 	navigateToSection(targetId);
-	}
-    });
+	  if (targetId === 'practice') {
+		startPracticeTest();
+		} else if (targetId === 'practice-by-section') {
+		navigateToSection('practice-by-section'); // Release 2 addition. Right content is shown when a user clicks “Practice by Section
+		} else {
+		navigateToSection(targetId);
+		}
+	});
   });
 
   mobileToggleBtn.addEventListener('click', () => {
@@ -797,22 +860,42 @@
   });
 </script>
 
-<script> <!-- release 2 All Questions by section -->
+<script>
+  // release 2: All Questions by section
   function startSectionPractice(sectionName) {
-    const sectionQuestions = questionsBank.filter(q => q.section === sectionName);
+    const sectionQuestions = questionsBank.filter(q => q.section.trim() === sectionName.trim());
     if (sectionQuestions.length === 0) {
       alert('No questions found for this section.');
       return;
     }
-    currentTestQuestions = shuffleArray([...sectionQuestions]);
+	// Hide all other views first
+		[landingSection, practiceSection, sectionBySection, mistakesSection, resourcesSection].forEach(s => s.hidden = true);
+
+	// Show the test section
+	practiceSection.hidden = false;
+	
+    // Rest
+	currentTestQuestions = shuffleArray([...sectionQuestions]);
     currentQuestionIndex = 0;
     userAnswers = [];
     reviewingMistakes = false;
     renderQuestion();
+    updateActiveNav('practice'); // release 2 highlight menu properly
+	updateProgressCounter(); // release 2. Show how many questions tried
     document.getElementById('practice').scrollIntoView({ behavior: 'smooth' });
+
+  }
+
+  // release 2: Ensures questions are randomized each time, without breaking the app
+  function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
   }
 </script>
-
+<script src="ZH_canton_test_citizenship_questions_2025.js"></script> /* Release 2 optimisation*/
 </body>
 
 

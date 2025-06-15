@@ -297,7 +297,7 @@ window.questionsBank = [
     id: 43,
     section: '1 Demokratie und Föderalismus',
     question: 'Wie viele Unterschriften braucht es für eine Volksinitiative auf Bundesebene?',
-    answers: [30000, 100000, 500000, 800000],
+    answers: ['30.000', '100.000', '500.000', '800.000'],
     correctIndex: 1
   },
   {
@@ -318,7 +318,7 @@ window.questionsBank = [
     id: 46,
     section: '1 Demokratie und Föderalismus',
     question: 'Wie oft pro Jahr stimmt das Stimmvolk normalerweise in Bundesangelegenheiten ab?',
-    answers: [5, 3, 2, 4],
+    answers: ['5', '3', '2', '4'],
     correctIndex: 3
   },
   {
@@ -444,7 +444,7 @@ window.questionsBank = [
     id: 64,
     section: '1 Demokratie und Föderalismus',
     question: 'Wie viele offizielle Landessprachen gibt es in der Schweiz?',
-    answers: [2, 3, 4, 8],
+    answers: ['2', '3', '4', '8'],
     correctIndex: 2
   },
   {
@@ -689,7 +689,7 @@ window.questionsBank = [
     id: 99,
     section: '1 Demokratie und Föderalismus',
     question: 'Wie viele Regierungsräte hat der Kanton Zürich?',
-    answers: [3, 250, 7, 180],
+    answers: ['3', '250', '7', '180'],
     correctIndex: 2
   },
   {
@@ -717,7 +717,7 @@ window.questionsBank = [
     id: 103,
     section: '1 Demokratie und Föderalismus',
     question: 'Wie viele Bezirke gibt es im Kanton Zürich?',
-    answers: [12, 18, 7, 25],
+    answers: ['12', '18', '7', '25'],
     correctIndex: 0
   },
   {
@@ -731,7 +731,7 @@ window.questionsBank = [
     id: 105,
     section: '1 Demokratie und Föderalismus',
     question: 'Wie viele Mitglieder hat die Regierung des Kantons Zürich?',
-    answers: [7, 3, 5, 'je nach Aufgaben, die anstehen'],
+    answers: ['7', '3', '5', 'je nach Aufgaben, die anstehen'],
     correctIndex: 0
   },
   {
@@ -759,7 +759,7 @@ window.questionsBank = [
     id: 109,
     section: '1 Demokratie und Föderalismus',
     question: 'Wie viele Personen sind für den Kanton Zürich im Ständerat?',
-    answers: [13, 5, 2, 7],
+    answers: ['13', '5', '2', '7'],
     correctIndex: 2
   },
   {
@@ -1025,7 +1025,7 @@ window.questionsBank = [
     id: 147,
     section: '4 Geografie',
     question: 'Wie viele Ausländerinnen und Ausländer leben in der Schweiz (Stand 2020)?',
-    answers: ['3.5 Millionen', '2.1 Millionen', 630000, '1.1 Millionen'],
+    answers: ['3.5 Millionen', '2.1 Millionen', '630.000', '1.1 Millionen'],
     correctIndex: 1
   },
   {
@@ -1046,7 +1046,7 @@ window.questionsBank = [
     id: 150,
     section: '4 Geografie',
     question: 'Wie gross ist der Anteil der ausländischen Wohnbevölkerung in der Schweiz (Stand 2020)?',
-    answers: [0.1, 0.6, 0.25, 0.4],
+    answers: ['10%', '60%', '25%', '40%'],
     correctIndex: 2
   },
   {
@@ -1102,7 +1102,7 @@ window.questionsBank = [
     id: 158,
     section: '4 Geografie',
     question: 'An wie viele Kantone grenzt der Kanton Zürich?',
-    answers: [10, 2, 6, 8],
+    answers: ['10 Kantone', '2 Kantone', '6 Kantone', '8 Kantone'],
     correctIndex: 2
   },
   {
@@ -1172,14 +1172,14 @@ window.questionsBank = [
     id: 168,
     section: '4 Geografie',
     question: 'Wie gross ist die Landwirtschaftsfläche im Kanton Zürich?',
-    answers: [0.05, 0.6, 0.8, 0.41],
+    answers: ['5%', '60%', '80%', '41%'],
     correctIndex: 3
   },
   {
     id: 169,
     section: '4 Geografie',
     question: 'Wie viele Personen leben im Kanton Zürich (Stand 2020)?',
-    answers: ['1.5 Millionen', 360000, 600000, '3.1 Millionen'],
+    answers: ['1.5 Millionen', '360.000', '600.000', '3.1 Millionen'],
     correctIndex: 0
   },
   {
@@ -2145,7 +2145,7 @@ window.questionsBank = [
     id: 307,
     section: '3 Geschichte',
     question: 'Wann haben Schweizer Frauen das Stimm- und Wahlrecht auf Bundesebene bekommen?',
-    answers: [1918, 1971, 1948, 1988],
+    answers: ['1918', '1971', '1948', '1988'],
     correctIndex: 1
   },
   {
@@ -2397,7 +2397,7 @@ window.questionsBank = [
     id: 343,
     section: '3 Geschichte',
     question: 'Den Kanton Zürich im modernen Sinn gibt es seit ...',
-    answers: [1415, 1291, 1803, 1798],
+    answers: ['1415', '1291', '1803', '1798'],
     correctIndex: 2
   },
   {
