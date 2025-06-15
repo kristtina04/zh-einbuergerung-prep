@@ -328,8 +328,10 @@
 	/* Grid layout */
 	.section-grid {
 	  display: grid;
-	  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 	  gap: 1.5rem;
+	  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+	  padding: 0 1rem;
+	  justify-items: center;
 	}
 
 	/* Card style */
@@ -341,6 +343,8 @@
 	  padding: 1.5rem;
 	  text-align: center;
 	  transition: transform 0.2s ease, box-shadow 0.2s ease;
+	  width: 100%;
+	  max-width: 400px;
 	}
 
 	.section-card:hover {
@@ -384,8 +388,8 @@
   <div class="logo">Zürich Citizenship Prep</div>
   <nav role="navigation" aria-label="Main navigation">
     <a href="#landing" class="nav-link active">Home</a>
-    <a href="#practice" class="nav-link">Praxis test</a>
-	<a href="#practice-by-section" class="nav-link">Practice by section</a>  <!-- release 2 -->
+    <a href="#practice" class="nav-link">Zufalls-Test</a>
+	<a href="#practice-by-section" class="nav-link">Fragen nach Thema</a>  <!-- release 2 -->
     <a href="#mistakes" class="nav-link">Fehler statistik</a>
     <a href="#resources" class="nav-link">Materialien</a>
    </nav>
@@ -393,8 +397,8 @@
 </header>
 <nav id="mobile-menu" class="nav-mobile" aria-label="Mobile navigation">
   <a href="#landing" class="nav-link active">Home</a>
-  <a href="#practice" class="nav-link">Praxis test</a>
-  <a href="#practice-by-section" class="nav-link">Practice by section</a>  <!-- release 2 -->
+  <a href="#practice" class="nav-link">Zufalls-Test</a>
+  <a href="#practice-by-section" class="nav-link">Fragen nach Thema</a>  <!-- release 2 -->
   <a href="#mistakes" class="nav-link">Fehler statistik</a>
   <a href="#resources" class="nav-link">Materialien</a>
 </nav>
@@ -427,7 +431,7 @@
 
  <!-- release 2 start -->
 <section id="practice-by-section" hidden style="padding: 2rem;">
-  <h2 class="section-title">Practice by section</h2>
+  <h2 class="section-title">Fragen nach Thema</h2>
 
   <div class="section-grid">
 	<div class="section-card">
@@ -506,15 +510,18 @@
 </main>
 
 <footer>
-  <p>© 2024 Zürich Citizenship Prep. Made with care.</p>
-  <p> Diese Website enthält alle 347 Übungsfragen aus des offiziellen Vorbereitungshandbuchs für den Einbürgerungstest im Kanton Zürich (Stand: 14. Juni 2025). </p>
-  <p> <b> Bitte beachten</b></p>
-<p> Die Inhalte dienen nur zur persönlichen Vorbereitung. </p>
-<p> Diese Website ist nicht offiziell und nicht mit Behörden verbunden. </p>
-<p> Es wird nicht garantiert, dass Sie mit dieser Website den offiziellen Test bestehen. </p>
-<p> Die Nutzung erfolgt auf eigenes Risiko. </p>
-<p> Für Fehler, veraltete Inhalte oder Folgen aus der Nutzung wird keine Haftung übernommen.</p>
-<p> Mit der Nutzung der Website akzeptieren Sie diesen Haftungsausschluss. </p>
+  <p>© 2025 Zürich Citizenship Prep. Made with care.</p>
+  <p>Diese Website basiert auf den 347 offiziellen Fragen aus dem Einbürgerungstest Kanton Zürich (Stand: Juni 2025).</p>
+
+  <details style="margin-top: 1rem;">
+    <summary><strong>Haftungsausschluss & Hinweise</strong></summary>
+    <ul style="margin-top: 0.5rem;">
+      <li>Diese Inhalte dienen ausschliesslich der persönlichen Vorbereitung.</li>
+      <li>Die Website ist nicht offiziell und steht in keinem Zusammenhang mit Behörden.</li>
+      <li>Die Nutzung erfolgt auf eigenes Risiko – es gibt keine Garantie für das Bestehen des Tests.</li>
+      <li>Für Fehler oder veraltete Inhalte wird keine Haftung übernommen.</li>
+    </ul>
+  </details>
 </footer>
 
 <!-- Release optimisation: Move data outside -->
