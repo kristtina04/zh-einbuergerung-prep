@@ -14,7 +14,7 @@ This project includes: <br>
 HTML5, CSS3, Vanilla JavaScript <br>
 Lightweight – no external frameworks <br>
 
-Question data stored in a separate .js file (coming soon) <br>
+Question data stored in a separate .js file <br>
 
 📂 **Project Structure** <br>
 ├── index.html                # Main page <br>
