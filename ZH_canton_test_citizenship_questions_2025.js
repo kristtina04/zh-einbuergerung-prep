@@ -1844,7 +1844,7 @@ window.questionsBank = [
     id: 264,
     section: '2 Sozialstaat und Zivilgesellschaft',
     question: 'Welcher Feiertag gilt nach Gesetz für die ganze Schweiz?',
-    answers: ['1. August', 'Auffahrt', 'Karfreitag', '1. Ma'],
+    answers: ['1. August', 'Auffahrt', 'Karfreitag', '1. Mai'],
     correctIndex: 0
   },
   {
