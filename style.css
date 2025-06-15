@@ -202,10 +202,11 @@
 	width: 100%;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	justify-content: flex-start;
+	align-items: center;
   }
   .stat-card button {
-  margin-top: 32px; /* or 32px for more space */
+	margin-top: 24px; 
   }
   
   .stat-value {
@@ -217,6 +218,9 @@
   .stat-label {
     font-weight: 500;
     color: #cad6f2;
+	margin-bottom: 0;     /* reset */
+	margin-top: 8px;      /* small gap from title */
+	flex-grow: 1;         /* fills vertical space */
   }
   /* Questions list */
   .questions-list {
@@ -361,5 +365,6 @@
 	  max-width: 960px;
 	  margin-left: auto;
 	  margin-right: auto;
+	  align-items: stretch
 	}
 }
