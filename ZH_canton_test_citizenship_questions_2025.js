@@ -3,7 +3,7 @@ window.questionsBank = [
     id: 1,
     section: '1 Demokratie und Föderalismus',
     question: 'Die Schweiz ist neutral. Was heisst das?',
-    answers: ['Sie unterzeichnet keine internationalen Verträge.', 'Sie schliesst nur mit Staaten Verträge, die nicht in Kriege verwickelt sind.', 'Sie mischt sich nicht in bewaffnete Konflikte anderer Staaten ein.', 'Sie will als Transitland wirtschaftlich unabhängig sein.'],
+    answers: ['Sie unterzeichnet keine internationalen Verträge', 'Sie schliesst nur mit Staaten Verträge, die nicht in Kriege verwickelt sind', 'Sie mischt sich nicht in bewaffnete Konflikte anderer Staaten ein', 'Sie will als Transitland wirtschaftlich unabhängig sein'],
     correctIndex: 2
   },
   {
@@ -17,7 +17,7 @@ window.questionsBank = [
     id: 3,
     section: '1 Demokratie und Föderalismus',
     question: 'Confoederatio Helvetica ...',
-    answers: ['ist der Name einer Schweizer Schokolade.', 'ist der lateinische Name für die Schweizer Eidgenossenschaft.', 'ist der Name des ersten Parlaments der Schweiz.', 'ist eine Fraktion des Parlaments.'],
+    answers: ['ist der Name einer Schweizer Schokolade', 'ist der lateinische Name für die Schweizer Eidgenossenschaft', 'ist der Name des ersten Parlaments der Schweiz', 'ist eine Fraktion des Parlaments'],
     correctIndex: 1
   },
   {
@@ -31,7 +31,7 @@ window.questionsBank = [
     id: 5,
     section: '1 Demokratie und Föderalismus',
     question: 'Zwischen den Mitgliedern des Bundesrats gilt das Kollegialitätsprinzip. Was heisst das?',
-    answers: ['Die Mitglieder des Bundesrates müssen sich gut kennen.', 'Jeder Bundesrat vertritt seine eigenen politischen Meinungen.', 'Alle Mitglieder müssen Entscheide des Bundesrates nach aussen gleich vertreten.', 'Der Bundesrat Entscheidungen mit Abstimmung.'],
+    answers: ['Die Mitglieder des Bundesrates müssen sich gut kennen', 'Jeder Bundesrat vertritt seine eigenen politischen Meinungen', 'Alle Mitglieder müssen Entscheide des Bundesrates nach aussen gleich vertreten', 'Der Bundesrat Entscheidungen mit Abstimmung'],
     correctIndex: 2
   },
   {
@@ -59,14 +59,14 @@ window.questionsBank = [
     id: 9,
     section: '1 Demokratie und Föderalismus',
     question: 'Welche politischen Rechte haben Schweizerinnen und Schweizer, die im Ausland leben?',
-    answers: ['Sie dürfen an Abstimmungen und Wahlen teilnehmen, wenn sie in der Schweiz zu Besuch sind.', 'Sie verlieren alle politischen Rechte in der Schweiz.', 'Sie können an nationalen Abstimmungen und Wahlen teilnehmen, ohne deswegen in die Schweiz reisen zu müssen.', 'Sie dürfen sich im Gastland in keiner Weise politisch engagieren.'],
+    answers: ['Sie dürfen an Abstimmungen und Wahlen teilnehmen, wenn sie in der Schweiz zu Besuch sind', 'Sie verlieren alle politischen Rechte in der Schweiz', 'Sie können an nationalen Abstimmungen und Wahlen teilnehmen, ohne deswegen in die Schweiz reisen zu müssen', 'Sie dürfen sich im Gastland in keiner Weise politisch engagieren'],
     correctIndex: 2
   },
   {
     id: 10,
     section: '1 Demokratie und Föderalismus',
     question: 'Wer in der Schweiz wählen und abstimmen will, …',
-    answers: ['muss das Schweizer Bürgerrecht haben.', 'muss einen Computer haben.', 'muss in der Schweiz geboren sein.', 'muss mehr Steuern zahlen'],
+    answers: ['muss das Schweizer Bürgerrecht haben', 'muss einen Computer haben', 'muss in der Schweiz geboren sein', 'muss mehr Steuern zahlen'],
     correctIndex: 0
   },
   {
@@ -108,28 +108,28 @@ window.questionsBank = [
     id: 16,
     section: '1 Demokratie und Föderalismus',
     question: 'Welche Pflichten haben Einwohnerinnen und Einwohner der Schweiz?',
-    answers: ['Sie müssen Steuern bezahlen.', 'Sie müssen eine Lehre machen.', 'Sie müssen ein Bankkonto haben.', 'Sie müssen den Führerausweis haben'],
+    answers: ['Sie müssen Steuern bezahlen', 'Sie müssen eine Lehre machen', 'Sie müssen ein Bankkonto haben', 'Sie müssen den Führerausweis haben'],
     correctIndex: 0
   },
   {
     id: 17,
     section: '1 Demokratie und Föderalismus',
     question: 'Welche Pflichten haben Einwohnerinnen und Einwohner der Schweiz?',
-    answers: ['Sie müssen eine Weiterbildung machen.', 'Sie müssen Mitglied einer Kirche sein.', 'Sie müssen sich in der Gemeinde anmelden.', 'Sie müssen ein Telefon haben.'],
+    answers: ['Sie müssen eine Weiterbildung machen', 'Sie müssen Mitglied einer Kirche sein', 'Sie müssen sich in der Gemeinde anmelden', 'Sie müssen ein Telefon haben'],
     correctIndex: 2
   },
   {
     id: 18,
     section: '1 Demokratie und Föderalismus',
     question: 'Welche Pflichten haben Einwohnerinnen und Einwohner der Schweiz?',
-    answers: ['Sie müssen gegen Diebstahl versichert sein.', 'Sie müssen bei einer Krankenkasse versichert sein.', 'Sie müssen ein Halbtax der SBB haben.', 'Sie müssen ein Haus besitzen.'],
+    answers: ['Sie müssen gegen Diebstahl versichert sein', 'Sie müssen bei einer Krankenkasse versichert sein', 'Sie müssen ein Halbtax der SBB haben', 'Sie müssen ein Haus besitzen'],
     correctIndex: 1
   },
   {
     id: 19,
     section: '1 Demokratie und Föderalismus',
     question: 'Was bedeutet Rechtsgleichheit?',
-    answers: ['Alle verdienen gleich viel.', 'Alle Kantone haben die gleichen Gesetze.', 'Alle Menschen sind vor dem Gesetz gleich.', 'Alle Menschen haben gleich lange Ferien.'],
+    answers: ['Alle verdienen gleich viel', 'Alle Kantone haben die gleichen Gesetze', 'Alle Menschen sind vor dem Gesetz gleich', 'Alle Menschen haben gleich lange Ferien'],
     correctIndex: 2
   },
   {
@@ -143,21 +143,21 @@ window.questionsBank = [
     id: 21,
     section: '1 Demokratie und Föderalismus',
     question: 'Die Schweiz ist …',
-    answers: ['eine Diktatur.', 'ein absolutistischer Staat.', 'eine Demokratie.', 'ein Fürstentum.'],
+    answers: ['eine Diktatur', 'ein absolutistischer Staat', 'eine Demokratie', 'ein Fürstentum'],
     correctIndex: 2
   },
   {
     id: 22,
     section: '1 Demokratie und Föderalismus',
     question: 'Was ist ein wichtiges Merkmal der Demokratie?',
-    answers: ['Das Volk wählt ein Parlament.', 'Es regiert ein König.', 'Die Menschen können frei reisen.', 'Die Menschen haben ein garantiertes Grundeinkommen.'],
+    answers: ['Das Volk wählt ein Parlament', 'Es regiert ein König', 'Die Menschen können frei reisen', 'Die Menschen haben ein garantiertes Grundeinkommen'],
     correctIndex: 0
   },
   {
     id: 23,
     section: '1 Demokratie und Föderalismus',
     question: 'Warum gibt es in einer Demokratie regelmässig Wahlen?',
-    answers: ['Damit das Interesse für Politik geweckt wird.', 'Damit das Volk die Volksvertretung bestimmen kann.', 'Damit die Armen mehr Macht bekommen.', 'Damit Frauen und Männer gleichmässig vertreten sind.'],
+    answers: ['Damit das Interesse für Politik geweckt wird', 'Damit das Volk die Volksvertretung bestimmen kann', 'Damit die Armen mehr Macht bekommen', 'Damit Frauen und Männer gleichmässig vertreten sind'],
     correctIndex: 1
   },
   {
@@ -199,7 +199,7 @@ window.questionsBank = [
     id: 29,
     section: '1 Demokratie und Föderalismus',
     question: 'Was bedeutet das aktive Wahlrecht in der Demokratie?',
-    answers: ['Man darf nur wählen und abstimmen, wenn man in einer politischen Partei aktiv ist.', 'Man kann in ein politisches Amt gewählt werden.', 'Man darf wählen und abstimmen.', 'Man muss beim Auszählen der Stimmen helfen.'],
+    answers: ['Man darf nur wählen und abstimmen, wenn man in einer politischen Partei aktiv ist', 'Man kann in ein politisches Amt gewählt werden', 'Man darf wählen und abstimmen', 'Man muss beim Auszählen der Stimmen helfen'],
     correctIndex: 2
   },
   {
@@ -213,7 +213,7 @@ window.questionsBank = [
     id: 31,
     section: '1 Demokratie und Föderalismus',
     question: 'Wie können Schweizer Bürgerinnen und Bürger auf die Gesetzgebung Einfluss nehmen?',
-    answers: ['Sie können über Initiativen und Referenden abstimmen.', 'Sie haben keine direkte Einflussmöglichkeit.', 'Sie können einer Partei beitreten.', 'Sie können den Bundesrat wählen.'],
+    answers: ['Sie können über Initiativen und Referenden abstimmen', 'Sie haben keine direkte Einflussmöglichkeit', 'Sie können einer Partei beitreten', 'Sie können den Bundesrat wählen'],
     correctIndex: 0
   },
   {
@@ -227,7 +227,7 @@ window.questionsBank = [
     id: 33,
     section: '1 Demokratie und Föderalismus',
     question: 'Weshalb ist die Volksinitiative ein wichtiges politisches Recht der Stimmbürgerinnen und Stimmbürger? Sie können mit der Volksinitiative …',
-    answers: ['das Parlament ausschalten.', 'die Regierung abwählen.', 'politische Entscheidungen rückgängig machen.', 'wichtige Anliegen aus der Bevölkerung politisch durchsetzen.'],
+    answers: ['das Parlament ausschalten', 'die Regierung abwählen', 'politische Entscheidungen rückgängig machen', 'wichtige Anliegen aus der Bevölkerung politisch durchsetzen'],
     correctIndex: 3
   },
   {
@@ -255,7 +255,7 @@ window.questionsBank = [
     id: 37,
     section: '1 Demokratie und Föderalismus',
     question: 'Was ist die zentrale Aufgabe der Bundesversammlung (Bundesparlament)?',
-    answers: ['Sie organisiert Wahlen und Abstimmungen.', 'Sie berät und beschliesst Gesetze.', 'Sie führt die Regierungsgeschäfte in der Schweiz.', 'Sie fällt Gerichtsurteile in letzter Instanz.'],
+    answers: ['Sie organisiert Wahlen und Abstimmungen', 'Sie berät und beschliesst Gesetze', 'Sie führt die Regierungsgeschäfte in der Schweiz', 'Sie fällt Gerichtsurteile in letzter Instanz'],
     correctIndex: 1
   },
   {
@@ -269,7 +269,7 @@ window.questionsBank = [
     id: 39,
     section: '1 Demokratie und Föderalismus',
     question: 'Das Bundeshaus in Bern ist der Sitz …',
-    answers: ['des Nationalmuseums.', 'der Bundesversammlung (Schweizer Parlament).', 'der Universität.', 'des Schweizer Fernsehens.'],
+    answers: ['des Nationalmuseums', 'der Bundesversammlung (Schweizer Parlament)', 'der Universität', 'des Schweizer Fernsehens'],
     correctIndex: 1
   },
   {
@@ -290,7 +290,7 @@ window.questionsBank = [
     id: 42,
     section: '1 Demokratie und Föderalismus',
     question: 'Welche Funktion haben die Parteien in einer Demokratie?',
-    answers: ['Sie vertreten verschiedene Interessen und Anliegen der Bevölkerung.', 'Sie wählen die Regierung.', 'Sie kontrollieren die Medien.', 'Sie vermitteln bei Streit zwischen verschiedenen Ämtern.'],
+    answers: ['Sie vertreten verschiedene Interessen und Anliegen der Bevölkerung', 'Sie wählen die Regierung', 'Sie kontrollieren die Medien', 'Sie vermitteln bei Streit zwischen verschiedenen Ämtern'],
     correctIndex: 0
   },
   {
@@ -304,14 +304,14 @@ window.questionsBank = [
     id: 44,
     section: '1 Demokratie und Föderalismus',
     question: 'Was ist die Aufgabe des Ständerates?',
-    answers: ['Er hat nur eine repräsentative Funktion.', 'Er ist die höchste juristische Instanz.', 'Er vertritt vor allem die Interessen der Kantone.', 'Er koordiniert die Planung der Gemeinden.'],
+    answers: ['Er hat nur eine repräsentative Funktion', 'Er ist die höchste juristische Instanz', 'Er vertritt vor allem die Interessen der Kantone', 'Er koordiniert die Planung der Gemeinden'],
     correctIndex: 2
   },
   {
     id: 45,
     section: '1 Demokratie und Föderalismus',
     question: 'Was machen Nationalrat und Ständerat gemeinsam?',
-    answers: ['Sie entscheiden über internationale Verträge.', 'Sie wählen die Mitglieder des Bundesrats und des Bundesgerichts.', 'Sie entwerfen das Bundesbudget.', 'Sie fällen im Bundesgericht Urteile.'],
+    answers: ['Sie entscheiden über internationale Verträge', 'Sie wählen die Mitglieder des Bundesrats und des Bundesgerichts', 'Sie entwerfen das Bundesbudget', 'Sie fällen im Bundesgericht Urteile'],
     correctIndex: 1
   },
   {
@@ -339,7 +339,7 @@ window.questionsBank = [
     id: 49,
     section: '1 Demokratie und Föderalismus',
     question: 'Durch eine Volksinitiative kann …',
-    answers: ['der National- und Ständerat abgesetzt werden.', 'die Bundesverfassung geändert werden.', 'das Völkerrecht geändert werden.', 'der Bundesrat ausgetauscht werden.'],
+    answers: ['der National- und Ständerat abgesetzt werden', 'die Bundesverfassung geändert werden', 'das Völkerrecht geändert werden', 'der Bundesrat ausgetauscht werden'],
     correctIndex: 1
   },
   {
@@ -360,28 +360,28 @@ window.questionsBank = [
     id: 52,
     section: '1 Demokratie und Föderalismus',
     question: 'Was ist eine wichtige Aufgabe des Bundesstaats?',
-    answers: ['Er sorgt für soziale Sicherheit.', 'Er organisiert die Arbeit in Fabriken und Betrieben.', 'Er garantiert günstigen Wohnraum für alle.', 'Er gibt verschiedene Tageszeitungen in allen Landessprachen heraus.'],
+    answers: ['Er sorgt für soziale Sicherheit', 'Er organisiert die Arbeit in Fabriken und Betrieben', 'Er garantiert günstigen Wohnraum für alle', 'Er gibt verschiedene Tageszeitungen in allen Landessprachen heraus'],
     correctIndex: 0
   },
   {
     id: 53,
     section: '1 Demokratie und Föderalismus',
     question: 'Was ist eine wichtige Aufgabe des Bundes?',
-    answers: ['Er fördert die Gründung von Vereinen.', 'Er unterstützt die Gründung von Firmen.', 'Er sorgt für die innere und äussere Sicherheit.', 'Er unterhält eigene Spitäler und Kliniken.'],
+    answers: ['Er fördert die Gründung von Vereinen', 'Er unterstützt die Gründung von Firmen', 'Er sorgt für die innere und äussere Sicherheit', 'Er unterhält eigene Spitäler und Kliniken'],
     correctIndex: 2
   },
   {
     id: 54,
     section: '1 Demokratie und Föderalismus',
     question: 'Was ist eine wichtige Aufgabe des Bundes?',
-    answers: ['Er finanziert die Herstellung von Autos.', 'Er sorgt für den Schutz der Umwelt.', 'Er bestimmt die Leitzinsen der Nationalbank.', 'Er unterhält eigene Elektrizitätswerke.'],
+    answers: ['Er finanziert die Herstellung von Autos', 'Er sorgt für den Schutz der Umwelt', 'Er bestimmt die Leitzinsen der Nationalbank', 'Er unterhält eigene Elektrizitätswerke'],
     correctIndex: 1
   },
   {
     id: 55,
     section: '1 Demokratie und Föderalismus',
     question: 'Der Schweizer Bundesstaat besteht aus verschiedenen. . .',
-    answers: ['Bundesländern.', 'Kantonen.', 'Distrikten.', 'Provinzen.'],
+    answers: ['Bundesländern', 'Kantonen', 'Distrikten', 'Provinzen'],
     correctIndex: 1
   },
   {
@@ -493,14 +493,14 @@ window.questionsBank = [
     id: 71,
     section: '1 Demokratie und Föderalismus',
     question: 'Was ist die Aufgabe der Richterinnen und Richter?',
-    answers: ['Sie überwachen die Verwaltung.', 'Sie fällen Gerichtsurteile.', 'Sie verteidigen die Angeklagten.', 'Sie verfassen Gesetze.'],
+    answers: ['Sie überwachen die Verwaltung', 'Sie fällen Gerichtsurteile', 'Sie verteidigen die Angeklagten', 'Sie verfassen Gesetze'],
     correctIndex: 1
   },
   {
     id: 72,
     section: '1 Demokratie und Föderalismus',
     question: 'Was ist eine Aufgabe der Polizei?',
-    answers: ['Sie hilft bei der Steuererklärung.', 'Sie verfolgt Rechtsverletzungen.', 'Sie erlässt neue Gesetze.', 'Sie fällt Gerichtsurteile'],
+    answers: ['Sie hilft bei der Steuererklärung', 'Sie verfolgt Rechtsverletzungen', 'Sie erlässt neue Gesetze', 'Sie fällt Gerichtsurteile'],
     correctIndex: 1
   },
   {
@@ -514,14 +514,14 @@ window.questionsBank = [
     id: 74,
     section: '1 Demokratie und Föderalismus',
     question: 'Was bedeutet Gewaltenteilung?',
-    answers: ['Polizei und Militär dürfen beide Gewalt anwenden.', 'Die Verteilung der Macht auf Staat und Kirche.', 'Die Verteilung der Staatsgewalt auf verschiedene Staatsorgane wie Regierung, Parlament und Gerichte.', 'Die Verteilung der Macht auf den Nationalrat und den Ständerat.'],
+    answers: ['Polizei und Militär dürfen beide Gewalt anwenden', 'Die Verteilung der Macht auf Staat und Kirche', 'Die Verteilung der Staatsgewalt auf verschiedene Staatsorgane wie Regierung, Parlament und Gerichte', 'Die Verteilung der Macht auf den Nationalrat und den Ständerat'],
     correctIndex: 2
   },
   {
     id: 75,
     section: '1 Demokratie und Föderalismus',
     question: 'Die Schweiz ist ein Rechtsstaat. Was bedeutet das?',
-    answers: ['Auch der Staat muss sich an die Gesetze halten.', 'Die Gesetze gelten nur für die Personen, die diesen Gesetzen zugestimmt haben.', 'Die Gesetze gelten nur für Schweizer Bürgerinnen und Bürger.', 'Die Gesetze gelten nicht für Politikerinnen und Politiker.'],
+    answers: ['Auch der Staat muss sich an die Gesetze halten', 'Die Gesetze gelten nur für die Personen, die diesen Gesetzen zugestimmt haben', 'Die Gesetze gelten nur für Schweizer Bürgerinnen und Bürger', 'Die Gesetze gelten nicht für Politikerinnen und Politiker'],
     correctIndex: 0
   },
   {
@@ -549,14 +549,14 @@ window.questionsBank = [
     id: 79,
     section: '1 Demokratie und Föderalismus',
     question: 'Frauen und Männer sind laut Verfassung und Gesetz in der Schweiz gleichberechtigt. Was heisst das?',
-    answers: ['Kochen ist Männersache.', 'Frauen und Männer haben grundsätzlich die gleichen Rechte.', 'In politischen Gremien müssen gleich viele Männer wie Frauen vertreten sein.', 'Kindererziehung ist Frauensache.'],
+    answers: ['Kochen ist Männersache', 'Frauen und Männer haben grundsätzlich die gleichen Rechte', 'In politischen Gremien müssen gleich viele Männer wie Frauen vertreten sein', 'Kindererziehung ist Frauensache'],
     correctIndex: 1
   },
   {
     id: 80,
     section: '1 Demokratie und Föderalismus',
     question: 'Was ist in der Schweiz verboten?',
-    answers: ['Man darf keine falschen Behauptungen über Personen öffentlich verbreiten.', 'Man darf die Regierung nicht öffentlich kritisieren.', 'Man darf eine geschlossene Ehe nicht auflösen.', 'Man darf nicht an Demonstrationen teilnehmen.'],
+    answers: ['Man darf keine falschen Behauptungen über Personen öffentlich verbreiten', 'Man darf die Regierung nicht öffentlich kritisieren', 'Man darf eine geschlossene Ehe nicht auflösen', 'Man darf nicht an Demonstrationen teilnehmen'],
     correctIndex: 0
   },
   {
@@ -570,28 +570,28 @@ window.questionsBank = [
     id: 82,
     section: '1 Demokratie und Föderalismus',
     question: 'Welches Recht bekommen Personen erst mit der Einbürgerung?',
-    answers: ['Sie dürfen einem Verein beitreten.', 'Sie dürfen an politischen Wahlen und Abstimmungen auf Bundesebene teilnehmen.', 'Sie dürfen eine Wohnung kaufen.', 'Sie dürfen den Arbeitsplatz frei wählen.'],
+    answers: ['Sie dürfen einem Verein beitreten', 'Sie dürfen an politischen Wahlen und Abstimmungen auf Bundesebene teilnehmen', 'Sie dürfen eine Wohnung kaufen', 'Sie dürfen den Arbeitsplatz frei wählen'],
     correctIndex: 1
   },
   {
     id: 83,
     section: '1 Demokratie und Föderalismus',
     question: 'Durch was wird der Persönlichkeits- oder Datenschutz verletzt?',
-    answers: ['Wenn der persönliche Computer nicht genügend geschützt ist.', 'Wenn eine Person auf einer öffentlichen Strasse fotografiert wird.', 'Wenn eine Zeitung über eine Person berichtet.', 'Wenn private Informationen über einzelne Personen ohne gesetzliche Grundlage oder ohne Zustimmung der Person veröffentlicht werden.'],
+    answers: ['Wenn der persönliche Computer nicht genügend geschützt ist', 'Wenn eine Person auf einer öffentlichen Strasse fotografiert wird', 'Wenn eine Zeitung über eine Person berichtet', 'Wenn private Informationen über einzelne Personen ohne gesetzliche Grundlage oder ohne Zustimmung der Person veröffentlicht werden'],
     correctIndex: 3
   },
   {
     id: 84,
     section: '1 Demokratie und Föderalismus',
     question: 'Was verbietet die Schweizer Bundesverfassung?',
-    answers: ['Man darf im öffentlichen Raum keine religiösen Zeichen tragen.', 'Man darf keine Sammelaktionen für notleidende Menschen durchführen.', 'Es darf niemand gefoltert werden.', 'Man darf nicht ohne Lohn arbeiten.'],
+    answers: ['Man darf im öffentlichen Raum keine religiösen Zeichen tragen', 'Man darf keine Sammelaktionen für notleidende Menschen durchführen', 'Es darf niemand gefoltert werden', 'Man darf nicht ohne Lohn arbeiten'],
     correctIndex: 2
   },
   {
     id: 85,
     section: '1 Demokratie und Föderalismus',
     question: 'Welches Recht ist in der Schweizer Bundesverfassung verankert?',
-    answers: ['Alle Menschen haben ein Recht auf gesunde und kostenlose Ernährung.', 'Das persönliche Eigentum ist geschützt.', 'Man darf Haustiere halten.', 'Man darf kostenlos das Internet benutzen.'],
+    answers: ['Alle Menschen haben ein Recht auf gesunde und kostenlose Ernährung', 'Das persönliche Eigentum ist geschützt', 'Man darf Haustiere halten', 'Man darf kostenlos das Internet benutzen'],
     correctIndex: 1
   },
   {
@@ -619,7 +619,7 @@ window.questionsBank = [
     id: 89,
     section: '1 Demokratie und Föderalismus',
     question: 'Welche Pflicht gilt in der Schweiz nur für Männer?',
-    answers: ['Männer müssen bis zu einem bestimmten Alter Militärdienst oder Zivilschutzdienst leisten.', 'Männer müssen bei Bedarf ein politisches Amt übernehmen.', 'Männer müssen für den Unterhalt der Familie sorgen.', 'Männer müssen mehr Steuern und Krankenkassenprämien bezahlen'],
+    answers: ['Männer müssen bis zu einem bestimmten Alter Militärdienst oder Zivilschutzdienst leisten', 'Männer müssen bei Bedarf ein politisches Amt übernehmen', 'Männer müssen für den Unterhalt der Familie sorgen', 'Männer müssen mehr Steuern und Krankenkassenprämien bezahlen'],
     correctIndex: 0
   },
   {
@@ -633,7 +633,7 @@ window.questionsBank = [
     id: 91,
     section: '1 Demokratie und Föderalismus',
     question: 'Was geschieht in der Schweiz, wenn jemand eine Straftat begeht?',
-    answers: ['Wer gegen ein Gesetz verstossen hat, wird bestraft.', 'Wer Opfer eines Verbrechens geworden ist, darf sich selber rächen.', 'Wer sich selbst anzeigt, bleibt straffrei.', 'Die Opfer eines Verbrechens können zwischen verschiedenen Strafen wählen.'],
+    answers: ['Wer gegen ein Gesetz verstossen hat, wird bestraft', 'Wer Opfer eines Verbrechens geworden ist, darf sich selber rächen', 'Wer sich selbst anzeigt, bleibt straffrei', 'Die Opfer eines Verbrechens können zwischen verschiedenen Strafen wählen'],
     correctIndex: 0
   },
   {
@@ -668,14 +668,14 @@ window.questionsBank = [
     id: 96,
     section: '1 Demokratie und Föderalismus',
     question: 'Wie werden Richterinnen und Richter am Bundesgericht ernannt?',
-    answers: ['Durch die Kantonsparlamente. Jeder Kanton kann einen Richter stellen.', 'Durch ein normales Bewerbungsverfahren mit Vorstellungsgespräch.', 'Durch Wahl des Bundesparlaments.', 'Der Bundesrat hat das Recht, Richter einzusetzen.'],
+    answers: ['Durch die Kantonsparlamente. Jeder Kanton kann einen Richter stellen', 'Durch ein normales Bewerbungsverfahren mit Vorstellungsgespräch', 'Durch Wahl des Bundesparlaments', 'Der Bundesrat hat das Recht, Richter einzusetzen'],
     correctIndex: 2
   },
   {
     id: 97,
     section: '1 Demokratie und Föderalismus',
     question: 'Dürfen Schweizer Bürgerinnen und Bürger an andere Länder ausgeliefert werden?',
-    answers: ['Nein. Dies ist unter keinen Umständen erlaubt.', 'Ja, aber nur an Länder welche demokratisch organisiert sind.', 'Ja, aber nur wenn die Straftat auch in der Schweiz strafbar ist.', 'Grundsätzlich nicht. Ausgenommen für Prozesse vor internationalen Gerichten.'],
+    answers: ['Nein. Dies ist unter keinen Umständen erlaubt', 'Ja, aber nur an Länder welche demokratisch organisiert sind', 'Ja, aber nur wenn die Straftat auch in der Schweiz strafbar ist', 'Grundsätzlich nicht. Ausgenommen für Prozesse vor internationalen Gerichten'],
     correctIndex: 3
   },
   {
@@ -724,7 +724,7 @@ window.questionsBank = [
     id: 104,
     section: '1 Demokratie und Föderalismus',
     question: 'Wie können im Kanton Zürich auch Personen ohne Schweizer Pass politisch aktiv werden?',
-    answers: ['mit einem Referendum.', 'mit einer Petition.', 'mit einem Einsitz in die Regierung.', 'mit einem parlamentarischen Kommissionsantrag.'],
+    answers: ['mit einem Referendum', 'mit einer Petition', 'mit einem Einsitz in die Regierung', 'mit einem parlamentarischen Kommissionsantrag'],
     correctIndex: 1
   },
   {
@@ -773,7 +773,7 @@ window.questionsBank = [
     id: 111,
     section: '1 Demokratie und Föderalismus',
     question: 'Wie werden die Mitglieder der Zürcher Regierung bestimmt?',
-    answers: ['Sie werden von den Parteien ernannt.', 'Sie werden vom Kantonsrat gewählt.', 'Sie werden auf Parteiversammlungen gewählt.', 'Sie werden von den Zürcher Stimmbürgerinnen und Stimmbürgern gewählt.'],
+    answers: ['Sie werden von den Parteien ernannt', 'Sie werden vom Kantonsrat gewählt', 'Sie werden auf Parteiversammlungen gewählt', 'Sie werden von den Zürcher Stimmbürgerinnen und Stimmbürgern gewählt'],
     correctIndex: 3
   },
   {
@@ -801,7 +801,7 @@ window.questionsBank = [
     id: 115,
     section: '1 Demokratie und Föderalismus',
     question: 'Was passiert an einer Gemeindeversammlung?',
-    answers: ['Die Stimmbürgerinnen und Stimmbürger entscheiden über das Budget.', 'Die Einwohnerinnen und Einwohner feiern ein Fest.', 'Die Stimmbürgerinnen und Stimmbürger wählen den Chef oder die Chefin der Feuerwehr.', 'Die Stimmbürgerinnen und Stimmbürger beschliessen neue nationale Gesetze.'],
+    answers: ['Die Stimmbürgerinnen und Stimmbürger entscheiden über das Budget', 'Die Einwohnerinnen und Einwohner feiern ein Fest', 'Die Stimmbürgerinnen und Stimmbürger wählen den Chef oder die Chefin der Feuerwehr', 'Die Stimmbürgerinnen und Stimmbürger beschliessen neue nationale Gesetze'],
     correctIndex: 0
   },
   {
@@ -815,7 +815,7 @@ window.questionsBank = [
     id: 117,
     section: '1 Demokratie und Föderalismus',
     question: 'Was ist eine Aufgabe von Zürcher Gemeinden?',
-    answers: ['Sie bauen Autobahnen.', 'Sie führen das Militär.', 'Sie verkaufen Versicherungen.', 'Sie organisieren die Primarschule.'],
+    answers: ['Sie bauen Autobahnen', 'Sie führen das Militär', 'Sie verkaufen Versicherungen', 'Sie organisieren die Primarschule'],
     correctIndex: 3
   },
   {
@@ -843,7 +843,7 @@ window.questionsBank = [
     id: 121,
     section: '1 Demokratie und Föderalismus',
     question: 'Bürgerinnen und Bürger können auf Gemeindeebene politisch entscheiden, indem sie . . .',
-    answers: ['regelmässig an Volksfesten teilnehmen.', 'die Steuern rechtzeitig bezahlen.', 'in Vereinen mitwirken.', 'an Wahlen und Abstimmungen teilnehmen'],
+    answers: ['regelmässig an Volksfesten teilnehmen', 'die Steuern rechtzeitig bezahlen', 'in Vereinen mitwirken', 'an Wahlen und Abstimmungen teilnehmen'],
     correctIndex: 3
   },
   {
@@ -878,14 +878,14 @@ window.questionsBank = [
     id: 126,
     section: '4 Geografie',
     question: 'Was ist am Gotthard-Basis-Tunnel speziell?',
-    answers: ['Er war der erste Tunnel in Europa.', 'Er ist der einzige Eisenbahntunnel Europas.', 'Er ist der längste Eisenbahntunnel der Welt.', 'Er hat den grössten Tunneldurchmesser der Welt.'],
+    answers: ['Er war der erste Tunnel in Europa', 'Er ist der einzige Eisenbahntunnel Europas', 'Er ist der längste Eisenbahntunnel der Welt', 'Er hat den grössten Tunneldurchmesser der Welt'],
     correctIndex: 2
   },
   {
     id: 127,
     section: '4 Geografie',
     question: 'Simplon, Gotthard, Grosser Sankt Bernhard sind Beispiele für ...',
-    answers: ['Schweizer Käsesorten.', 'Schweizer Hauptverkehrsachsen.', 'Schweizer Naturreservate.', 'Schweizer Alpenpässe.'],
+    answers: ['Schweizer Käsesorten', 'Schweizer Hauptverkehrsachsen', 'Schweizer Naturreservate', 'Schweizer Alpenpässe'],
     correctIndex: 3
   },
   {
@@ -906,21 +906,21 @@ window.questionsBank = [
     id: 130,
     section: '4 Geografie',
     question: 'Rund zwei Drittel der ausländischen Bevölkerung der Schweiz ...',
-    answers: ['kommen aus einem EU-Land.', 'kommen aus Italien.', 'sprechen fliessend Englisch.', 'leben in der Ostschweiz.'],
+    answers: ['kommen aus einem EU-Land', 'kommen aus Italien', 'sprechen fliessend Englisch', 'leben in der Ostschweiz'],
     correctIndex: 0
   },
   {
     id: 131,
     section: '4 Geografie',
     question: 'Aus geografischer Sicht ist die Schweiz ...',
-    answers: ['ein Binnenland.', 'eine Exklave.', 'ein Kontinent.', 'eine Insel.'],
+    answers: ['ein Binnenland', 'eine Exklave', 'ein Kontinent', 'eine Insel'],
     correctIndex: 0
   },
   {
     id: 132,
     section: '4 Geografie',
     question: 'Über das Eisenbahnnetz der Schweiz sagt man, ...',
-    answers: ['es sei das schönste der Welt.', 'es sei das dichteste der Welt.', 'es sei das längste der Welt.', 'es sei das billigste der Welt.'],
+    answers: ['es sei das schönste der Welt', 'es sei das dichteste der Welt', 'es sei das längste der Welt', 'es sei das billigste der Welt'],
     correctIndex: 1
   },
   {
@@ -983,7 +983,7 @@ window.questionsBank = [
     id: 141,
     section: '4 Geografie',
     question: 'Wie reagieren Förster auf den Anstieg der Temperaturen wegen des Klimawandels?',
-    answers: ['Sie holzen die Wälder ab.', 'Sie pflanzen andere Baumsorten.', 'Sie besprühen die Wälder.', 'Sie verweigern die Arbeit.'],
+    answers: ['Sie holzen die Wälder ab', 'Sie pflanzen andere Baumsorten', 'Sie besprühen die Wälder', 'Sie verweigern die Arbeit'],
     correctIndex: 1
   },
   {
@@ -997,14 +997,14 @@ window.questionsBank = [
     id: 143,
     section: '4 Geografie',
     question: 'Die Schweiz grenzt im Westen an …',
-    answers: ['Portugal.', 'Spanien.', 'Frankreich.', 'Deutschland.'],
+    answers: ['Portugal', 'Spanien', 'Frankreich', 'Deutschland'],
     correctIndex: 2
   },
   {
     id: 144,
     section: '4 Geografie',
     question: 'Das Nachbarland im Süden der Schweiz ist …',
-    answers: ['Spanien.', 'Kroatien.', 'Liechtenstein.', 'Italien.'],
+    answers: ['Spanien', 'Kroatien', 'Liechtenstein', 'Italien'],
     correctIndex: 3
   },
   {
@@ -1095,7 +1095,7 @@ window.questionsBank = [
     id: 157,
     section: '4 Geografie',
     question: 'Geografisch gehört der Kanton Zürich ...',
-    answers: ['zum Jura.', 'zur Seenplatte.', 'zum Mittelland.', 'zur Tössebene.'],
+    answers: ['zum Jura', 'zur Seenplatte', 'zum Mittelland', 'zur Tössebene'],
     correctIndex: 2
   },
   {
@@ -1214,7 +1214,7 @@ window.questionsBank = [
     id: 174,
     section: '5 Kultur und Alltagskultur',
     question: 'Die Basler Fasnacht wird mit dem «Morgestraich» an einem Montag um 4 Uhr morgens angepfiffen. Was passiert dann?',
-    answers: ['Alle Baslerinnen und Basler beginnen zu singen.', 'Die Vorsitzenden der Fasnachtsgruppen halten Reden.', 'Die Strassenlichter werden gelöscht und die Pfeifer und Trommler beginnen zu speilen', 'Brennende Besen werden durch die Stadt getragen.'],
+    answers: ['Alle Baslerinnen und Basler beginnen zu singen', 'Die Vorsitzenden der Fasnachtsgruppen halten Reden', 'Die Strassenlichter werden gelöscht und die Pfeifer und Trommler beginnen zu speilen', 'Brennende Besen werden durch die Stadt getragen'],
     correctIndex: 2
   },
   {
@@ -1242,7 +1242,7 @@ window.questionsBank = [
     id: 178,
     section: '5 Kultur und Alltagskultur',
     question: 'SBB, BLS, SOB, SZU sind Abkürzungen für Schweizer ...',
-    answers: ['Gewerkschaften.', 'Kulturvereine.', 'Eisenbahngesellschaften.', 'Seilbahngesellschaften.'],
+    answers: ['Gewerkschaften', 'Kulturvereine', 'Eisenbahngesellschaften', 'Seilbahngesellschaften'],
     correctIndex: 2
   },
   {
@@ -1270,14 +1270,14 @@ window.questionsBank = [
     id: 182,
     section: '5 Kultur und Alltagskultur',
     question: 'Was ist eine bäuerliche kulturelle Tradition der Schweiz?',
-    answers: ['Didgeridoo spielen.', 'Kastagnetten schlagen.', 'Jodeln.', 'Bembé Trommel spielen.'],
+    answers: ['Didgeridoo spielen', 'Kastagnetten schlagen', 'Jodeln', 'Bembé Trommel spielen'],
     correctIndex: 2
   },
   {
     id: 183,
     section: '5 Kultur und Alltagskultur',
     question: 'Was braucht man zum Jodeln?',
-    answers: ['Holzschuhe.', 'eine kleine Pfeife.', 'die Hände.', 'die Stimme.'],
+    answers: ['Holzschuhe', 'eine kleine Pfeife', 'die Hände', 'die Stimme'],
     correctIndex: 3
   },
   {
@@ -1305,7 +1305,7 @@ window.questionsBank = [
     id: 187,
     section: '5 Kultur und Alltagskultur',
     question: 'Roger Federer ist ein bekannter Schweizer …',
-    answers: ['Tennisspieler.', 'Fussballspieler.', 'Skirennfahrer.', 'Filmschauspieler.'],
+    answers: ['Tennisspieler', 'Fussballspieler', 'Skirennfahrer', 'Filmschauspieler'],
     correctIndex: 0
   },
   {
@@ -1326,7 +1326,7 @@ window.questionsBank = [
     id: 190,
     section: '5 Kultur und Alltagskultur',
     question: 'Die Stadt Bern ist politisch wichtig. Warum?',
-    answers: ['Sie ist Sitz der FIFA.', 'Sie ist die Hauptstadt der Schweiz.', 'Sie ist der Sitz der UNO (Vereinte Nationen).', 'Sie ist der Sitz des Europarats.'],
+    answers: ['Sie ist Sitz der FIFA', 'Sie ist die Hauptstadt der Schweiz', 'Sie ist der Sitz der UNO (Vereinte Nationen)', 'Sie ist der Sitz des Europarats'],
     correctIndex: 1
   },
   {
@@ -1382,14 +1382,14 @@ window.questionsBank = [
     id: 198,
     section: '5 Kultur und Alltagskultur',
     question: 'Max Frisch (1911-1991) und Friedrich Dürrenmatt (1921-1990) waren bekannte Schweizer …',
-    answers: ['Komponisten.', 'Schriftsteller.', 'Unternehmer.', 'Journalisten.'],
+    answers: ['Komponisten', 'Schriftsteller', 'Unternehmer', 'Journalisten'],
     correctIndex: 1
   },
   {
     id: 199,
     section: '5 Kultur und Alltagskultur',
     question: 'Niki de Saint-Phalle, Sophie Täuber-Arp und Pipilotti Rist sind international berühmte Schweizer …',
-    answers: ['Politikerinnen.', 'Sportlerinnen.', 'Ingenieurinnen.', 'Künstlerinnen.'],
+    answers: ['Politikerinnen', 'Sportlerinnen', 'Ingenieurinnen', 'Künstlerinnen'],
     correctIndex: 3
   },
   {
@@ -1417,7 +1417,7 @@ window.questionsBank = [
     id: 203,
     section: '5 Kultur und Alltagskultur',
     question: 'Wie ist das Verhältnis der Schweiz zur Europäischen Union (EU) geregelt?',
-    answers: ['Sie ist Mitglied der EU.', 'Sie hat mit der EU die Bilateralen Verträge abgeschlossen.', 'Sie hat mit allen EU-Mitgliedstaaten Einzelverträge abgeschlossen.', 'Sie ist gegenüber der EU vollständig unabhängig.'],
+    answers: ['Sie ist Mitglied der EU', 'Sie hat mit der EU die Bilateralen Verträge abgeschlossen', 'Sie hat mit allen EU-Mitgliedstaaten Einzelverträge abgeschlossen', 'Sie ist gegenüber der EU vollständig unabhängig'],
     correctIndex: 1
   },
   {
@@ -1459,7 +1459,7 @@ window.questionsBank = [
     id: 209,
     section: '5 Kultur und Alltagskultur',
     question: 'Man sagt: Je schneller am Sechseläuten der "Böögg" (SchneemannPuppe) auf dem Scheiterhaufen den Kopf verliert, desto ...',
-    answers: ['kälter wird der Zürichsee im Sommer.', 'schöner wird der nächste Sommer.', 'mehr Kinder wird es im kommenden Jahr geben.', 'besser wird die Wirtschaft im kommenden Jahr laufen.'],
+    answers: ['kälter wird der Zürichsee im Sommer', 'schöner wird der nächste Sommer', 'mehr Kinder wird es im kommenden Jahr geben', 'besser wird die Wirtschaft im kommenden Jahr laufen'],
     correctIndex: 1
   },
   {
@@ -1515,14 +1515,14 @@ window.questionsBank = [
     id: 217,
     section: '5 Kultur und Alltagskultur',
     question: 'Gottfried Keller (1819-1890) war ein bekannter Zürcher ...',
-    answers: ['Erfinder.', 'Schriftsteller.', 'reformierter Pfarrer.', 'Fabrikant.'],
+    answers: ['Erfinder', 'Schriftsteller', 'reformierter Pfarrer', 'Fabrikant'],
     correctIndex: 1
   },
   {
     id: 218,
     section: '2 Sozialstaat und Zivilgesellschaft',
     question: 'Die Steuererklärung ...',
-    answers: ['beschreibt das Vorgehen bei Abgabe der Steuer.', 'weist die finanzielle Situation des Steuerzahlenden gegenüber der Steuerbehörde aus.', 'belegt gegenüber der Steuerbehörde die Lotteriegewinne.', 'beschreibt, wie man die Formulare für die Steuerbehörde ausfüllen muss.'],
+    answers: ['beschreibt das Vorgehen bei Abgabe der Steuer', 'weist die finanzielle Situation des Steuerzahlenden gegenüber der Steuerbehörde aus', 'belegt gegenüber der Steuerbehörde die Lotteriegewinne', 'beschreibt, wie man die Formulare für die Steuerbehörde ausfüllen muss'],
     correctIndex: 1
   },
   {
@@ -1543,28 +1543,28 @@ window.questionsBank = [
     id: 221,
     section: '2 Sozialstaat und Zivilgesellschaft',
     question: 'Arbeitnehmende und Selbständigerwerbende mit Kindern haben Anspruch auf …',
-    answers: ['Kinderbegünstigung.', 'Elternentlastung', 'Familienzulage.', 'Finanzhilfe.'],
+    answers: ['Kinderbegünstigung', 'Elternentlastung', 'Familienzulage', 'Finanzhilfe'],
     correctIndex: 2
   },
   {
     id: 222,
     section: '2 Sozialstaat und Zivilgesellschaft',
     question: 'Der Zivildienst in der Schweiz ist …',
-    answers: ['für alle Männer und Frauen obligatorisch.', 'ein freiwilliger Einsatz für die Gesellschaft.', 'ein Ersatz zum Militärdienst.', 'ein Freifach der obligatorischen Schule.'],
+    answers: ['für alle Männer und Frauen obligatorisch', 'ein freiwilliger Einsatz für die Gesellschaft', 'ein Ersatz zum Militärdienst', 'ein Freifach der obligatorischen Schule'],
     correctIndex: 2
   },
   {
     id: 223,
     section: '2 Sozialstaat und Zivilgesellschaft',
     question: 'Welche Aussage zur obligatorischen Versicherung in einer Krankenkasse in der Schweiz ist richtig?',
-    answers: ['Jede Krankenkasse bestimmt ihre Leistungen selbst.', 'Man kann die Krankenkasse frei wählen.', 'Es ist freiwillig, eine Krankenkasse zu haben', 'Der Kanton kann seinen Einwohnerinnen und Einwohnern eine Krankenkasse zuteilen.'],
+    answers: ['Jede Krankenkasse bestimmt ihre Leistungen selbst', 'Man kann die Krankenkasse frei wählen', 'Es ist freiwillig, eine Krankenkasse zu haben', 'Der Kanton kann seinen Einwohnerinnen und Einwohnern eine Krankenkasse zuteilen'],
     correctIndex: 1
   },
   {
     id: 224,
     section: '2 Sozialstaat und Zivilgesellschaft',
     question: 'Wann dürfen Einwohnerinnen und Einwohner ohne Schweizer Pass an\nnationalen Abstimmungen teilnehmen?',
-    answers: ['nur bei Abstimmungen über Volksinitiativen', 'nur bei nationalen Referenden', 'Sie dürfen gar nicht abstimmen.', 'nur bei den Abstimmungen Ende Jahr'],
+    answers: ['nur bei Abstimmungen über Volksinitiativen', 'nur bei nationalen Referenden', 'Sie dürfen gar nicht abstimmen', 'nur bei den Abstimmungen Ende Jahr'],
     correctIndex: 2
   },
   {
@@ -1634,7 +1634,7 @@ window.questionsBank = [
     id: 234,
     section: '2 Sozialstaat und Zivilgesellschaft',
     question: 'In der Schweiz sind seit 2002 Abtreibungen mit der Fristenlösung geregelt. Was bedeutet das?',
-    answers: ['Eine Frau darf bis zur 12. Woche der Schwangerschaft frei entscheiden, ob sie\ndas Kind behalten will.', 'Eine Frau braucht die Erlaubnis ihres Ehemannes, um abzutreiben.', 'Abtreibung ist in jedem Fall verboten.', 'Abtreibung ist nur erlaubt, wenn die Eltern nicht verheiratet sind.'],
+    answers: ['Eine Frau darf bis zur 12. Woche der Schwangerschaft frei entscheiden, ob sie\ndas Kind behalten will', 'Eine Frau braucht die Erlaubnis ihres Ehemannes, um abzutreiben', 'Abtreibung ist in jedem Fall verboten', 'Abtreibung ist nur erlaubt, wenn die Eltern nicht verheiratet sind'],
     correctIndex: 0
   },
   {
@@ -1662,14 +1662,14 @@ window.questionsBank = [
     id: 238,
     section: '2 Sozialstaat und Zivilgesellschaft',
     question: 'Wenn man mit der Steuerrechnung nicht einverstanden ist, . . .',
-    answers: ['bezahlt man vorläufig nur die Hälfte des Betrags.', 'muss man sie an die Steuerbehörden zurück schicken.', 'muss man sich bei der Polizei melden.', 'kann man bei der Steuerbehörde schriftlich seine Einwände dagegen mitteilen.'],
+    answers: ['bezahlt man vorläufig nur die Hälfte des Betrags', 'muss man sie an die Steuerbehörden zurück schicken', 'muss man sich bei der Polizei melden', 'kann man bei der Steuerbehörde schriftlich seine Einwände dagegen mitteilen'],
     correctIndex: 3
   },
   {
     id: 239,
     section: '2 Sozialstaat und Zivilgesellschaft',
     question: 'Wie unterstützt der Staat in der Schweiz die Familien?',
-    answers: ['Es gibt keine Unterstützung.', 'mit kostenlosem Internet', 'mit kostengünstigen Lebensmitteln', 'mit Steuerabzügen'],
+    answers: ['Es gibt keine Unterstützung', 'mit kostenlosem Internet', 'mit kostengünstigen Lebensmitteln', 'mit Steuerabzügen'],
     correctIndex: 3
   },
   {
@@ -1690,7 +1690,7 @@ window.questionsBank = [
     id: 242,
     section: '2 Sozialstaat und Zivilgesellschaft',
     question: 'Was wird Angestellten direkt vom Lohn abgezogen? Der Beitrag für die . . .',
-    answers: ['Auto- und Unfallversicherung (AUV)', 'Arbeitslosenversicherung (ALV).', 'Diebstahlversicherung (DV).', 'Brandschutzversicherung (BSV).'],
+    answers: ['Auto- und Unfallversicherung (AUV)', 'Arbeitslosenversicherung (ALV)', 'Diebstahlversicherung (DV)', 'Brandschutzversicherung (BSV)'],
     correctIndex: 1
   },
   {
@@ -1746,7 +1746,7 @@ window.questionsBank = [
     id: 250,
     section: '2 Sozialstaat und Zivilgesellschaft',
     question: 'Ab wann muss ein Kind in der Schweiz eine Krankenversicherung haben?',
-    answers: ['ab spätestens einem Jahr nach der Geburt', 'ab Schuleintritt', 'ab spätestens drei Monaten nach der Geburt', 'Ein Kind braucht keine eigene Krankenversicherung.'],
+    answers: ['ab spätestens einem Jahr nach der Geburt', 'ab Schuleintritt', 'ab spätestens drei Monaten nach der Geburt', 'Ein Kind braucht keine eigene Krankenversicherung'],
     correctIndex: 2
   },
   {
@@ -1767,7 +1767,7 @@ window.questionsBank = [
     id: 253,
     section: '2 Sozialstaat und Zivilgesellschaft',
     question: 'Die Erziehung der Kinder ist vor allem Aufgabe …',
-    answers: ['des Staats.', 'der Grosseltern.', 'der Eltern.', 'der Schulen.'],
+    answers: ['des Staats', 'der Grosseltern', 'der Eltern', 'der Schulen'],
     correctIndex: 2
   },
   {
@@ -1781,7 +1781,7 @@ window.questionsBank = [
     id: 255,
     section: '2 Sozialstaat und Zivilgesellschaft',
     question: 'Eine Angestellte darf nicht entlassen werden, wenn sie …',
-    answers: ['immer pünktlich war.', 'die Kündigung ablehnt.', 'schwanger ist.', 'schon lange im Betrieb gearbeitet hat.'],
+    answers: ['immer pünktlich war', 'die Kündigung ablehnt', 'schwanger ist', 'schon lange im Betrieb gearbeitet hat'],
     correctIndex: 2
   },
   {
@@ -1949,7 +1949,7 @@ window.questionsBank = [
     id: 279,
     section: '2 Sozialstaat und Zivilgesellschaft',
     question: 'Was ist eine Voraussetzung für eine Eheschliessung in der Schweiz?',
-    answers: ['Beide Partner müssen mindestens 16 Jahre alt sein.', 'Die Partner müssen bereits in einer eingetragenen Partnerschaft leben.', 'Die Partner müssen den gleichen Wohnsitz haben.', 'Die Partner dürfen nicht eng verwandt sein.'],
+    answers: ['Beide Partner müssen mindestens 16 Jahre alt sein', 'Die Partner müssen bereits in einer eingetragenen Partnerschaft leben', 'Die Partner müssen den gleichen Wohnsitz haben', 'Die Partner dürfen nicht eng verwandt sein'],
     correctIndex: 3
   },
   {
@@ -1970,14 +1970,14 @@ window.questionsBank = [
     id: 282,
     section: '2 Sozialstaat und Zivilgesellschaft',
     question: 'Besitzer eines Hundes müssen für ihren Hund …',
-    answers: ['einen Namen haben.', 'eine Geburtsurkunde besitzen.', 'Hundesteuern zahlen.', 'eine Krankenversicherung abschliessen.'],
+    answers: ['einen Namen haben', 'eine Geburtsurkunde besitzen', 'Hundesteuern zahlen', 'eine Krankenversicherung abschliessen'],
     correctIndex: 2
   },
   {
     id: 283,
     section: '2 Sozialstaat und Zivilgesellschaft',
     question: 'Wann kann jemand sogenannte Ergänzungsleistungen beziehen?',
-    answers: ['Wenn man eine Lehrstelle in einem Betrieb hat.', 'Wenn man den Mindestlohn nicht erreicht.', 'Wenn man trotz IV- oder AHV-Rente das Existenzminimum nicht erreicht.', 'Wenn man arbeitslos ist.'],
+    answers: ['Wenn man eine Lehrstelle in einem Betrieb hat', 'Wenn man den Mindestlohn nicht erreicht', 'Wenn man trotz IV- oder AHV-Rente das Existenzminimum nicht erreicht', 'Wenn man arbeitslos ist'],
     correctIndex: 2
   },
   {
@@ -2026,14 +2026,14 @@ window.questionsBank = [
     id: 290,
     section: '2 Sozialstaat und Zivilgesellschaft',
     question: 'Was ist ein Quartierverein?',
-    answers: ['Ein Verein, der die Rechte eines Quartiers gegenüber dem Bund und dem Kanton regelt.', 'Ein Verein, der für die Interessen der Bewohnerinnen und Bewohner eines Quartiers gegenüber Behörden eintritt und das gesellschaftliche Leben fördert.', 'Ein Verein, in dem Bewohnerinnen und Bewohner eines Quartiers automatisch Mitglied sind.', 'Ein Verein, der die Verkehrswege innerhalb eines Quartiers regelt und die Einhaltung der Verkehrsvorschriften kontrolliert.'],
+    answers: ['Ein Verein, der die Rechte eines Quartiers gegenüber dem Bund und dem Kanton regelt', 'Ein Verein, der für die Interessen der Bewohnerinnen und Bewohner eines Quartiers gegenüber Behörden eintritt und das gesellschaftliche Leben fördert', 'Ein Verein, in dem Bewohnerinnen und Bewohner eines Quartiers automatisch Mitglied sind', 'Ein Verein, der die Verkehrswege innerhalb eines Quartiers regelt und die Einhaltung der Verkehrsvorschriften kontrolliert'],
     correctIndex: 1
   },
   {
     id: 291,
     section: '2 Sozialstaat und Zivilgesellschaft',
     question: 'Was will der Finanzausgleich zwischen den Gemeinden?',
-    answers: ['Er soll helfen, die Korruption zu bekämpfen.', 'Er soll helfen, eine Inflation zu vermeiden.', 'Er zwingt arme Gemeinden zur Erledigung ihrer Pflichten (Schulen, Altersheime, usw.).', 'Er unterstützt arme Gemeinden oder Gemeinden mit hohen Sozialausgaben bei\nder Erledigung ihrer Aufgaben.'],
+    answers: ['Er soll helfen, die Korruption zu bekämpfen', 'Er soll helfen, eine Inflation zu vermeiden', 'Er zwingt arme Gemeinden zur Erledigung ihrer Pflichten (Schulen, Altersheime, usw.)', 'Er unterstützt arme Gemeinden oder Gemeinden mit hohen Sozialausgaben bei\nder Erledigung ihrer Aufgaben'],
     correctIndex: 3
   },
   {
@@ -2103,7 +2103,7 @@ window.questionsBank = [
     id: 301,
     section: '3 Geschichte',
     question: 'Beim Landesstreik 1918 forderten die Arbeitenden mehr Rechte. Was war eine Folge des Landesstreiks?',
-    answers: ['Die 48-Stunden-Woche wurde eingeführt.', 'Die Arbeitenden konnten mit der Eisenbahn gratis zur Arbeit fahren.', 'Arbeitenden bekamen 6 Wochen Ferien.', 'Die Fabriken wurden Eigentum des Staates.'],
+    answers: ['Die 48-Stunden-Woche wurde eingeführt', 'Die Arbeitenden konnten mit der Eisenbahn gratis zur Arbeit fahren', 'Arbeitenden bekamen 6 Wochen Ferien', 'Die Fabriken wurden Eigentum des Staates'],
     correctIndex: 0
   },
   {
@@ -2159,7 +2159,7 @@ window.questionsBank = [
     id: 309,
     section: '3 Geschichte',
     question: 'Warum kamen viele Menschen in den 1990-er Jahren aus (Ex-)Jugoslawien in die Schweiz?',
-    answers: ['Sie wollten an einer Schweizer Universität studieren.', 'Sie wollten ihre Verwandten besuchen und die Schweiz bereisen.', 'Sie flohen vor dem Krieg aus ihrer Heimat.', 'Sie wurden beim Staudammprojekt Grand-Dixence als Arbeitskräfte benötigt.'],
+    answers: ['Sie wollten an einer Schweizer Universität studieren', 'Sie wollten ihre Verwandten besuchen und die Schweiz bereisen', 'Sie flohen vor dem Krieg aus ihrer Heimat', 'Sie wurden beim Staudammprojekt Grand-Dixence als Arbeitskräfte benötigt'],
     correctIndex: 2
   },
   {
@@ -2187,7 +2187,7 @@ window.questionsBank = [
     id: 313,
     section: '3 Geschichte',
     question: 'Im 19. Jahrhundert wandelte sich die Schweiz ...',
-    answers: ['vom Bundesstaat zum Zentralstaat.', 'zu einer europäischen Grossmacht.', 'zu einer Kolonialmacht.', 'vom Agrarstaat zum Industriestaat.'],
+    answers: ['vom Bundesstaat zum Zentralstaat', 'zu einer europäischen Grossmacht', 'zu einer Kolonialmacht', 'vom Agrarstaat zum Industriestaat'],
     correctIndex: 3
   },
   {
@@ -2201,7 +2201,7 @@ window.questionsBank = [
     id: 315,
     section: '3 Geschichte',
     question: 'Während der kolonialen Herrschaft Europas ...',
-    answers: ['hatte die Schweiz Kolonien in Asien und Afrika.', 'waren Schweizer Söldner in Russland aktiv.', 'exportierte die Schweiz Gewürze nach Nordamerika.', 'konnte sich die Schweiz dank Zugang zu Rohstoffen als Industrienation etablieren.'],
+    answers: ['hatte die Schweiz Kolonien in Asien und Afrika', 'waren Schweizer Söldner in Russland aktiv', 'exportierte die Schweiz Gewürze nach Nordamerika', 'konnte sich die Schweiz dank Zugang zu Rohstoffen als Industrienation etablieren'],
     correctIndex: 3
   },
   {
@@ -2235,8 +2235,8 @@ window.questionsBank = [
   {
     id: 320,
     section: '3 Geschichte',
-    question: 'm Jahr 1515 verloren die Eidgenossen die Schlacht bei Marignano. Welche Folgen hatte diese Niederlage?',
-    answers: ['Die Eidgenossen verzichteten auf die Eroberung weiterer Gebiete.', 'Die Schweiz schaffte ihre Armee ab.', 'Die Bauern wehrten sich gegen die Regierungen in Bern, Zürich und Luzern.', 'Die Eidgenossen überfielen die Stadt Zürich.'],
+    question: 'Im Jahr 1515 verloren die Eidgenossen die Schlacht bei Marignano. Welche Folgen hatte diese Niederlage?',
+    answers: ['Die Eidgenossen verzichteten auf die Eroberung weiterer Gebiete', 'Die Schweiz schaffte ihre Armee ab', 'Die Bauern wehrten sich gegen die Regierungen in Bern, Zürich und Luzern', 'Die Eidgenossen überfielen die Stadt Zürich'],
     correctIndex: 0
   },
   {
@@ -2292,7 +2292,7 @@ window.questionsBank = [
     id: 328,
     section: '3 Geschichte',
     question: 'Im Jahr 1877 hat man die Kinderarbeit in der Schweiz verboten. Warum?',
-    answers: ['Kinder mussten zuhause auf den Bauernhöfen mithelfen.', 'Kinder konnten bei schweren und gefährlichen Arbeiten sowieso nicht eingesetzt werden.', 'Kinder konnten nicht zur Schule gehen, weil sie in Fabriken arbeiteten.', 'Kinder wurden zur Arbeit ausgeliehen. Sie verdienten dort aber zu wenig.'],
+    answers: ['Kinder mussten zuhause auf den Bauernhöfen mithelfen', 'Kinder konnten bei schweren und gefährlichen Arbeiten sowieso nicht eingesetzt werden', 'Kinder konnten nicht zur Schule gehen, weil sie in Fabriken arbeiteten', 'Kinder wurden zur Arbeit ausgeliehen. Sie verdienten dort aber zu wenig'],
     correctIndex: 2
   },
   {
@@ -2348,7 +2348,7 @@ window.questionsBank = [
     id: 336,
     section: '3 Geschichte',
     question: 'Weshalb wanderten viele Schweizerinnen und Schweizer im 19. Jahrhundert aus?',
-    answers: ['Weil sie in der Schweiz politisch verfolgt wurden.', 'Weil sie Berufserfahrung sammeln wollten.', 'Weil Hunger, Armut und Arbeitslosigkeit herrschte.', 'Weil sie Lust auf Abenteuer hatten.'],
+    answers: ['Weil sie in der Schweiz politisch verfolgt wurden', 'Weil sie Berufserfahrung sammeln wollten', 'Weil Hunger, Armut und Arbeitslosigkeit herrschte', 'Weil sie Lust auf Abenteuer hatten'],
     correctIndex: 2
   },
   {
@@ -2376,7 +2376,7 @@ window.questionsBank = [
     id: 340,
     section: '3 Geschichte',
     question: 'Von 5000 bis 1000 vor Christus bauten die Menschen am Zürichsee …',
-    answers: ['Iglus.', 'Pfahlbauten.', 'Kirchen.', 'Höhlensysteme.'],
+    answers: ['Iglus', 'Pfahlbauten', 'Kirchen', 'Höhlensysteme'],
     correctIndex: 1
   },
   {
@@ -2390,7 +2390,7 @@ window.questionsBank = [
     id: 342,
     section: '3 Geschichte',
     question: 'Ulrich Zwingli (1484-1531) war ein bekannter . . .',
-    answers: ['Reformator in Zürich.', 'Unternehmer.', 'Naturwissenschaftler.', 'Musiker.'],
+    answers: ['Reformator in Zürich', 'Unternehmer', 'Naturwissenschaftler', 'Musiker'],
     correctIndex: 0
   },
   {
