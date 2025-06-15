@@ -502,8 +502,10 @@
 
   navLinks.forEach(link => {
 	link.addEventListener('click', e => {
+	  const href = link.getAttribute('href');
+	  if (href.startsWith('#')) {
 		e.preventDefault();
-		const targetId = link.getAttribute('href').substring(1);
+		const targetId = href.substring(1);
 		if (targetId === 'practice') {
 		  startPracticeTest();
 		} else if (targetId === 'practice-by-section') {
@@ -511,6 +513,7 @@
 		} else {
 		  navigateToSection(targetId);
 		}
+	  }
 	});
   });
 

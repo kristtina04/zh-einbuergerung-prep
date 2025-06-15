@@ -205,7 +205,7 @@
 	justify-content: space-between;
   }
   .stat-card button {
-  margin-top: auto;
+  margin-top: 32px; /* or 32px for more space */
   }
   
   .stat-value {
@@ -338,9 +338,7 @@
 	.highlight-link:hover {
 	  color: #fde68a;
 	}	
-	.nav-mobile a:last-child {
-		margin-top: auto;
-	}
+
 /* Practice by Section - Responsive and polished layout */
 
 	#practice-by-section {
