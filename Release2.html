@@ -384,8 +384,8 @@
   <div class="logo">Zürich Citizenship Prep</div>
   <nav role="navigation" aria-label="Main navigation">
     <a href="#landing" class="nav-link active">Home</a>
-    <a href="#practice" class="nav-link">Praxis Test</a>
-	<a href="#practice-by-section" class="nav-link">Practice by Section</a>  <!-- release 2 -->
+    <a href="#practice" class="nav-link">Praxis test</a>
+	<a href="#practice-by-section" class="nav-link">Practice by section</a>  <!-- release 2 -->
     <a href="#mistakes" class="nav-link">Fehler statistik</a>
     <a href="#resources" class="nav-link">Materialien</a>
    </nav>
@@ -393,9 +393,9 @@
 </header>
 <nav id="mobile-menu" class="nav-mobile" aria-label="Mobile navigation">
   <a href="#landing" class="nav-link active">Home</a>
-  <a href="#practice" class="nav-link">Praxis Test</a>
-  <a href="#practice-by-section" class="nav-link">Practice by Section</a>  <!-- release 2 -->
-  <a href="#mistakes" class="nav-link">Fehler Statistik</a>
+  <a href="#practice" class="nav-link">Praxis test</a>
+  <a href="#practice-by-section" class="nav-link">Practice by section</a>  <!-- release 2 -->
+  <a href="#mistakes" class="nav-link">Fehler statistik</a>
   <a href="#resources" class="nav-link">Materialien</a>
 </nav>
 <main id="content" tabindex="-1">
@@ -427,7 +427,7 @@
 
  <!-- release 2 start -->
 <section id="practice-by-section" hidden style="padding: 2rem;">
-  <h2 class="section-title">Practice by Section</h2>
+  <h2 class="section-title">Practice by section</h2>
 
   <div class="section-grid">
 	<div class="section-card">
@@ -464,7 +464,7 @@
 
   
   <section id="practice" aria-label="Praxis Test" class="card" hidden>
-    <h2>Praxis Test</h2>
+    <h2>Praxis test</h2>
 	<p id="progress-counter" style="color:#a0aec0; font-weight:500;"></p> <!-- release 2. Show how many questions tried from total pool -->
     <div class="practice-container" id="practice-container" aria-live="polite" aria-atomic="true">
       <!-- Questions and answers will be dynamically injected here -->
@@ -682,8 +682,6 @@
 
   const shuffled = remaining.sort(() => 0.5 - Math.random());
   const selected = shuffled.slice(0, num);
-  const newUsed = [...usedIds, ...selected.map(q => q.id)];
-  saveUsedQuestionIds(newUsed);
   return selected;
   }
   // Release 2 end. Show unique questions from 347 pool
@@ -711,37 +709,47 @@
   }
 
   function onAnswerSelected(e) {
-    const selectedIndex = Number(e.currentTarget.getAttribute('data-index'));
-    const q = currentTestQuestions[currentQuestionIndex];
-    const feedbackDiv = document.getElementById('feedback');
-    const allButtons = practiceContainer.querySelectorAll('button[data-index]');
-    allButtons.forEach(button => button.disabled = true);
-    userAnswers[currentQuestionIndex] = selectedIndex;
+	  const selectedIndex = Number(e.currentTarget.getAttribute('data-index'));
+	  const q = currentTestQuestions[currentQuestionIndex];
+	  const feedbackDiv = document.getElementById('feedback');
+	  const allButtons = practiceContainer.querySelectorAll('button[data-index]');
+	  allButtons.forEach(button => button.disabled = true);
+	  userAnswers[currentQuestionIndex] = selectedIndex;
 
-    if (selectedIndex === q.correctIndex) {
-      e.currentTarget.classList.add('correct');
-      feedbackDiv.textContent = 'Richtig!';
-      feedbackDiv.className = 'feedback correct';
-    } else {
-      e.currentTarget.classList.add('incorrect');
-      const correctBtn = practiceContainer.querySelector(`button[data-index="${q.correctIndex}"]`);
-      if (correctBtn) correctBtn.classList.add('correct');
-      feedbackDiv.textContent = `Falsch. Richtige Antwort: ${q.answers[q.correctIndex]}`;
-      feedbackDiv.className = 'feedback incorrect';
-      countMistake(q.id);
-    }
-    setTimeout(() => {
-      currentQuestionIndex++;
-      if (currentQuestionIndex >= currentTestQuestions.length) {
-        renderTestSummary();
-      } else {
-        renderQuestion();
-      }
-    }, 1800);
-  }
+	  if (selectedIndex === q.correctIndex) {
+		e.currentTarget.classList.add('correct');
+		feedbackDiv.textContent = 'Richtig!';
+		feedbackDiv.className = 'feedback correct';
+	  } else {
+		e.currentTarget.classList.add('incorrect');
+		const correctBtn = practiceContainer.querySelector(`button[data-index="${q.correctIndex}"]`);
+		if (correctBtn) correctBtn.classList.add('correct');
+		feedbackDiv.textContent = `Falsch. Richtige Antwort: ${q.answers[q.correctIndex]}`;
+		feedbackDiv.className = 'feedback incorrect';
+		countMistake(q.id);
+	  }
+
+	  // Save progress only after answer is selected
+	  const used = loadUsedQuestionIds();
+	  if (!used.includes(q.id)) {
+		used.push(q.id);
+		saveUsedQuestionIds(used);
+		updateProgressCounter();
+	  }
+
+	  setTimeout(() => {
+		currentQuestionIndex++;
+		if (currentQuestionIndex >= currentTestQuestions.length) {
+		  renderTestSummary();
+		} else {
+		  renderQuestion();
+		}
+	  }, 1800);
+	}
 
   function renderTestSummary() {
-    let score = 0;
+    window.scrollTo({ top: 0, behavior: 'smooth' }); //Release 2 UX addition
+	let score = 0;
     currentTestQuestions.forEach((q, idx) => {
       if (userAnswers[idx] === q.correctIndex) score++;
     });
@@ -906,6 +914,14 @@
     return array;
   }
 </script>
+
+<!-- release 2 updates start -->
+<noscript> 
+  <div style="padding: 1rem; background: #ffeded; color: #333; text-align: center;">
+    Diese Seite benötigt JavaScript, um korrekt zu funktionieren.
+  </div>
+</noscript>
+<!-- release 2 updates end -->
 
 </body>
 
