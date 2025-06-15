@@ -305,90 +305,85 @@
     main {
       padding: 48px 48px 64px;
     }
-  #practice-by-section {
-    padding: 2rem 1rem;
+
+/* Practice by Section - Release 2 */
+
+	#practice-by-section {
+	  display: none;         /* hidden by default */
+	  padding: 2rem 1rem;
 	}
 
- /* release 2 below */
-  #practice-by-section {
-	display: none;
-  }
-  #practice-by-section:not([hidden]) {
-	display: block;
-  }
-  #practice-by-section h2 {
-    color: white;
-    font-size: 2rem;
-    border-bottom: 2px solid #00BFFF;
-    margin-bottom: 2rem;
-    padding-bottom: 0.5rem;
-  }
-
-  .section-card {
-    background-color: #f9f9f9;
-    color: #222;
-    padding: 1.5rem;
-    border-radius: 16px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    margin-bottom: 1.5rem;
-    text-align: center;
-  }
-
-  .section-card h3 {
-    font-size: 1.3rem;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-  }
-
-  .section-card p {
-    font-size: 1rem;
-    color: #666;
-    margin-bottom: 1rem;
-  }
-
-  .section-card button {
-    background: linear-gradient(45deg, #7b2ff7, #00c6ff);
-    border: none;
-    color: white;
-    padding: 0.6rem 1.2rem;
-    border-radius: 12px;
-    font-size: 1rem;
-    font-weight: bold;
-    cursor: pointer;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-    transition: transform 0.1s ease, box-shadow 0.2s ease;
-  }
-
-  .section-card button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 10px rgba(0,0,0,0.2);
-  }
-  
-  .section-card {
-	margin: 16px 0;
+	#practice-by-section:not([hidden]) {
+	  display: block;        /* shown when not hidden */
 	}
-/* release 2 above */
-  }
+
+	#practice-by-section h2 {
+	  color: white;
+	  font-size: 2rem;
+	  border-bottom: 2px solid #00BFFF;
+	  margin-bottom: 2rem;
+	  padding-bottom: 0.5rem;
+	}
+
+	.section-card {
+	  background-color: #f9f9f9;
+	  color: #222;
+	  padding: 1.5rem;
+	  border-radius: 16px;
+	  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+	  margin: 16px 0;
+	  text-align: center;
+	}
+
+	.section-card h3 {
+	  font-size: 1.3rem;
+	  font-weight: 600;
+	  margin-bottom: 0.5rem;
+	}
+
+	.section-card p {
+	  font-size: 1rem;
+	  color: #666;
+	  margin-bottom: 1rem;
+	}
+
+	.section-card button {
+	  background: linear-gradient(45deg, #7b2ff7, #00c6ff);
+	  border: none;
+	  color: white;
+	  padding: 0.6rem 1.2rem;
+	  border-radius: 12px;
+	  font-size: 1rem;
+	  font-weight: bold;
+	  cursor: pointer;
+	  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+	  transition: transform 0.1s ease, box-shadow 0.2s ease;
+	}
+
+	.section-card button:hover {
+	  transform: translateY(-2px);
+	  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+	}
 </style>
 </head>
 <body>
 <header>
-  <div class="logo" tabindex="0">Zürich Citizenship Prep</div>
+  <div class="logo">Zürich Citizenship Prep</div>
   <nav role="navigation" aria-label="Main navigation">
-    <a href="#landing" class="nav-link active" tabindex="0">Home</a>
-    <a href="#practice" class="nav-link" tabindex="0">Praxis Test</a>
-	<a href="#practice-by-section" class="nav-link" tabindex="0">Practice by Section</a>  <!-- release 2 -->
-    <a href="#mistakes" class="nav-link" tabindex="0">Fehler statistik</a>
-    <a href="#resources" class="nav-link" tabindex="0">Materialien</a>
+    <a href="#landing" class="nav-link active">Home</a>
+    <a href="#practice" class="nav-link">Praxis Test</a>
+	<a href="#practice-by-section" class="nav-link">Practice by Section</a>  <!-- release 2 -->
+    <a href="#mistakes" class="nav-link">Fehler statistik</a>
+    <a href="#resources" class="nav-link">Materialien</a>
    </nav>
   <button class="material-icons mobile-toggle" aria-label="Menü öffnen" aria-expanded="false" aria-controls="mobile-menu">menu</button>
 </header>
 <nav id="mobile-menu" class="nav-mobile" aria-label="Mobile navigation">
-  <a href="#landing" class="nav-link active" tabindex="0">Home</a>
-  <a href="#practice" class="nav-link" tabindex="0">Praxis Test</a>
-  <a href="#practice-by-section" class="nav-link" tabindex="0">Practice by Section</a>  <!-- release 2 -->
-  <a href="#mistakes" class="nav-link" tabindex="0">Fehler Statistik</a>
-  <a href="#resources" class="nav-link" tabindex="0">Materialien</a>
+  <a href="#landing" class="nav-link active">Home</a>
+  <a href="#practice" class="nav-link">Praxis Test</a>
+  <a href="#practice-by-section" class="nav-link">Practice by Section</a>  <!-- release 2 -->
+  <a href="#mistakes" class="nav-link">Fehler Statistik</a>
+  <a href="#resources" class="nav-link">Materialien</a>
 </nav>
 <main id="content" tabindex="-1">
   
@@ -507,7 +502,8 @@
 <p> Mit der Nutzung der Website akzeptieren Sie diesen Haftungsausschluss. </p>
 </footer>
 
-<script src="ZH_canton_test_citizenship_questions_2025.js"></script> /* Release 2 optimisation*/
+<!-- Release optimisation: Move data outside -->
+<script src="ZH_canton_test_citizenship_questions_2025.js"></script> 
 
 <script> // Release 2 Check that questionsBank loaded correctly
   const questionsBank = window.questionsBank;
@@ -517,7 +513,7 @@
   
 </script>
 
-<script> <!-- Test practice 50 random questions -->
+<script> //Test practice 50 random questions
   'use strict';
   // The full list of 347 questions from https://www.zh.ch/content/dam/zhweb/bilder-dokumente/themen/migration-integration/einbuergerung/gkt/grundkenntnistest_kanton_zuerich.pdf
   
@@ -544,7 +540,7 @@
   const mostFailedQuestionsContainer = document.getElementById('most-failed-questions');
   const resourcesSection = document.getElementById('resources');
   const donateBtn = document.getElementById('donate-btn');
-  const practiceMistakesBtn = document.getElementById('practice-mistakes-btn'); <!-- release 2 -->
+  const practiceMistakesBtn = document.getElementById('practice-mistakes-btn'); // release 2
 
   // Accessibility: Focus main content on navigation
   function focusMain() {
@@ -629,13 +625,12 @@
     navLinks.forEach(link => link.classList.remove('active'));
     if (id === 'landing') landingSection.hidden = false;
     if (id === 'practice') practiceSection.hidden = false;
-	if (id === 'practice-by-section') sectionBySection.hidden = false; <!-- release 2 -->
+	if (id === 'practice-by-section') sectionBySection.hidden = false; //release 2 
     if (id === 'mistakes') {
       mistakesSection.hidden = false;
       showMostFailedQuestions();
     }
     if (id === 'resources') resourcesSection.hidden = false;
-	if (id === 'practice-by-section') sectionBySection.hidden = false; <!-- release 2 -->
     navLinks.forEach(link => {
       const href = link.getAttribute('href').substring(1);
       if (href === id) link.classList.add('active');
@@ -805,7 +800,7 @@
   }
 
   function missingSectionHideExcept(showId) {
-	const sections = [landingSection, practiceSection, mistakesSection, resourcesSection, sectionBySection]; <!-- release 2 -->
+	const sections = [landingSection, practiceSection, mistakesSection, resourcesSection, sectionBySection]; // release 2 
 
     for (const s of sections) {
       s.hidden = s.id !== showId;
@@ -820,16 +815,15 @@
   }
 
   navLinks.forEach(link => {
-  });
-    link.addEventListener('click', e => {
-      e.preventDefault();
-      const targetId = link.getAttribute('href').substring(1);
-	  if (targetId === 'practice') {
-		startPracticeTest();
+	link.addEventListener('click', e => {
+		e.preventDefault();
+		const targetId = link.getAttribute('href').substring(1);
+		if (targetId === 'practice') {
+		  startPracticeTest();
 		} else if (targetId === 'practice-by-section') {
-		navigateToSection('practice-by-section'); // Release 2 addition. Right content is shown when a user clicks “Practice by Section
+		  navigateToSection('practice-by-section');
 		} else {
-		navigateToSection(targetId);
+		  navigateToSection(targetId);
 		}
 	});
   });
