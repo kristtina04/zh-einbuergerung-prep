@@ -176,6 +176,7 @@
     padding: 24px 20px;
     text-align: center;
     user-select: none;
+	box-shadow: 0 8px 24px rgba(8, 27, 58, 0.7)
   }
   .stat-value {
     font-size: 2rem;
@@ -315,4 +316,13 @@
 	  margin-bottom: 2rem;
 	  padding-bottom: 0.5rem;
 	}
+	#practice-by-section .stats-grid {
+	  max-width: 960px;
+	  margin-left: auto;
+	  margin-right: auto;
+	}
+	.stat-card {
+	  max-width: 300px;
+	  width: 100%;
+}
 }
