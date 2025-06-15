@@ -200,7 +200,14 @@
 	box-shadow: 0 8px 24px rgba(8, 27, 58, 0.7);
 	max-width: 300px;
 	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
   }
+  .stat-card button {
+  margin-top: auto;
+  }
+  
   .stat-value {
     font-size: 2rem;
     font-weight: 700;
@@ -323,7 +330,17 @@
 		display: none !important;
 	  }
 }
-	
+/* Support menu highlight */
+	.highlight-link {
+	  font-weight: 700;
+	  color: #facc15; /* golden yellow */
+	}
+	.highlight-link:hover {
+	  color: #fde68a;
+	}	
+	.nav-mobile a:last-child {
+		margin-top: auto;
+	}
 /* Practice by Section - Responsive and polished layout */
 
 	#practice-by-section {
