@@ -290,10 +290,11 @@
       padding: 32px 24px 48px;
     }
   }
-  @media (min-width: 1025px) {
-    main {
-      padding: 48px 48px 64px;
-    }
+	@media (min-width: 641px) {
+	  .nav-mobile {
+		display: none !important;
+	  }
+}
 	
 /* Practice by Section - Responsive and polished layout */
 
@@ -369,3 +370,34 @@
 	  transform: translateY(-2px);
 	  box-shadow: 0 6px 10px rgba(0,0,0,0.2);
 	}
+@media (max-width: 640px) {
+  .section-grid {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+    padding: 0 1rem;
+  }
+
+  .section-card {
+    margin: 0 0 2rem 0;
+    padding: 1.2rem 1rem 1rem;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  }
+
+  .section-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.4rem;
+  }
+
+  .section-card p {
+    margin-bottom: 0.8rem;
+    font-size: 0.95rem;
+    color: #444;
+  }
+
+  .section-card button {
+    font-size: 1rem;
+    padding: 0.5rem 1.2rem;
+    border-radius: 10px;
+  }
+}
