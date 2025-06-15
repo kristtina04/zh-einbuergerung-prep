@@ -305,6 +305,29 @@
     main {
       padding: 48px 48px 64px;
     }
+<!-- release 2 below -->	
+  .section-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem;
+  }
+  .section-card {
+    background-color: #f2f2f2;
+    border-radius: 12px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  .section-card button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #007acc;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+<!-- release 2 up -->
   }
 </style>
 </head>
@@ -314,6 +337,7 @@
   <nav role="navigation" aria-label="Main navigation">
     <a href="#landing" class="nav-link active" tabindex="0">Home</a>
     <a href="#practice" class="nav-link" tabindex="0">Praxis Test</a>
+	<a href="#section-practice" class="nav-link" tabindex="0">Practice by Section</a>  <!-- release 2 -->
     <a href="#mistakes" class="nav-link" tabindex="0">Fehler statistik</a>
     <a href="#resources" class="nav-link" tabindex="0">Materialien</a>
    </nav>
@@ -322,6 +346,7 @@
 <nav id="mobile-menu" class="nav-mobile" aria-label="Mobile navigation">
   <a href="#landing" class="nav-link active" tabindex="0">Home</a>
   <a href="#practice" class="nav-link" tabindex="0">Praxis Test</a>
+  <a href="#section-practice" class="nav-link" tabindex="0">Practice by Section</a>  <!-- release 2 -->
   <a href="#mistakes" class="nav-link" tabindex="0">Fehler Statistik</a>
   <a href="#resources" class="nav-link" tabindex="0">Materialien</a>
 </nav>
@@ -358,6 +383,37 @@
       <!-- Questions and answers will be dynamically injected here -->
     </div>
   </section>
+
+  <section id="section-practice" tabindex="-1"> <!-- release 2 -->
+  <h2>Practice by Section</h2>
+  <div class="section-grid">
+    <div class="section-card">
+      <h3>1. Demokratie und Föderalismus</h3>
+      <p>125 Fragen</p>
+      <button onclick="startSectionPractice('Demokratie und Föderalismus')">Practice</button>
+    </div>
+    <div class="section-card">
+      <h3>2. Sozialstaat und Zivilgesellschaft</h3>
+      <p>81 Fragen</p>
+      <button onclick="startSectionPractice('Sozialstaat und Zivilgesellschaft')">Practice</button>
+    </div>
+    <div class="section-card">
+      <h3>3. Geschichte</h3>
+      <p>48 Fragen</p>
+      <button onclick="startSectionPractice('Geschichte')">Practice</button>
+    </div>
+    <div class="section-card">
+      <h3>4. Geografie</h3>
+      <p>46 Fragen</p>
+      <button onclick="startSectionPractice('Geografie')">Practice</button>
+    </div>
+    <div class="section-card">
+      <h3>5. Kultur und Alltagskultur</h3>
+      <p>46 Fragen</p>
+      <button onclick="startSectionPractice('Kultur und Alltagskultur')">Practice</button>
+    </div>
+  </div>
+</section>
 
   <section id="mistakes" aria-label="Statistik der falschen Antworten" class="card" hidden>
     <h2>Fragen mit den meisten Fehlern</h2>
@@ -407,7 +463,7 @@
 
 <script src="ZH_canton_test_citizenship_questions_2025.js"></script>
 
-<script>
+<script> <!-- Test practice 50 random questions -->
   'use strict';
   // The full list of 347 questions from https://www.zh.ch/content/dam/zhweb/bilder-dokumente/themen/migration-integration/einbuergerung/gkt/grundkenntnistest_kanton_zuerich.pdf
   
@@ -702,5 +758,24 @@
     navigateToSection('landing');
   });
 </script>
+
+<script> <!-- release 2 All Questions by section -->
+  function startSectionPractice(sectionName) {
+    const sectionQuestions = questionsBank.filter(q => q.section === sectionName);
+    if (sectionQuestions.length === 0) {
+      alert('No questions found for this section.');
+      return;
+    }
+    currentTestQuestions = shuffleArray([...sectionQuestions]);
+    currentQuestionIndex = 0;
+    userAnswers = [];
+    reviewingMistakes = false;
+    showPracticeQuestion();
+    document.getElementById('practice').scrollIntoView({ behavior: 'smooth' });
+  }
+</script>
+
 </body>
+
+
 </html>
