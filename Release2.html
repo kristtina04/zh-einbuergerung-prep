@@ -306,27 +306,57 @@
       padding: 48px 48px 64px;
     }
 <!-- release 2 below -->	
-  .section-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 1.5rem;
-    padding: 1rem;
+  #practice-by-section {
+    padding: 2rem 1rem;
   }
-  .section-card {
-    background-color: #f2f2f2;
-    border-radius: 12px;
-    padding: 1.5rem;
-    text-align: center;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  }
-  .section-card button {
-    margin-top: 1rem;
-    padding: 0.5rem 1rem;
-    background-color: #007acc;
+
+  #practice-by-section h2 {
     color: white;
+    font-size: 2rem;
+    border-bottom: 2px solid #00BFFF;
+    margin-bottom: 2rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .section-card {
+    background-color: #f9f9f9;
+    color: #222;
+    padding: 1.5rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+
+  .section-card h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+
+  .section-card p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1rem;
+  }
+
+  .section-card button {
+    background: linear-gradient(45deg, #7b2ff7, #00c6ff);
     border: none;
-    border-radius: 8px;
+    color: white;
+    padding: 0.6rem 1.2rem;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: bold;
     cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    transition: transform 0.1s ease, box-shadow 0.2s ease;
+  }
+
+  .section-card button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 10px rgba(0,0,0,0.2);
+  }
 <!-- release 2 up -->
   }
 </style>
@@ -337,7 +367,7 @@
   <nav role="navigation" aria-label="Main navigation">
     <a href="#landing" class="nav-link active" tabindex="0">Home</a>
     <a href="#practice" class="nav-link" tabindex="0">Praxis Test</a>
-	<a href="#section-practice" class="nav-link" tabindex="0">Practice by Section</a>  <!-- release 2 -->
+	<a href="#practice-by-section" class="nav-link" tabindex="0">Practice by Section</a>  <!-- release 2 -->
     <a href="#mistakes" class="nav-link" tabindex="0">Fehler statistik</a>
     <a href="#resources" class="nav-link" tabindex="0">Materialien</a>
    </nav>
@@ -346,7 +376,7 @@
 <nav id="mobile-menu" class="nav-mobile" aria-label="Mobile navigation">
   <a href="#landing" class="nav-link active" tabindex="0">Home</a>
   <a href="#practice" class="nav-link" tabindex="0">Praxis Test</a>
-  <a href="#section-practice" class="nav-link" tabindex="0">Practice by Section</a>  <!-- release 2 -->
+  <a href="#practice-by-section" class="nav-link" tabindex="0">Practice by Section</a>  <!-- release 2 -->
   <a href="#mistakes" class="nav-link" tabindex="0">Fehler Statistik</a>
   <a href="#resources" class="nav-link" tabindex="0">Materialien</a>
 </nav>
@@ -377,43 +407,48 @@
     </div>
   </section>
 
+ <!-- release 2 start -->
+<section id="practice-by-section" style="display:none; padding: 2rem;">
+  <h2 class="section-title">Practice by Section</h2>
+
+  <div class="card">
+    <h3 class="question-text">1 Demokratie und Föderalismus</h3>
+    <p class="card-description">125 Fragen</p>
+    <button onclick="startSectionPractice('1 Demokratie und Föderalismus')" class="gradient-button">Practice</button>
+  </div>
+
+  <div class="card">
+    <h3 class="question-text">2 Sozialstaat und Zivilgesellschaft</h3>
+    <p class="card-description">81 Fragen</p>
+    <button onclick="startSectionPractice('2 Sozialstaat und Zivilgesellschaft')" class="gradient-button">Practice</button>
+  </div>
+
+  <div class="card">
+    <h3 class="question-text">3 Geschichte</h3>
+    <p class="card-description">48 Fragen</p>
+    <button onclick="startSectionPractice('3 Geschichte')" class="gradient-button">Practice</button>
+  </div>
+
+  <div class="card">
+    <h3 class="question-text">4 Geografie</h3>
+    <p class="card-description">46 Fragen</p>
+    <button onclick="startSectionPractice('4 Geografie')" class="gradient-button">Practice</button>
+  </div>
+
+  <div class="card">
+    <h3 class="question-text">5 Kultur und Alltagskultur</h3>
+    <p class="card-description">46 Fragen</p>
+    <button onclick="startSectionPractice('5 Kultur und Alltagskultur')" class="gradient-button">Practice</button>
+  </div>
+</section>  <!-- release 2 end -->
+
+  
   <section id="practice" aria-label="Praxis Test" class="card" hidden>
     <h2>Praxis Test</h2>
     <div class="practice-container" id="practice-container" aria-live="polite" aria-atomic="true">
       <!-- Questions and answers will be dynamically injected here -->
     </div>
   </section>
-
-  <section id="section-practice" tabindex="-1"> <!-- release 2 -->
-  <h2>Practice by Section</h2>
-  <div class="section-grid">
-    <div class="section-card">
-      <h3>1. Demokratie und Föderalismus</h3>
-      <p>125 Fragen</p>
-      <button onclick="startSectionPractice('Demokratie und Föderalismus')">Practice</button>
-    </div>
-    <div class="section-card">
-      <h3>2. Sozialstaat und Zivilgesellschaft</h3>
-      <p>81 Fragen</p>
-      <button onclick="startSectionPractice('Sozialstaat und Zivilgesellschaft')">Practice</button>
-    </div>
-    <div class="section-card">
-      <h3>3. Geschichte</h3>
-      <p>48 Fragen</p>
-      <button onclick="startSectionPractice('Geschichte')">Practice</button>
-    </div>
-    <div class="section-card">
-      <h3>4. Geografie</h3>
-      <p>46 Fragen</p>
-      <button onclick="startSectionPractice('Geografie')">Practice</button>
-    </div>
-    <div class="section-card">
-      <h3>5. Kultur und Alltagskultur</h3>
-      <p>46 Fragen</p>
-      <button onclick="startSectionPractice('Kultur und Alltagskultur')">Practice</button>
-    </div>
-  </div>
-</section>
 
   <section id="mistakes" aria-label="Statistik der falschen Antworten" class="card" hidden>
     <h2>Fragen mit den meisten Fehlern</h2>
