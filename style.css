@@ -164,19 +164,42 @@
     color: #06b6d4;
   }
   /* Stats Grid */
-  .stats-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(180px,1fr));
-    gap: 32px;
-    margin-bottom: 32px;
-  }
+.stats-grid {
+  display: grid;
+  gap: 32px;
+  margin-bottom: 32px;
+}
+
+/* For desktop/laptop: exactly 3 columns */
+	@media (min-width: 768px) {
+	  .stats-grid {
+		grid-template-columns: repeat(3, 1fr);
+	  }
+	}
+
+/* For tablets: 2 columns */
+	@media (max-width: 767px) and (min-width: 481px) {
+	  .stats-grid {
+		grid-template-columns: repeat(2, 1fr);
+	  }
+	}
+
+/* For phones: 1 column */
+	@media (max-width: 480px) {
+	  .stats-grid {
+		grid-template-columns: 1fr;
+	  }
+	}
+	
   .stat-card {
-    background: rgba(139, 92, 246, 0.15);
-    border-radius: 12px;
-    padding: 24px 20px;
-    text-align: center;
-    user-select: none;
-	box-shadow: 0 8px 24px rgba(8, 27, 58, 0.7)
+	background: rgba(139, 92, 246, 0.15);
+	border-radius: 12px;
+	padding: 24px 20px;
+	text-align: center;
+	user-select: none;
+	box-shadow: 0 8px 24px rgba(8, 27, 58, 0.7);
+	max-width: 300px;
+	width: 100%;
   }
   .stat-value {
     font-size: 2rem;
@@ -296,6 +319,9 @@
 	  .nav-mobile.show {
 		display: none !important;
 	  }
+	  .mobile-toggle {
+		display: none !important;
+	  }
 }
 	
 /* Practice by Section - Responsive and polished layout */
@@ -321,8 +347,4 @@
 	  margin-left: auto;
 	  margin-right: auto;
 	}
-	.stat-card {
-	  max-width: 300px;
-	  width: 100%;
-}
 }
