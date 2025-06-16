@@ -3,21 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="title" content="Zürich Citizenship Prep – Practice Test for Einbürgerung 2025">
-  <meta name="description" content="Prepare for the Zürich Einbürgerungstest with 347 official questions. Practice by topic or simulate the real exam.">
-  <meta name="keywords" content="Zürich citizenship test, Einbürgerung Zürich, Schweiz Test 2025, citizenship practice questions, Einbürgerungstest online, Zürcher Einbürgerung, Switzerland naturalization">
+  <meta name="title" content="Zürich Einbürgerungstest: Übe 346 offizielle Fragen für 2025">
+  <meta name="description" content="Bereite dich jetzt auf den Zürich Einbürgerungstest vor! Übe mit 347 offiziellen Fragen und steigere deine Erfolgschancen. Zufalls- und Kapiteltests verfügbar.">
   <meta name="author" content="Zürich Citizenship Preparation Team">
 
   <!-- Social -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://kristtina04.github.io/">
   <meta property="og:title" content="Zürich Citizenship Prep – Einbürgerung 2025 Test">
-  <meta property="og:description" content="Free test simulator with all 347 official questions for the Zürich Einbürgerungstest. Practice randomly or by section.">
+  <meta property="og:description" content="Free test simulator with all 346 official questions for the Zürich Einbürgerungstest. Practice randomly or by section.">
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:url" content="https://kristtina04.github.io/">
   <meta name="twitter:title" content="Zürich Citizenship Prep – 2025 Practice Test">
-  <meta name="twitter:description" content="Train with 347 real Einbürgerung questions. Smart practice mode. Mobile-friendly.">
+  <meta name="twitter:description" content="Train with 346 real Einbürgerung questions. Smart practice mode. Mobile-friendly.">
 
   <!-- Fonts & Styles -->
   <link rel="stylesheet" href="style.css">
@@ -32,7 +31,7 @@
 </head>
 <body>
 <header>
-	<div class="logo" aria-label="Zürich Citizenship Preparation Free Test Practice">Zürich Citizenship Prep</div>
+<div class="logo" aria-label="Zürich Citizenship Prep – Einbürgerung 2025 Test">Zürich Citizenship Prep</div>
   <nav role="navigation" aria-label="Main navigation">
     <a href="#landing" class="nav-link active">Home</a>
     <a href="#practice" class="nav-link">Zufalls-Test</a>
@@ -54,20 +53,20 @@
 <main id="content" tabindex="-1">
   
   <section id="landing" aria-label="Startseite" class="card" tabindex="0">
-     <h1>Teste dein Wissen für die Einbürgerung in Zürich – einfach und gratis!</h1>
+     <h1>Einbürgerung in Kanton Zürich: Teste dein Wissen und übe kostenlos!</h1>
     <p><strong>Hier kannst du dich auf deine Einbürgerungsprüfung vorbereiten,</strong> indem du zufällige Quizze oder thematische 
-	    Kapiteltests mit allen 347 offiziellen Fragen aus dem Testhandbuch des Kantons Zürich übst: <a href="https://www.zh.ch/content/dam/zhweb/bilder-dokumente/themen/migration-integration/einbuergerung/gkt/grundkenntnistest_kanton_zuerich.pdf" target="_blank">[zur Quelle]</a>.</p>
+	    Kapiteltests mit allen 346 offiziellen Fragen aus dem Testhandbuch des Kantons Zürich übst: <a href="https://www.zh.ch/content/dam/zhweb/bilder-dokumente/themen/migration-integration/einbuergerung/gkt/grundkenntnistest_kanton_zuerich.pdf" target="_blank">[zur Quelle]</a>.</p>
     <strong>Hinweis:</strong> Keine offizielle Seite – einfach zum Üben gemacht. <br>
    <p> Viel Spass & Erfolg💪!</p><p></p>
    
     <div class="stats-grid" aria-live="polite" aria-atomic="true">
       <div class="stat-card" role="region" aria-label="Gesamtzahl Anträge">
         <div class="stat-value" id="stat-applications">~9 Mio.</div>
-        <div class="stat-label">Gesamtbevölkerung in der Schweiz (2025)</div>
+        <div class="stat-label">Schweizer Gesamtbevölkerung 2025</div>
       </div>
       <div class="stat-card" role="region" aria-label="Erfolgsquote">
         <div class="stat-value" id="stat-successrate">13'991</div>
-        <div class="stat-label">Einbürgerungsgesuche im Kanton Zürich (2024)</div>
+        <div class="stat-label">Einbürgerungsgesuche im Kanton Zürich 2024</div>
       </div>
       <div class="stat-card" role="region" aria-label="Nutzer insgesamt">
         <div class="stat-value" id="stat-users">14.Juni</div>
@@ -161,7 +160,7 @@
 
 <footer>
   <p>© 2025 Zürich Citizenship Prep. Made with care.</p>
-  <p>Basierend auf 347 offiziellen Fragen des Zürcher Einbürgerungstests (Stand: 14 Juni 2025).</p>
+  <p>Basierend auf 346 offiziellen Fragen des Zürcher Einbürgerungstests (Stand: 14 Juni 2025).</p>
 
   <details style="margin-top: 1rem;">
     <summary><strong>Haftungsausschluss & Hinweise</strong></summary>
@@ -187,7 +186,7 @@
 
 <script> //Test practice 50 random questions
   'use strict';
-  // The full list of 347 questions from https://www.zh.ch/content/dam/zhweb/bilder-dokumente/themen/migration-integration/einbuergerung/gkt/grundkenntnistest_kanton_zuerich.pdf
+  // The full list of 346 questions from https://www.zh.ch/content/dam/zhweb/bilder-dokumente/themen/migration-integration/einbuergerung/gkt/grundkenntnistest_kanton_zuerich.pdf
   
   // Local storage keys
   const STORAGE_MISTAKES_KEY = 'cep_mistake_counts';
@@ -327,7 +326,7 @@
     mobileToggleBtn.focus();
   }
   
-  // Release 2 start. Show unique questions from 347 pool
+  // Release 2 start. Show unique questions from 346 pool
   function selectRandomQuestions(num = 50, pool = questionsBank) {
 	const usedIds = loadUsedQuestionIds();
 	const remaining = pool.filter(q => !usedIds.includes(q.id));
@@ -341,7 +340,7 @@
   const selected = shuffled.slice(0, num);
   return selected;
   }
-  // Release 2 end. Show unique questions from 347 pool
+  // Release 2 end. Show unique questions from 346 pool
   
   function renderQuestion() {
     const q = currentTestQuestions[currentQuestionIndex];
