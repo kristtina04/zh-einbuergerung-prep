@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="title" content="Zürich Citizenship Prep – Practice Test for Einbürgerung 2025">
-  <meta name="description" content="Prepare for the Zürich Einbürgerungstest with 347 official questions. Practice by topic or simulate the real exam.">
+  <meta name="description" content="Prepare for the Zürich Einbürgerungstest with 346 official questions. Practice by topic or simulate the real exam.">
   <meta name="keywords" content="Zürich citizenship test, Einbürgerung Zürich, Schweiz Test 2025, citizenship practice questions, Einbürgerungstest online, Zürcher Einbürgerung, Switzerland naturalization">
   <meta name="author" content="Zürich Citizenship Preparation Team">
 
@@ -12,12 +12,12 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://kristtina04.github.io/">
   <meta property="og:title" content="Zürich Citizenship Prep – Einbürgerung 2025 Test">
-  <meta property="og:description" content="Free test simulator with all 347 official questions for the Zürich Einbürgerungstest. Practice randomly or by section.">
+  <meta property="og:description" content="Free test simulator with all 346 official questions for the Zürich Einbürgerungstest. Practice randomly or by section.">
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:url" content="https://kristtina04.github.io/">
   <meta name="twitter:title" content="Zürich Citizenship Prep – 2025 Practice Test">
-  <meta name="twitter:description" content="Train with 347 real Einbürgerung questions. Smart practice mode. Mobile-friendly.">
+  <meta name="twitter:description" content="Train with 346 real Einbürgerung questions. Smart practice mode. Mobile-friendly.">
 
   <!-- Fonts & Styles -->
   <link rel="stylesheet" href="style.css">
@@ -56,7 +56,7 @@
   <section id="landing" aria-label="Startseite" class="card" tabindex="0">
      <h1>Teste dein Wissen für die Einbürgerung in Zürich – einfach und gratis!</h1>
     <p><strong>Hier kannst du dich auf deine Einbürgerungsprüfung vorbereiten,</strong> indem du zufällige Quizze oder 
-	    thematische Kapiteltests mit allen 347 offiziellen Fragen aus dem Testhandbuch des 
+	    thematische Kapiteltests mit allen 346 offiziellen Fragen aus dem Testhandbuch des 
 	    Kantons Zürich übst <a href="https://www.zh.ch/content/dam/zhweb/bilder-dokumente/themen/migration-integration/einbuergerung/gkt/grundkenntnistest_kanton_zuerich.pdf" target="_blank">[zur Quelle]</a>.</p>
     <strong>Hinweis:</strong> Keine offizielle Seite – einfach zum üben gemacht.<br>
    <p> Viel Spass & Erfolg💪!</p><p></p>
@@ -162,7 +162,7 @@
 
 <footer>
   <p>© 2025 Zürich Citizenship Prep. Made with care.</p>
-  <p>Basierend auf 347 offiziellen Fragen des Zürcher Einbürgerungstests (Stand: 14 Juni 2025).</p>
+  <p>Basierend auf 346 offiziellen Fragen des Zürcher Einbürgerungstests (Stand: 14 Juni 2025).</p>
 
   <details style="margin-top: 1rem;">
     <summary><strong>Haftungsausschluss & Hinweise</strong></summary>
@@ -188,7 +188,7 @@
 
 <script> //Test practice 50 random questions
   'use strict';
-  // The full list of 347 questions from https://www.zh.ch/content/dam/zhweb/bilder-dokumente/themen/migration-integration/einbuergerung/gkt/grundkenntnistest_kanton_zuerich.pdf
+  // The full list of 346 questions from https://www.zh.ch/content/dam/zhweb/bilder-dokumente/themen/migration-integration/einbuergerung/gkt/grundkenntnistest_kanton_zuerich.pdf
   
   // Local storage keys
   const STORAGE_MISTAKES_KEY = 'cep_mistake_counts';
@@ -328,7 +328,7 @@
     mobileToggleBtn.focus();
   }
   
-  // Release 2 start. Show unique questions from 347 pool
+  // Release 2 start. Show unique questions from 346 pool
   function selectRandomQuestions(num = 50, pool = questionsBank) {
 	const usedIds = loadUsedQuestionIds();
 	const remaining = pool.filter(q => !usedIds.includes(q.id));
@@ -342,7 +342,7 @@
   const selected = shuffled.slice(0, num);
   return selected;
   }
-  // Release 2 end. Show unique questions from 347 pool
+  // Release 2 end. Show unique questions from 346 pool
   
   function renderQuestion() {
     const q = currentTestQuestions[currentQuestionIndex];
